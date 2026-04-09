@@ -10,7 +10,7 @@
       </div>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-1.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-1.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -24,7 +24,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-2.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-2.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -38,7 +38,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-3.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-3.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -52,7 +52,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-4.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-4.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -66,7 +66,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-5.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-5.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -80,7 +80,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-6.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-6.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -94,7 +94,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-7.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-7.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -108,7 +108,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-8.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-8.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -122,7 +122,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-9.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-9.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>
@@ -136,7 +136,7 @@
       <span>Speaker</span>
     </div>
   </div>
-  <div class="member-item set-bg" data-setbg="{{ asset('img/team-member/member-10.jpg') }}">
+  <div class="member-item set-bg" data-setbg="{{ Storage::url('img/team-member/member-10.jpg') }}">
     <div class="mi-social">
       <div class="mi-social-inner bg-gradient">
         <a href="#"><i class="fa fa-facebook"></i></a>

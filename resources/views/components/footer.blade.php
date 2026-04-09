@@ -14,7 +14,7 @@
         <div class="col-lg-12">
           <div class="footer-text">
             {{-- <div class="ft-logo">
-              <a href="{{ route('home') }}" class="footer-logo"><img src="{{ asset('img/footer-logo.png') }}" alt=""></a>
+              <a href="{{ route('home') }}" class="footer-logo"><img src="{{ Storage::url('img/footer-logo.png') }}" alt=""></a>
             </div> --}}
             <ul>
               @foreach ($footerMenu as $item)

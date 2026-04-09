@@ -17,10 +17,10 @@
               <div class="testimonial-item">
                 <div class="ti-author">
                   <div class="quote-pic">
-                    <img src="{{ asset('img/quote.png') }}" alt="">
+                    <img src="{{ Storage::url('img/quote.png') }}" alt="">
                   </div>
                   <div class="ta-pic">
-                    <img src="{{ asset('img/testimonial/testimonial-1.jpg') }}" alt="">
+                    <img src="{{ Storage::url('img/testimonial/testimonial-1.jpg') }}" alt="">
                   </div>
                   <div class="ta-text">
                     <h5>Emma Sandoval</h5>
@@ -35,10 +35,10 @@
               <div class="testimonial-item">
                 <div class="ti-author">
                   <div class="quote-pic">
-                    <img src="{{ asset('img/quote.png') }}" alt="">
+                    <img src="{{ Storage::url('img/quote.png') }}" alt="">
                   </div>
                   <div class="ta-pic">
-                    <img src="{{ asset('img/testimonial/testimonial-2.jpg') }}" alt="">
+                    <img src="{{ Storage::url('img/testimonial/testimonial-2.jpg') }}" alt="">
                   </div>
                   <div class="ta-text">
                     <h5>John Smith</h5>
@@ -53,10 +53,10 @@
               <div class="testimonial-item">
                 <div class="ti-author">
                   <div class="quote-pic">
-                    <img src="{{ asset('img/quote.png') }}" alt="">
+                    <img src="{{ Storage::url('img/quote.png') }}" alt="">
                   </div>
                   <div class="ta-pic">
-                    <img src="{{ asset('img/testimonial/testimonial-2.jpg') }}" alt="">
+                    <img src="{{ Storage::url('img/testimonial/testimonial-2.jpg') }}" alt="">
                   </div>
                   <div class="ta-text">
                     <h5>John Smith</h5>

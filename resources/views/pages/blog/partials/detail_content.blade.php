@@ -19,7 +19,7 @@
                 re-energized and more hopeful. We are committed to a new future which we now own. You
                 helped us learn how to be resilient change masters."</p>
               <span>John Smith</span>
-              <img src="{{ asset('img/quote-left.png') }}" alt="">
+              <img src="{{ Storage::url('img/quote-left.png') }}" alt="">
             </div>
             <div class="bd-more-text">
               <h4>Free Classifieds Using Them To Promote Your Stuff Online</h4>
@@ -34,10 +34,10 @@
             <div class="bd-more-pic">
               <div class="row">
                 <div class="col-md-6">
-                  <img src="{{ asset('img/blog/blog-details/blog-more-1.jpg') }}" alt="">
+                  <img src="{{ Storage::url('img/blog/blog-details/blog-more-1.jpg') }}" alt="">
                 </div>
                 <div class="col-md-6">
-                  <img src="{{ asset('img/blog/blog-details/blog-more-2.jpg') }}" alt="">
+                  <img src="{{ Storage::url('img/blog/blog-details/blog-more-2.jpg') }}" alt="">
                 </div>
               </div>
             </div>

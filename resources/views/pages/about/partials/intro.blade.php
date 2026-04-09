@@ -17,7 +17,7 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="about-pic">
-          <img src="{{ asset('img/about-us.jpg') }}" alt="">
+          <img src="{{ Storage::url('img/about-us.jpg') }}" alt="">
         </div>
       </div>
       <div class="col-lg-6">

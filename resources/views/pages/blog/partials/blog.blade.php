@@ -5,7 +5,7 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-1.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-1.jpg') }}">
                 <div class="bi-tag bg-gradient">Foody</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">Google's AI Assistant Aims to Transcend the Smart Speaker</a></h5>
@@ -14,7 +14,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-2.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-2.jpg') }}">
                 <div class="bi-tag bg-gradient">Foody</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">Free Classifiends Using Them To Promote</a></h5>
@@ -23,7 +23,7 @@
               </div>
             </div>
           </div>
-          <div class="blog-item set-bg large-item" data-setbg="{{ asset('img/blog/blog-4.jpg') }}">
+          <div class="blog-item set-bg large-item" data-setbg="{{ Storage::url('img/blog/blog-4.jpg') }}">
             <div class="bi-tag bg-gradient">Business</div>
             <div class="bi-text">
               <h3><a href="blog-details.html">"Inspired By Modiji, Will Make Biopic": BJP's Ravi Kishan</a></h3>
@@ -32,7 +32,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-7.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-7.jpg') }}">
                 <div class="bi-tag bg-gradient">Foody</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">The ZenBook With a Touchpad That Lights Up</a></h5>
@@ -41,7 +41,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-8.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-8.jpg') }}">
                 <div class="bi-tag bg-gradient">Foody</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">Is the Detel Posh a Posh Speaker?</a></h5>
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="blog-item set-bg large-item" data-setbg="{{ asset('img/blog/blog-3.jpg') }}">
+          <div class="blog-item set-bg large-item" data-setbg="{{ Storage::url('img/blog/blog-3.jpg') }}">
             <div class="bi-tag bg-gradient">Marketing</div>
             <div class="bi-text">
               <h3><a href="blog-details.html">Lok Sabha Elections 2019 - In BJP, Only ''Tai'' Can Admonish Me: PM Modi On Sumitra
@@ -62,7 +62,7 @@
           </div>
           <div class="row">
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-5.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-5.jpg') }}">
                 <div class="bi-tag bg-gradient">Design</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">The Biggest Stories Of January 06, 2019</a></h5>
@@ -71,7 +71,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-6.jpg') }}">
+              <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-6.jpg') }}">
                 <div class="bi-tag bg-gradient">UX/UI</div>
                 <div class="bi-text">
                   <h5><a href="blog-details.html">Alexa Can Now Show You Things!</a></h5>
@@ -80,7 +80,7 @@
               </div>
             </div>
           </div>
-          <div class="blog-item set-bg" data-setbg="{{ asset('img/blog/blog-9.jpg') }}">
+          <div class="blog-item set-bg" data-setbg="{{ Storage::url('img/blog/blog-9.jpg') }}">
             <div class="bi-tag bg-gradient">Marketing</div>
             <div class="bi-text">
               <h3><a href="blog-details.html">"Still Waiting For BJP To Make Me Chief Minister": Goa Assembly Speaker</a></h3>

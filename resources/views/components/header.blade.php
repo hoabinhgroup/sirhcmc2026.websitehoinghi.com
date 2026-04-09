@@ -3,7 +3,7 @@
     <div class="container">
       <div class="logo">
         <a href="{{ route('home') }}">
-          <img src="{{ asset('img/logo.png') }}" alt="">
+          <img src="{{ Storage::url('img/logo.png') }}" alt="">
         </a>
       </div>
       <div class="nav-menu">

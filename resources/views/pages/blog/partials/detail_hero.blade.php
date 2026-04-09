@@ -1,5 +1,5 @@
   <!-- Blog Details Hero Section Begin -->
-  <section class="blog-hero-section set-bg" data-setbg="{{ asset('img/blog/blog-details/blog-details-hero.jpg') }}">
+  <section class="blog-hero-section set-bg" data-setbg="{{ Storage::url('img/blog/blog-details/blog-details-hero.jpg') }}">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
