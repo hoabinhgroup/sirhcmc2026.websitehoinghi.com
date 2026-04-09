@@ -14,13 +14,13 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;display=swap" rel="stylesheet">
 
   <!-- Css Styles -->
-  <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/elegant-icons.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/magnific-popup.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/slicknav.min.css')}}" type="text/css">
-  <link rel="stylesheet" href="{{asset('css/style.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/bootstrap.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/font-awesome.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/elegant-icons.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/owl.carousel.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/magnific-popup.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/slicknav.min.css')}}" type="text/css">
+  <link rel="stylesheet" href="{{ Storage::url('css/style.css')}}" type="text/css">
   @vite('resources/js/app.js')
 </head>
 
@@ -33,13 +33,13 @@
   @yield('content')
   @include('components.footer')
 
-  <script src="{{asset('js/jquery-3.3.1.min.js')}}"></script>
-  <script src="{{asset('js/bootstrap.min.js')}}"></script>
-  <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
-  <script src="{{asset('js/jquery.countdown.min.js')}}"></script>
-  <script src="{{asset('js/jquery.slicknav.js')}}"></script>
-  <script src="{{asset('js/owl.carousel.min.js')}}"></script>
-  <script src="{{asset('js/main.js')}}"></script>
+  <script src="{{ Storage::url('js/jquery-3.3.1.min.js')}}"></script>
+  <script src="{{ Storage::url('js/bootstrap.min.js')}}"></script>
+  <script src="{{ Storage::url('js/jquery.magnific-popup.min.js')}}"></script>
+  <script src="{{ Storage::url('js/jquery.countdown.min.js')}}"></script>
+  <script src="{{ Storage::url('js/jquery.slicknav.js')}}"></script>
+  <script src="{{ Storage::url('js/owl.carousel.min.js')}}"></script>
+  <script src="{{ Storage::url('js/main.js')}}"></script>
 </body>
 
 </html>

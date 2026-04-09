@@ -1,5 +1,5 @@
   <!-- Pricing Section Begin -->
-  <section class="pricing-section set-bg spad" data-setbg="{{asset('img/pricing-bg.jpg')}}">
+  <section class="pricing-section set-bg spad" data-setbg="{{ Storage::url('img/pricing-bg.jpg')}}">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
