@@ -1,0 +1,10 @@
+@extends('layout.index')
+@section('title', 'SIR HCMC 2026')
+@section('content')
+  @include('pages.about.partials.breadcrumb')
+  @include('pages.about.partials.team')
+  @include('pages.about.partials.story')
+  @include('pages.about.partials.pricing')
+  @include('pages.about.partials.testimonial')
+  @include('pages.about.partials.newsletter')
+@endsection
