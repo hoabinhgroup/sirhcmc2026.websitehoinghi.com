@@ -4,7 +4,9 @@
       <div class="row">
         <div class="col-lg-6">
           <div class="ha-pic">
-            <img src="https://placehold.co/300x300" alt="">
+            <iframe src="https://www.youtube.com/embed/bB_mm7cI-6k?autoplay=1&mute=1&loop=1&playlist=bB_mm7cI-6k&vq=hd1080&rel=0" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
           </div>
         </div>
         <div class="col-lg-6">

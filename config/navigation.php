@@ -44,7 +44,7 @@ return [
             'label_en' => 'REGISTRATION',
             'children' => [
                 ['route' => 'registration.delegate-registration', 'label_vi' => 'Đăng ký tham dự', 'label_en' => 'Delegate Registration'],
-                ['route' => 'registration.abstract-submission', 'label_vi' => 'Đăng ký báo cáo Abstract ', 'label_en' => 'abstract submission'],
+                ['route' => 'registration.abstract-submission', 'label_vi' => 'Đăng ký báo cáo', 'label_en' => 'abstract submission'],
             ],
             'active' => ['registration', 'registration.*'],
         ],
