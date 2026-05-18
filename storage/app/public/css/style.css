@@ -236,12 +236,7 @@ ol {
 .price-item .tr-tag,
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
-    background-image:
-        -o-linear-gradient(330deg, #f9488b 0%, #ec1f23 100%),
-        -o-linear-gradient(330deg, #f9488b 0%, #ec1f23 100%);
-    background-image:
-        linear-gradient(120deg, #f9488b 0%, #ec1f23 100%),
-        linear-gradient(120deg, #f9488b 0%, #ec1f23 100%);
+    background-color: #ec1f23;
 }
 
 /* buttons */
