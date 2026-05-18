@@ -32,6 +32,10 @@
 /* Template default CSS
 /*----------------------------------------*/
 
+[x-cloak] {
+    display: none !important;
+}
+
 html,
 body {
     height: 100%;
@@ -133,7 +137,7 @@ ol {
 .switch-language .button-vietnam:hover,
 .switch-language .button-english:hover {
     transition: all 0.3s ease;
-    background-color: #f4494967;
+    background-color: #ec1f2367;
 }
 
 .switch-language .button-vietnam.active,
@@ -149,7 +153,7 @@ ol {
     position: absolute;
     width: 0%;
     height: 100%;
-    background-color: #f44949;
+    background-color: #ec1f23;
     z-index: -1;
     transition: width 0.3s ease;
 }
@@ -233,11 +237,11 @@ ol {
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
     background-image:
-        -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%),
-        -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%);
+        -o-linear-gradient(330deg, #f9488b 0%, #ec1f23 100%),
+        -o-linear-gradient(330deg, #f9488b 0%, #ec1f23 100%);
     background-image:
-        linear-gradient(120deg, #ee8425 0%, #f9488b 100%),
-        linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+        linear-gradient(120deg, #f9488b 0%, #ec1f23 100%),
+        linear-gradient(120deg, #f9488b 0%, #ec1f23 100%);
 }
 
 /* buttons */
@@ -255,22 +259,22 @@ ol {
             linear,
             left top,
             right top,
-            from(#ee8425),
-            to(#f9488b)
+            from(#f9488b),
+            to(#ec1f23)
         ),
         -webkit-gradient(
                 linear,
                 left top,
                 right top,
-                from(#ee8425),
-                to(#f9488b)
+                from(#f9488b),
+                to(#ec1f23)
             );
     background-image:
-        -o-linear-gradient(left, #ee8425 0%, #f9488b 100%),
-        -o-linear-gradient(left, #ee8425 0%, #f9488b 100%);
+        -o-linear-gradient(left, #f9488b 0%, #ec1f23 100%),
+        -o-linear-gradient(left, #f9488b 0%, #ec1f23 100%);
     background-image:
-        linear-gradient(to right, #ee8425 0%, #f9488b 100%),
-        linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+        linear-gradient(to right, #f9488b 0%, #ec1f23 100%),
+        linear-gradient(to right, #f9488b 0%, #ec1f23 100%);
 }
 
 .site-btn {
@@ -430,7 +434,7 @@ ol {
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:hover {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .nav-menu .mainmenu ul li .dropdown li a:after {
@@ -467,7 +471,7 @@ ol {
     bottom: 36px;
     height: 2px;
     width: 100%;
-    background: #f44949;
+    background: #ec1f23;
     content: "";
     opacity: 0;
     -webkit-transition: all 0.3s;
@@ -585,7 +589,7 @@ ol {
 
 .about-section-title {
     margin-bottom: 32px;
-    border-left: 5px solid #f44949;
+    border-left: 5px solid #ec1f23;
     padding-left: 20px;
 }
 
@@ -616,7 +620,7 @@ ol {
 }
 
 .ha-text ul li span {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .ha-text .ha-btn {
@@ -632,7 +636,7 @@ ol {
     bottom: -6px;
     height: 2px;
     width: 100%;
-    background: #f44949;
+    background: #ec1f23;
     content: "";
 }
 
@@ -708,7 +712,7 @@ ol {
 
 .member-item .mi-text span {
     font-size: 16px;
-    color: #f44949;
+    color: #ec1f23;
     display: block;
 }
 
@@ -831,7 +835,7 @@ ol {
 }
 
 .schedule-tab .st-content .sc-text ul li i {
-    color: #f44949;
+    color: #ec1f23;
     font-size: 14px;
 }
 
@@ -849,7 +853,7 @@ ol {
 }
 
 .schedule-tab .st-content .sc-widget li i {
-    color: #f44949;
+    color: #ec1f23;
     position: absolute;
     left: 0;
     top: 7px;
@@ -968,7 +972,7 @@ ol {
 }
 
 .price-item .price-btn span {
-    color: #f44949;
+    color: #ec1f23;
     position: relative;
     top: 3px;
     -webkit-transition: all 0.3s;
@@ -1027,7 +1031,7 @@ ol {
 }
 
 .latest-item.large-item .li-text span i {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .latest-item .li-tag {
@@ -1066,7 +1070,7 @@ ol {
 }
 
 .latest-item .li-text span i {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 /*---------------------
@@ -1134,7 +1138,7 @@ ol {
     font-size: 16px;
     font-weight: 600;
     border-radius: 3px;
-    background-color: #f44949;
+    background-color: #ec1f23;
     display: flex;
     justify-self: center;
     align-items: center;
@@ -1304,7 +1308,7 @@ ol {
 }
 
 .footer-text ul li a:hover {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .footer-text .copyright-text {
@@ -1314,7 +1318,7 @@ ol {
 }
 
 .footer-text .copyright-text i {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .footer-text .copyright-text a {
@@ -1322,7 +1326,7 @@ ol {
 }
 
 .footer-text .copyright-text a:hover {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .footer-text .ft-social a {
@@ -1409,6 +1413,70 @@ ol {
     margin-bottom: 20px;
 }
 
+.oc-switch-language {
+    margin-bottom: 40px;
+}
+
+.oc-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.oc-card {
+    min-width: 0;
+}
+
+.oc-card-body {
+    background: #ffffff;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.1);
+    box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.1);
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    border-top: 3px solid #ec1f23;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.oc-card-pic img {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 3 / 4;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+}
+
+.oc-card-content {
+    padding: 24px 20px 28px;
+}
+
+.oc-card-body:hover {
+    -webkit-box-shadow: 0px 8px 30px rgba(11, 12, 48, 0.18);
+    box-shadow: 0px 8px 30px rgba(11, 12, 48, 0.18);
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.oc-card-name {
+    color: #171822;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.oc-card-role {
+    color: #ec1f23;
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
 .about-pic {
     -webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
     box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.15);
@@ -1440,7 +1508,7 @@ ol {
 }
 
 .about-text ul li span {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 /*---------------------
@@ -1472,7 +1540,7 @@ ol {
 }
 
 .story-item h2 {
-    color: #f44949;
+    color: #ec1f23;
     font-weight: 600;
     float: left;
     margin-right: 30px;
@@ -1537,11 +1605,11 @@ ol {
         linear,
         left top,
         right top,
-        from(#ee8425),
-        to(#f9488b)
+        from(#f9488b),
+        to(#ec1f23)
     );
-    background: -o-linear-gradient(left, #ee8425, #f9488b);
-    background: linear-gradient(to right, #ee8425, #f9488b);
+    background: -o-linear-gradient(left, #f9488b, #ec1f23);
+    background: linear-gradient(to right, #f9488b, #ec1f23);
     color: #ffffff;
 }
 
@@ -1595,7 +1663,7 @@ ol {
 
 .testimonial-item .ti-author .ta-text span {
     display: block;
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .testimonial-item p {
@@ -1633,7 +1701,7 @@ ol {
 }
 
 .speaker-item .si-text .si-title span {
-    color: #f44949;
+    color: #ec1f23;
     font-size: 16px;
     display: block;
 }
@@ -1656,8 +1724,8 @@ ol {
 }
 
 .speaker-item .si-text .si-social a:hover {
-    background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-    background: linear-gradient(120deg, #ee8425, #f9488b);
+    background: -o-linear-gradient(330deg, #f9488b, #ec1f23);
+    background: linear-gradient(120deg, #f9488b, #ec1f23);
     color: #ffffff;
 }
 
@@ -1774,7 +1842,7 @@ ol {
 
 .schedule-table-tab .schedule-table-content table tbody tr td.event-time {
     width: 140px;
-    color: #f44949;
+    color: #ec1f23;
     font-size: 24px;
     font-weight: 600;
 }
@@ -1784,8 +1852,8 @@ ol {
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
-    background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-    background: linear-gradient(120deg, #ee8425, #f9488b);
+    background: -o-linear-gradient(330deg, #f9488b, #ec1f23);
+    background: linear-gradient(120deg, #f9488b, #ec1f23);
 }
 
 .schedule-table-tab
@@ -1894,7 +1962,7 @@ ol {
 }
 
 .blog-item .bi-text span i {
-    color: #f44949;
+    color: #ec1f23;
 }
 
 .load-more.blog-more {
@@ -1998,7 +2066,7 @@ ol {
     top: 0;
     width: 4px;
     height: 100%;
-    background: #f44949;
+    background: #ec1f23;
     content: "";
 }
 
@@ -2011,7 +2079,7 @@ ol {
 
 .bd-text .bd-quote span {
     font-size: 14px;
-    color: #f44949;
+    color: #ec1f23;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 600;
@@ -2072,7 +2140,7 @@ ol {
 }
 
 .bd-text .bd-tag-share .tag a:hover {
-    background: #f44949;
+    background: #ec1f23;
     color: #ffffff;
 }
 
@@ -2149,7 +2217,7 @@ ol {
 }
 
 .comment-form input:focus {
-    border: 1px solid #f44949;
+    border: 1px solid #ec1f23;
     color: #171822;
 }
 
@@ -2191,7 +2259,7 @@ ol {
 }
 
 .comment-form textarea:focus {
-    border: 1px solid #f44949;
+    border: 1px solid #ec1f23;
     color: #171822;
 }
 
@@ -2302,7 +2370,7 @@ ol {
 
 .cc-map .map-hover i {
     font-size: 30px;
-    color: #f44949;
+    color: #ec1f23;
     position: absolute;
     left: 50%;
     top: -55px;
@@ -2488,6 +2556,9 @@ ol {
     .ha-pic {
         margin-right: 0;
     }
+    .oc-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 
 /* Tablet Device: 768px */
@@ -2569,17 +2640,20 @@ ol {
 
     .slicknav_nav a:hover {
         border-radius: 0;
-        background: #f44949;
+        background: #ec1f23;
         color: #ffffff;
     }
     .slicknav_nav .slicknav_row:hover {
         border-radius: 0;
-        background: #f44949;
+        background: #ec1f23;
         color: #ffffff;
     }
 }
 
 @media only screen and (max-width: 767px) {
+    .oc-grid {
+        grid-template-columns: 1fr;
+    }
     .counter-section .cd-timer .cd-item {
         margin-bottom: 10px;
     }
@@ -2701,7 +2775,7 @@ ol {
 .visa-page-body h2 {
     font-size: 24px;
     font-weight: 700;
-    color: #f44949;
+    color: #ec1f23;
     margin: 0 0 16px;
 }
 
@@ -2739,7 +2813,7 @@ ol {
 }
 
 .visa-page-body a {
-    color: #f9488b;
+    color: #ec1f23;
 }
 
 .visa-page-steps {
@@ -2767,7 +2841,7 @@ ol {
 
 .visa-page-cta {
     display: inline-block;
-    background: linear-gradient(to right, #ee8425, #f9488b);
+    background: linear-gradient(to right, #f9488b, #ec1f23);
     color: #ffffff !important;
     font-size: 20px;
     font-weight: 700;
