@@ -3,17 +3,17 @@
     [
       'name' => 'TS.BS. NGUYỄN ĐÌNH LUÂN',
       'image' => 'img/organizing-committee/nguyen-dinh-luan.jpg',
-      'role' => 'CHỦ TỊCH HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH',
+      'role' => '<p>CHỦ TỊCH </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
     ],
     [
       'name' => 'BSCKII. TRẦN THANH VŨ',
       'image' => 'img/organizing-committee/tran-thanh-vu.jpg',
-      'role' => 'PHÓ CHỦ TỊCH HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH',
+      'role' => '<p>PHÓ CHỦ TỊCH </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
     ],
     [
       'name' => 'BSCKII. NGUYỄN HUỲNH NHẤT TUẤN',
       'image' => 'img/organizing-committee/nguyen-huynh-nhat-tuan.jpg',
-      'role' => 'TỔNG THƯ KÝ HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH',
+      'role' => '<p>TỔNG THƯ KÝ </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
     ],
   ];
 
@@ -21,17 +21,17 @@
     [
       'name' => 'DR. NGUYEN DINH LUAN',
       'image' => 'img/organizing-committee/nguyen-dinh-luan.jpg',
-      'role' => 'PRESIDENT OF SIRHCM',
+      'role' => '<p>PRESIDENT OF SIRHCM</p>',
     ],
     [
       'name' => 'DR. TRAN THANH VU',
       'image' => 'img/organizing-committee/tran-thanh-vu.jpg',
-      'role' => 'VICE PRESIDENT OF SIRHCM',
+      'role' => '<p>VICE PRESIDENT OF SIRHCM</p>',
     ],
     [
       'name' => 'DR. NGUYEN HUYNH NHAT TUAN',
       'image' => 'img/organizing-committee/nguyen-huynh-nhat-tuan.jpg',
-      'role' => 'GENERAL SECRETARY SIRHCM',
+      'role' => '<p>GENERAL SECRETARY SIRHCM</p>',
     ],
   ];
 @endphp

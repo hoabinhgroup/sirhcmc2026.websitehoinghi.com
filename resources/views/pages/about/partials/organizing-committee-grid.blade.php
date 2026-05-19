@@ -12,7 +12,7 @@
         </div>
         <div class="oc-card-content">
           <h5 class="oc-card-name">{{ $member['name'] }}</h5>
-          <p class="oc-card-role">{{ $member['role'] }}</p>
+          <div class="oc-card-role">{!! $member['role'] !!}</div>
         </div>
       </div>
     </div>
