@@ -3,17 +3,17 @@
     [
       'name' => 'TS.BS. NGUYỄN ĐÌNH LUÂN',
       'image' => 'img/organizing-committee/nguyen-dinh-luan.jpg',
-      'role' => '<p>CHỦ TỊCH </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
+      'role' => '<p>CHỦ TỊCH SIRHCM</p>',
     ],
     [
       'name' => 'BSCKII. TRẦN THANH VŨ',
       'image' => 'img/organizing-committee/tran-thanh-vu.jpg',
-      'role' => '<p>PHÓ CHỦ TỊCH </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
+      'role' => '<p>PHÓ CHỦ TỊCH SIRHCM</p>',
     ],
     [
       'name' => 'BSCKII. NGUYỄN HUỲNH NHẤT TUẤN',
       'image' => 'img/organizing-committee/nguyen-huynh-nhat-tuan.jpg',
-      'role' => '<p>TỔNG THƯ KÝ </br> HỘI ĐIỆN QUANG CAN THIỆP HỒ CHÍ MINH</p>',
+      'role' => '<p>TỔNG THƯ KÝ SIRHCM</p>',
     ],
   ];
 

@@ -1476,6 +1476,7 @@ ol {
     margin-bottom: 0;
     line-height: 24px;
     text-transform: uppercase;
+    font-weight: 600;
 }
 
 .about-pic {
