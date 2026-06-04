@@ -547,6 +547,86 @@ ol {
 }
 
 /*---------------------
+  Welcome Letter Section
+-----------------------*/
+
+.welcome-letter-section.spad {
+    padding-top: 0;
+}
+
+.welcome-letter-section {
+    background: #f8f9fb;
+}
+
+.welcome-letter-section .wl-pic-col {
+    padding-top: 100px;
+}
+
+.wl-pic {
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    -webkit-box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.1);
+    box-shadow: 0px 0px 30px rgba(11, 12, 48, 0.1);
+    aspect-ratio: 4 / 5;
+}
+
+.wl-pic img {
+    width: 80%;
+    margin: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+.wl-profile {
+    background: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+    border-radius: 0 0 2px 2px;
+}
+
+.wl-profile-name {
+    color: #171822;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.wl-profile-role {
+    color: #ec1f23;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+}
+
+.wl-text {
+    padding-top: 100px;
+}
+
+.wl-text .f-para {
+    margin-bottom: 21px;
+}
+
+.wl-signature-name {
+    font-weight: 600;
+    color: #171822;
+}
+
+.wl-signature {
+    margin-bottom: 0;
+    color: #171822;
+}
+
+.wl-signature strong {
+    color: #ec1f23;
+}
+
+/*---------------------
   Home About Section
 -----------------------*/
 
@@ -1077,14 +1157,91 @@ ol {
 }
 
 .newslatter-inner {
-    padding: 20px;
+    padding: 48px;
     overflow: hidden;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-top: -100px;
+    position: relative;
+}
+
+.newslatter-inner::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(23, 24, 34, 0.62);
+    border-radius: 4px;
+    z-index: 0;
+}
+
+.ni-layout {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.ni-info-panel {
+    flex: 1;
+    min-width: 0;
+}
+
+.ni-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.ni-heading h3 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 0;
+    letter-spacing: 0.02em;
+}
+
+.ni-header .switch-language {
+    margin-bottom: 0;
+}
+
+.switch-language--light {
+    border-color: rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.switch-language--light .button-vietnam,
+.switch-language--light .button-english {
+    color: #ffffff;
+}
+
+.ni-form-panel {
+    flex: 0 0 400px;
+    max-width: 100%;
+    background: #ffffff;
+    padding: 28px 28px 24px;
+    border-radius: 4px;
+    box-shadow: 0 16px 40px rgba(11, 12, 48, 0.18);
+}
+
+.ni-form-title {
+    color: #171822;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.newslatter-inner .ni-form {
+    width: 100%;
+    position: relative;
+    float: none;
+    margin-top: 0;
 }
 
 .newslatter-inner .ni-text {
-    float: left;
+    float: none;
 }
 
 .newslatter-inner .ni-text h3 {
@@ -1098,35 +1255,26 @@ ol {
     margin-bottom: 0;
 }
 
-.newslatter-inner .ni-form {
-    width: 400px;
-    position: relative;
-    float: right;
-    margin-top: 12px;
-}
-
 .newslatter-inner .ni-form input {
     width: 100%;
     height: 50px;
     font-size: 16px;
-    color: #a0a1b5;
+    color: #171822;
     padding-left: 20px;
-    background: #ffffff;
+    background: #f4f5f8;
     border-radius: 3px;
-    border: none;
+    border: 1px solid #e8e9ef;
 }
 
-.newslatter-inner .ni-form input::-webkit-input-placeholder,
-.newslatter-inner .ni-form input::-moz-placeholder,
-.newslatter-inner .ni-form input:-ms-input-placeholder,
-.newslatter-inner .ni-form input::-ms-input-placeholder,
-.newslatter-inner .ni-form input::placeholder {
-    color: #171822;
+.newslatter-inner .ni-form input:focus {
+    outline: none;
+    border-color: #ec1f23;
+    background: #ffffff;
 }
 
 .newslatter-inner .ni-form button {
     width: 100%;
-    height: 40px;
+    height: 46px;
     text-align: center;
     border: none;
     color: #ffffff;
@@ -1135,20 +1283,33 @@ ol {
     border-radius: 3px;
     background-color: #ec1f23;
     display: flex;
-    justify-self: center;
     align-items: center;
     justify-content: center;
+    margin-top: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.newslatter-inner .ni-form button:hover {
+    background-color: #d0181c;
 }
 
 .newslatter-section .ni-form textarea {
     width: 100%;
-    border: none;
+    border: 1px solid #e8e9ef;
     padding: 16px 20px;
     margin-top: 12px;
     border-radius: 3px;
     resize: vertical;
     min-height: 110px;
-    color: #a0a1b5;
+    color: #171822;
+    background: #f4f5f8;
+}
+
+.newslatter-section .ni-form textarea:focus {
+    outline: none;
+    border-color: #ec1f23;
+    background: #ffffff;
 }
 
 .newslatter-section .captcha-wrap {
@@ -1159,19 +1320,211 @@ ol {
 .newslatter-section .captcha-message {
     font-size: 14px;
     margin-bottom: 10px;
-    color: #ffe2e2;
+    color: #c62828;
 }
 
 .newslatter-section .captcha-message.success {
-    color: #d4ffd4;
+    color: #2e7d32;
 }
 
 .newslatter-inner .ni-form textarea::-webkit-input-placeholder,
 .newslatter-inner .ni-form textarea::-moz-placeholder,
 .newslatter-inner .ni-form textarea:-ms-input-placeholder,
 .newslatter-inner .ni-form textarea::-ms-input-placeholder,
-.newslatter-inner .ni-form textarea::placeholder {
+.newslatter-inner .ni-form textarea::placeholder,
+.newslatter-inner .ni-form input::-webkit-input-placeholder,
+.newslatter-inner .ni-form input::-moz-placeholder,
+.newslatter-inner .ni-form input:-ms-input-placeholder,
+.newslatter-inner .ni-form input::-ms-input-placeholder,
+.newslatter-inner .ni-form input::placeholder {
+    color: #6a6b7c;
+}
+
+.contact-info--banner .contact-info-intro {
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-info--banner .contact-info-name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact-info--banner .contact-info-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-info--banner .contact-info-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-info--banner .contact-info-row:hover {
+    background: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.28);
+    color: #ffffff;
+}
+
+.contact-info--banner .contact-info-icon {
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(236, 31, 35, 0.9);
+    font-size: 18px;
+}
+
+.contact-info--banner .contact-info-row-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+.contact-info--banner .contact-info-row-text small {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.72);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.newslatter-inner .ni-switch-language {
+    margin: 16px 0;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-intro,
+.newslatter-inner .ni-contact-info .contact-info-name,
+.newslatter-inner .ni-contact-info .contact-info-list li,
+.newslatter-inner .ni-contact-info .contact-info-list li span {
+    color: #ffffff;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-intro {
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-list {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-list li {
+    list-style: none;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 6px;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-list li span {
+    display: block;
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+.newslatter-inner .ni-contact-info .contact-info-list a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.contact-info-intro {
+    font-size: 16px;
+    color: #6a6b7c;
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.contact-info-name {
+    font-size: 20px;
+    font-weight: 700;
     color: #171822;
+    margin-bottom: 16px;
+}
+
+.contact-info-list {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.contact-info-list li {
+    list-style: none;
+    font-size: 18px;
+    color: #171822;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.contact-info-list li span {
+    display: block;
+    font-size: 16px;
+    color: #6a6b7c;
+    margin-bottom: 2px;
+}
+
+.contact-info-list a {
+    color: #ec1f23;
+    font-weight: 600;
+}
+
+.contact-info-list a:hover {
+    color: #171822;
+}
+
+.contact-section .switch-language {
+    margin-bottom: 24px;
+}
+
+.cc-contact-info {
+    margin-bottom: 28px;
+}
+
+.cc-venue-info {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.cc-switch-language {
+    margin-bottom: 24px;
+}
+
+.cc-text .contact-info-intro,
+.cc-text .contact-info-name,
+.cc-text .contact-info-list li,
+.cc-text .contact-info-list li span {
+    color: #ffffff;
+}
+
+.cc-text .contact-info-list a {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 /*---------------------
@@ -2488,6 +2841,9 @@ ol {
     .newslatter-inner .ni-form {
         width: 350px;
     }
+    .ni-form-panel {
+        flex: 0 0 350px;
+    }
     .cc-text {
         padding-top: 65px;
     }
@@ -2527,12 +2883,20 @@ ol {
     .story-right {
         padding-left: 0;
     }
-    .newslatter-inner .ni-text {
-        float: none;
-    }
     .newslatter-inner .ni-form {
-        float: none;
-        margin-top: 30px;
+        width: 100%;
+    }
+    .ni-layout {
+        flex-direction: column;
+        gap: 32px;
+    }
+    .ni-form-panel {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+    .ni-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
     .testimonial-slider.owl-carousel .owl-nav button {
         left: -10px;
@@ -2557,6 +2921,15 @@ ol {
     }
     .ha-pic {
         margin-right: 0;
+    }
+    .wl-pic {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-height: 420px;
+        border-radius: 2px;
+    }
+    .wl-text {
+        padding-top: 50px;
     }
     .oc-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -2663,10 +3036,10 @@ ol {
         width: 50%;
     }
     .newslatter-inner {
-        padding: 60px 50px 48px;
+        padding: 36px 28px;
     }
     .newslatter-inner .ni-form {
-        width: 350px;
+        width: 100%;
     }
     .footer-text ul li {
         margin-right: 15px;
@@ -2719,7 +3092,16 @@ ol {
         line-height: normal;
     }
     .newslatter-inner {
-        padding: 60px 20px 48px;
+        padding: 32px 20px;
+    }
+    .newslatter-inner .ni-form {
+        width: 100%;
+    }
+    .newslatter-inner .ni-form button {
+        width: 100%;
+    }
+    .newslatter-inner .ni-form input {
+        padding-right: 20px;
     }
     .counter-section .cd-timer .cd-item {
         margin-right: 10px;
@@ -2730,15 +3112,6 @@ ol {
     }
     .member-item {
         width: 100%;
-    }
-    .newslatter-inner .ni-form {
-        width: 100%;
-    }
-    .newslatter-inner .ni-form button {
-        width: 95px;
-    }
-    .newslatter-inner .ni-form input {
-        padding-right: 100px;
     }
     .footer-text ul li {
         margin-bottom: 10px;

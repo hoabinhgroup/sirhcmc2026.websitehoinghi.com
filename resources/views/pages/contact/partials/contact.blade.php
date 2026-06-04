@@ -1,5 +1,5 @@
   <!-- Contact Top Content Section Begin -->
-  <section class="contact-content-section">
+  <section class="contact-content-section" x-data="{ lang: 'vi' }">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-6">
@@ -7,27 +7,22 @@
             <div class="row">
               <div class="col-lg-8 offset-lg-4">
                 <div class="section-title">
-                  <h2>Location</h2>
-                  <p>Get directions to our event center</p>
+                  <h2 x-show="lang === 'vi'" x-cloak>THÔNG TIN LIÊN HỆ</h2>
+                  <h2 x-show="lang === 'en'" x-cloak>CONTACT INFORMATION</h2>
+                  <p x-show="lang === 'vi'" x-cloak>Liên hệ Ban tổ chức</p>
+                  <p x-show="lang === 'en'" x-cloak>Contact the Organizing Committee</p>
                 </div>
-                <div class="cs-text">
+                <div class="switch-language cc-switch-language">
+                  <button @click="lang = 'vi'" :class="{ 'active': lang === 'vi' }" class="button-vietnam" type="button">Tiếng Việt</button>
+                  <button @click="lang = 'en'" :class="{ 'active': lang === 'en' }" class="button-english" type="button">English</button>
+                </div>
+                <div class="cs-text cc-contact-info">
+                  <x-contact-info />
+                </div>
+                <div class="cs-text cc-venue-info">
                   <div class="ct-address">
-                    <span>Address:</span>
-                    <p>01 Pascale Springs Apt. 339, NY City <br />United State</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <span>Phone:</span>
-                      (+12)-345-67-8910
-                    </li>
-                    <li>
-                      <span>Email:</span>
-                      info.colorlib@gmail.com
-                    </li>
-                  </ul>
-                  <div class="ct-links">
-                    <span>Website:</span>
-                    <p>https://conference.colorlib.com</p>
+                    <span>Địa chỉ / Address:</span>
+                    <p>Pullman Vũng tàu<br />Việt Nam</p>
                   </div>
                 </div>
               </div>
@@ -37,13 +32,13 @@
         <div class="col-lg-6">
           <div class="cc-map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105718.20476932525!2d-118.28504975143346!3d34.10298127166687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c6badc8521ad%3A0x7ad323479ca23922!2sNortheast%20Los%20Angeles%2C%20Los%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1579884986183!5m2!1sen!2sbd"
-              height="580" style="border:0;" allowfullscreen=""></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.917063588401!2d107.0919911758353!3d10.34851656693918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31756fe46b053f7d%3A0x16415f3ab82dbf99!2sPullman%20Vung%20Tau!5e0!3m2!1sen!2s!4v1775700221325!5m2!1sen!2s"
+              height="580" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="map-hover">
               <i class="fa fa-map-marker"></i>
               <div class="map-hover-inner">
-                <h5>01 Pascale SP Apt. 339</h5>
-                <p>NewYork City, US</p>
+                <h5>Pullman Vũng Tàu</h5>
+                <p>Việt Nam</p>
               </div>
             </div>
           </div>
@@ -59,27 +54,24 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
-            <h2>Contact Us By Email!</h2>
-            <p>Fill out the form below to recieve a free and confidential intial consultation.</p>
+            <h2>Liên hệ qua email</h2>
+            <p>Contact Us By Email</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form action="#" class="comment-form contact-form">
+          <form action="{{ route('contact-lead.store') }}" method="POST" class="comment-form contact-form">
+            @csrf
             <div class="row">
-              <div class="col-lg-4">
-                <input type="text" placeholder="Name">
+              <div class="col-lg-12">
+                <input type="email" name="email" value="{{ old('email') }}" placeholder="Email" required>
               </div>
-              <div class="col-lg-4">
-                <input type="text" placeholder="Email">
-              </div>
-              <div class="col-lg-4">
-                <input type="text" placeholder="Phone">
+              <div class="col-lg-12">
+                <textarea name="message" placeholder="Nội dung cần liên hệ / Your message" required>{{ old('message') }}</textarea>
               </div>
               <div class="col-lg-12 text-center">
-                <textarea placeholder="Messages"></textarea>
-                <button type="submit" class="site-btn">Send Message</button>
+                <button type="submit" class="site-btn">Gửi / Send</button>
               </div>
             </div>
           </form>
