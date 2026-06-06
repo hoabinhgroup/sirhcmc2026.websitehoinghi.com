@@ -19,8 +19,8 @@ return [
             'label_en' => 'Home',
         ],
         [
-            'label_vi' => 'SIR HCM 2026',
-            'label_en' => 'SIR HCM 2026',
+            'label_vi' => 'SIRHCM 2026',
+            'label_en' => 'SIRHCM 2026',
             'children' => [
                 ['route' => 'about.organizing-committee', 'label_vi' => 'Ban tổ chức', 'label_en' => 'Organizing Committee'],
                 ['route' => 'about.venue', 'label_vi' => 'Địa điểm tổ chức', 'label_en' => 'Venue'],
@@ -72,7 +72,7 @@ return [
     */
     'footer' => [
         ['route' => 'home', 'label' => 'Home'],
-        ['route' => 'about', 'label' => 'SIR HCM 2026'],
+        ['route' => 'about', 'label' => 'SIRHCM 2026'],
         ['route' => 'schedule', 'label' => 'Program'],
         ['route' => 'faculty', 'label' => 'Faculty'],
         ['route' => 'registration', 'label' => 'Registration'],

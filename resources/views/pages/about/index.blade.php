@@ -1,5 +1,5 @@
 @extends('layout.index')
-@section('title', 'SIR HCM 2026')
+@section('title', 'SIRHCM 2026')
 @section('content')
   @include('pages.about.partials.breadcrumb')
   @include('pages.about.partials.team')
