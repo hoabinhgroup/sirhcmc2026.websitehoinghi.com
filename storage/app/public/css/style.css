@@ -125,7 +125,9 @@ ol {
 }
 
 .switch-language .button-vietnam,
-.switch-language .button-english {
+.switch-language .button-english,
+.switch-language .button-day1,
+.switch-language .button-day2 {
     border: none;
     margin: 0;
     padding: 7px 20px;
@@ -135,20 +137,24 @@ ol {
 }
 
 .switch-language .button-vietnam:hover,
-.switch-language .button-english:hover {
+.switch-language .button-english:hover,
+.switch-language .button-day1:hover,
+.switch-language .button-day2:hover {
     transition: all 0.3s ease;
     background-color: #ec1f2367;
 }
 
 .switch-language .button-vietnam.active,
-.switch-language .button-english.active {
+.switch-language .button-english.active,
+.switch-language .button-day1.active,
+.switch-language .button-day2.active {
     color: #fff;
     transition: all 0.1s ease;
     transition-delay: 0.2s;
 }
 
 .switch-language .button-vietnam::after,
-.switch-language .button-english::before {
+.switch-language .button-day1::after {
     content: "";
     position: absolute;
     width: 0%;
@@ -158,18 +164,33 @@ ol {
     transition: width 0.3s ease;
 }
 
-.switch-language .button-vietnam::after {
+.switch-language .button-english::before,
+.switch-language .button-day2::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color: #ec1f23;
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.switch-language .button-vietnam::after,
+.switch-language .button-day1::after {
     top: 0;
     right: 0;
 }
 
-.switch-language .button-english::before {
+.switch-language .button-english::before,
+.switch-language .button-day2::before {
     top: 0;
     left: 0;
 }
 
 .switch-language .button-vietnam.active::after,
-.switch-language .button-english.active::before {
+.switch-language .button-day1.active::after,
+.switch-language .button-english.active::before,
+.switch-language .button-day2.active::before {
     width: 100%;
 }
 
@@ -2125,7 +2146,7 @@ ol {
 }
 
 .schedule-table-tab .nav-tabs .nav-item .nav-link {
-    padding: 22px 0;
+    padding: 4px 0;
     border: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -2176,12 +2197,11 @@ ol {
 .schedule-table-tab .schedule-table-content table tbody tr td {
     border-right: 1px solid #e5e5e5;
     width: 260px;
-    height: 134px;
-    padding: 37px 0 36px;
+    height: auto;
+    padding: 12px 8px;
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td h5 {
-    color: #171822;
     font-weight: 600;
     margin-bottom: 10px;
 }
@@ -2234,6 +2254,257 @@ ol {
     p
     span {
     color: #ffffff;
+}
+
+/*------------------------
+  Program Schedule
+-------------------------*/
+
+.program-schedule-section .program-day-switch {
+    margin: 0 auto 28px;
+}
+
+.program-day-switch .button-day1,
+.program-day-switch .button-day2 {
+    display: block;
+    text-align: center;
+    padding: 10px 32px;
+    min-width: 170px;
+    font-family: inherit;
+    color: #171822;
+}
+
+.program-day-switch .button-day1 strong,
+.program-day-switch .button-day2 strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 2px;
+}
+
+.program-day-switch .button-day1 span,
+.program-day-switch .button-day2 span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: #6a6b7c;
+    line-height: 1.3;
+}
+
+.program-day-switch .button-day1.active span,
+.program-day-switch .button-day2.active span {
+    color: rgba(255, 255, 255, 0.92);
+}
+
+.program-table-wrap {
+    overflow-x: auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(11, 12, 48, 0.06);
+}
+
+.program-schedule-section .program-table {
+    width: 100%;
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #e5e5e5;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.program-schedule-section .program-table thead tr th.program-th {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 10px;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 2px solid #e5e5e5;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    color: #171822;
+}
+
+.program-schedule-section .program-table thead tr th.program-th--time {
+    background: #f8f9fb;
+    width: 118px;
+    border-bottom-color: #ec1f23;
+}
+
+.program-schedule-section .program-table thead tr th.program-th--ballroom1 {
+    background: #fdf2f3;
+    border-bottom-color: #ec1f23;
+}
+
+.program-schedule-section .program-table thead tr th.program-th--ballroom2 {
+    background: #faf8fa;
+    border-bottom-color: #f9488b;
+}
+
+.program-schedule-section .program-table thead tr th.program-th--ballroom3 {
+    background: #f5f5f8;
+    border-bottom-color: #6a6b7c;
+}
+
+.program-schedule-section .program-table tbody tr td {
+    height: auto;
+    min-height: 64px;
+    padding: 12px 12px;
+    vertical-align: middle;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    width: auto;
+}
+
+.program-schedule-section .program-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.program-schedule-section .program-table tbody tr td.event-time {
+    width: 118px;
+    min-width: 118px;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+    background: #ffffff;
+    color: #ec1f23;
+    white-space: nowrap;
+}
+
+.program-schedule-section .program-table .program-cell h5 {
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.program-schedule-section .program-cell--ballroom1 {
+    background: #fdf6f6;
+    border-left: 3px solid #ec1f23;
+}
+
+.program-schedule-section .program-cell--ballroom1 h5 {
+    color: #171822;
+}
+
+.program-schedule-section .program-cell--ballroom2 {
+    background: #fdf6f9;
+    border-left: 3px solid #f9488b;
+}
+
+.program-schedule-section .program-cell--ballroom2 h5 {
+    color: #171822;
+}
+
+.program-schedule-section .program-cell--ballroom3 {
+    background: #f6f6f8;
+    border-left: 3px solid #6a6b7c;
+}
+
+.program-schedule-section .program-cell--ballroom3 h5 {
+    color: #171822;
+}
+
+.program-schedule-section .program-cell--shared {
+    background: #f8f9fb;
+    border-left: 3px solid #d8d9e0;
+}
+
+.program-schedule-section .program-cell--shared h5 {
+    color: #6a6b7c;
+}
+
+.program-schedule-section .program-cell--lunch {
+    background: #fff5f5;
+    border-left: 3px solid #ec1f23;
+}
+
+.program-schedule-section .program-cell--lunch h5 {
+    color: #171822;
+    font-size: 15px;
+}
+
+.program-schedule-section .program-cell--dinner {
+    background: #ec1f23;
+    border-left: none;
+}
+
+.program-schedule-section .program-cell--dinner h5 {
+    color: #ffffff;
+    font-size: 15px;
+    letter-spacing: 0.02em;
+}
+
+.program-schedule-section .program-cell--empty {
+    background: #fafbfc;
+}
+
+.program-schedule-section .schedule-table-content table.program-table tbody tr td {
+    height: auto !important;
+    min-height: 64px;
+    padding: 18px 12px;
+    width: auto;
+}
+
+.program-schedule-section .schedule-table-content table.program-table tbody tr td.event-time {
+    width: 118px;
+    min-width: 118px;
+    font-size: 15px;
+    color: #ec1f23;
+}
+
+.program-schedule-section .schedule-table-content table.program-table thead tr th {
+    height: auto;
+    padding: 11px 10px;
+}
+
+@media only screen and (max-width: 991px) {
+    .program-schedule-section .program-table tbody tr td {
+        min-height: 52px;
+        padding: 9px 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .program-day-switch .button-day1,
+    .program-day-switch .button-day2 {
+        min-width: 140px;
+        padding: 9px 20px;
+    }
+
+    .program-day-switch .button-day1 strong,
+    .program-day-switch .button-day2 strong {
+        font-size: 15px;
+    }
+
+    .program-schedule-section .program-table thead tr th.program-th {
+        font-size: 11px;
+        padding: 9px 6px;
+    }
+
+    .program-schedule-section .program-table tbody tr td.event-time {
+        font-size: 14px;
+        min-width: 96px;
+        width: 96px;
+        padding: 8px 6px;
+        white-space: normal;
+    }
+
+    .program-schedule-section .program-table .program-cell h5 {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .program-schedule-section .program-cell--lunch h5,
+    .program-schedule-section .program-cell--dinner h5 {
+        font-size: 14px;
+    }
+
+    .program-day-switch .button-day1 span,
+    .program-day-switch .button-day2 span {
+        font-size: 12px;
+    }
 }
 
 /*---------------------
@@ -3233,4 +3504,8 @@ ol {
 .visa-page-cta:hover {
     transform: scale(1.01);
     color: #ffffff;
+}
+
+#contact-form-section {
+    margin-top: 72px;
 }

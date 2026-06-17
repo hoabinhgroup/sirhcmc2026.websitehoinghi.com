@@ -4,10 +4,10 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="breadcrumb-text">
-            <h2>Event Schedule</h2>
+            <h2>CHƯƠNG TRÌNH / Program</h2>
             <div class="bt-option">
-              <a href="#">Home</a>
-              <span>Our Schedule</span>
+              <a href="{{ route('home') }}">Home</a>
+              <span>Program</span>
             </div>
           </div>
         </div>
