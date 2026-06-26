@@ -55,6 +55,7 @@ class RegistrationSubmitTest extends TestCase
             'payment_method' => PaymentMethod::BankTransfer->value,
         ]);
 
+        Mail::assertSent(RegistrationConfirmationMail::class, 1);
         Mail::assertSent(RegistrationConfirmationMail::class, function (RegistrationConfirmationMail $mail): bool {
             return $mail->registration->email === 'test@example.com'
                 && $mail->registration->guest_code === 'SIRHCM2026-001'

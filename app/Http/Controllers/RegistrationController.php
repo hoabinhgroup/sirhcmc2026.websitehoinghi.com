@@ -127,9 +127,6 @@ class RegistrationController extends Controller implements HasMiddleware
                 'status' => $status,
             ]);
 
-            if ($status === PaymentStatus::Successful->value) {
-                event(new RegistrationNotification($registration));
-            }
         }
 
         return redirect()->route($result['route'], [

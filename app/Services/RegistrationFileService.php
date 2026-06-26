@@ -30,9 +30,11 @@ class RegistrationFileService
 
     private function storeFile(UploadedFile $file, Registration $registration, string $folder): string
     {
-        $appName = config('app.name', 'sirhcm2026');
-        $storagePath = "{$appName}/files/registration/{$folder}/{$registration->id}";
+        $prefix = (string) config('registration.guest_code_prefix', 'SIRHCM2026');
+        $storagePath = "{$prefix}/files/registration/{$folder}/{$registration->id}";
         $filename = $file->getClientOriginalName();
+
+        Storage::disk('public')->makeDirectory($storagePath);
 
         return $file->storeAs($storagePath, $filename, 'public');
     }
