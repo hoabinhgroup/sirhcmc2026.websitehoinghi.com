@@ -242,14 +242,17 @@
 
           <div id="bank-transfer-note" class="note-box">
             <p><strong>Thông tin chuyển khoản:</strong></p>
-            <p>Tên tài khoản: {{ $bank['account_name'] }}</p>
-            <p>Số tài khoản (VND): {{ $bank['account_number'] ?: '—' }}</p>
-            <p>Ngân hàng: {{ $bank['bank_name'] }}</p>
-            <p>Địa chỉ: {{ $bank['branch'] }}</p>
-            @if ($bank['swift'])
-              <p>SWIFT: {{ $bank['swift'] }}</p>
+            <p>Tên tài khoản / Account name: {{ $bank['account_name'] }}</p>
+            @if (! empty($bank['account_short_name']))
+              <p>Tên viết tắt / Short name: {{ $bank['account_short_name'] }}</p>
             @endif
-            <p>Nội dung chuyển khoản: <em>{Họ tên} – {Mã đăng ký} | Đóng phí SIRHCM2026</em></p>
+            <p>Số tài khoản / Account number: {{ $bank['account_number'] ?: '—' }}</p>
+            <p>Ngân hàng / Bank: {{ $bank['bank_name'] }}</p>
+            <p>Địa chỉ ngân hàng / Bank address: {{ $bank['bank_address'] ?? '' }}</p>
+            @if ($bank['swift'])
+              <p>SWIFT code: {{ $bank['swift'] }}</p>
+            @endif
+            <p>Nội dung chuyển khoản / Transfer content: <em>{Họ tên} – {Mã đăng ký} | Đóng phí SIRHCM2026</em></p>
           </div>
         </div>
 

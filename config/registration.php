@@ -48,12 +48,12 @@ return [
     ],
 
     'bank_transfer' => [
-        'bank_name' => env('REGISTRATION_BANK_NAME', 'MB Bank'),
         'account_name' => env('REGISTRATION_BANK_ACCOUNT_NAME', 'CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI VÀ DU LỊCH QUỐC TẾ HÒA BÌNH'),
-        'account_number' => env('REGISTRATION_BANK_ACCOUNT_NUMBER', '8528051414755'),
-        'branch' => env('REGISTRATION_BANK_BRANCH', 'MB Bank – 34 Láng Hạ, Quận Đống Đa, Hà Nội'),
-        'bank_code' => env('REGISTRATION_BANK_CODE', '01311006'),
-        'swift' => env('REGISTRATION_BANK_SWIFT', 'MSCBVNVX'),
+        'account_short_name' => env('REGISTRATION_BANK_ACCOUNT_SHORT_NAME', 'HOA BINH INTERNATIONAL TOUR CO., LTD'),
+        'account_number' => env('REGISTRATION_BANK_ACCOUNT_NUMBER', '700042888990 – USD'),
+        'bank_name' => env('REGISTRATION_BANK_NAME', 'Ngân hàng TNHH MTV Shinhan Việt Nam – chi nhánh Đống Đa'),
+        'bank_address' => env('REGISTRATION_BANK_ADDRESS', 'Thaisquare Caliria Building, Tầng 1, Số 11A Cát Linh, Phường Ô Chợ Dừa, TP. Hà Nội, Việt Nam'),
+        'swift' => env('REGISTRATION_BANK_SWIFT', 'SHBKVNVX'),
         'qr_image' => env('REGISTRATION_BANK_QR_IMAGE', 'img/registration-qr.png'),
         'content_template' => '{fullname} – {guest_code} | Đóng phí SIRHCM2026',
     ],

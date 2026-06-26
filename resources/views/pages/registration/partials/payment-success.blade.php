@@ -27,6 +27,12 @@
               <td>Tên tài khoản / Account name</td>
               <td>{{ $bank['account_name'] }}</td>
             </tr>
+            @if (! empty($bank['account_short_name']))
+              <tr>
+                <td>Tên viết tắt / Short name</td>
+                <td>{{ $bank['account_short_name'] }}</td>
+              </tr>
+            @endif
             <tr>
               <td>Số tài khoản / Account number</td>
               <td>{{ $bank['account_number'] ?: '—' }}</td>
@@ -36,18 +42,12 @@
               <td>{{ $bank['bank_name'] }}</td>
             </tr>
             <tr>
-              <td>Địa chỉ / Address</td>
-              <td>{{ $bank['branch'] }}</td>
+              <td>Địa chỉ ngân hàng / Bank address</td>
+              <td>{{ $bank['bank_address'] ?? '' }}</td>
             </tr>
-            @if (! empty($bank['bank_code']))
-              <tr>
-                <td>Bank code</td>
-                <td>{{ $bank['bank_code'] }}</td>
-              </tr>
-            @endif
             @if (! empty($bank['swift']))
               <tr>
-                <td>SWIFT</td>
+                <td>SWIFT code</td>
                 <td>{{ $bank['swift'] }}</td>
               </tr>
             @endif
