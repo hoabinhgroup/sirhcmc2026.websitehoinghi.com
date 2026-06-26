@@ -21,6 +21,8 @@
   <link rel="stylesheet" href="{{ Storage::url('css/magnific-popup.css')}}" type="text/css">
   <link rel="stylesheet" href="{{ Storage::url('css/slicknav.min.css')}}" type="text/css">
   <link rel="stylesheet" href="{{ Storage::url('css/style.css')}}" type="text/css">
+  @stack('styles')
+  @stack('header')
   @vite('resources/js/app.js')
 </head>
 
@@ -40,6 +42,7 @@
   <script src="{{ Storage::url('js/jquery.slicknav.js')}}"></script>
   <script src="{{ Storage::url('js/owl.carousel.min.js')}}"></script>
   <script src="{{ Storage::url('js/main.js')}}"></script>
+  @stack('scripts')
 </body>
 
 </html>

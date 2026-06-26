@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactLeadController;
+use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\RegistrationFileController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'pages.home.index')->name('home');
@@ -16,7 +18,18 @@ Route::view('/schedule', 'pages.schedule.index')->name('schedule');
 Route::view('/faculty', 'pages.faculty.index')->name('faculty');
 
 Route::view('/registration', 'pages.registration.index')->name('registration');
-Route::view('/registration/delegate-registration', 'pages.registration.delegate-registration')->name('registration.delegate-registration');
+Route::get('/registration/delegate-registration', [RegistrationController::class, 'form'])->name('registration.delegate-registration');
+Route::post('/registration/submit', [RegistrationController::class, 'submit'])->name('registration.submit');
+Route::get('/registration/payment/callback', [RegistrationController::class, 'paymentCallback'])->name('registration.payment.callback');
+Route::get('/registration/dr', [RegistrationController::class, 'paymentCallback'])->name('payment.registration.dr');
+Route::get('/registration/payment/success/{registration?}', [RegistrationController::class, 'paymentSuccess'])->name('registration.payment.success');
+Route::get('/registration/payment/cancel/{registration?}', [RegistrationController::class, 'paymentCancel'])->name('registration.payment.cancel');
+Route::get('/registration/payment/error/{registration?}', [RegistrationController::class, 'paymentError'])->name('registration.payment.error');
+Route::get('/registration/closed', [RegistrationController::class, 'closed'])->name('registration.closed');
+Route::middleware('auth')->group(function () {
+    Route::get('/registration/files/{registration}/degree', [RegistrationFileController::class, 'degree'])
+        ->name('registration.files.degree');
+});
 Route::view('/registration/abstract-submission', 'pages.registration.abstract-submission')->name('registration.abstract-submission');
 
 Route::view('/travel-support', 'pages.travel-support.index')->name('travel-support');

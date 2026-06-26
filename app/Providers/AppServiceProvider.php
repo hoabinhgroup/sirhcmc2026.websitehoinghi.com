@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use App\Events\RegistrationNotification;
+use App\Listeners\SendRegistrationConfirmationEmail;
 use App\Support\Navigation;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -21,6 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        Event::listen(RegistrationNotification::class, SendRegistrationConfirmationEmail::class);
+
         View::composer('components.header', function ($view) {
             $view->with([
                 'headerMenu' => Navigation::headerMenu(),

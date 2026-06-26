@@ -1,0 +1,141 @@
+/* SIRHCM 2026 — Bank transfer success */
+.registration-bank {
+  --reg-primary: #ec1f23;
+  --reg-heading: #171822;
+  --reg-text: #6a6b7c;
+  --reg-border: #e5e5e5;
+  --reg-surface: #f8f9fb;
+  --reg-gradient: linear-gradient(to right, #f9488b 0%, #ec1f23 100%);
+}
+
+.registration-bank .bank-transfer-page-header {
+  text-align: center;
+  margin: 0 0 30px;
+}
+
+.registration-bank .bank-transfer-page-header h1 {
+  color: var(--reg-heading);
+  font-size: 28px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.registration-bank .bank-transfer-page-header p {
+  color: var(--reg-text);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.registration-bank .bank-transfer-wrapper {
+  display: flex;
+  border: 1px solid var(--reg-border);
+  border-radius: 2px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(23, 24, 34, 0.06);
+}
+
+.registration-bank .bank-info-section {
+  flex: 1;
+  padding: 28px 24px;
+  border-right: 1px solid var(--reg-border);
+  background: #ffffff;
+}
+
+.registration-bank .bank-info-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.registration-bank .bank-info-section table td {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--reg-border);
+  vertical-align: top;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.registration-bank .bank-info-section table tr:last-child td {
+  border-bottom: none;
+}
+
+.registration-bank .bank-info-section table td:first-child {
+  font-weight: 600;
+  width: 42%;
+  color: var(--reg-heading);
+}
+
+.registration-bank .bank-info-section table td:last-child {
+  color: var(--reg-text);
+}
+
+.registration-bank .qr-image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 28px 20px;
+  background: var(--reg-surface);
+}
+
+.registration-bank .qr-image-section img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--reg-border);
+  border-radius: 2px;
+}
+
+.registration-bank .qr-placeholder {
+  text-align: center;
+  padding: 20px;
+  color: var(--reg-text);
+  font-size: 14px;
+  line-height: 1.7;
+  border: 1px dashed var(--reg-border);
+  border-radius: 2px;
+  background: #ffffff;
+}
+
+.registration-bank .bank-transfer-actions {
+  text-align: center;
+  margin: 36px 0 20px;
+}
+
+.registration-bank .bank-transfer-actions p {
+  color: var(--reg-text);
+  margin-bottom: 16px;
+}
+
+.registration-bank .result-action-btn {
+  display: inline-block;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 50px;
+  background-image: var(--reg-gradient);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.registration-bank .result-action-btn:hover {
+  opacity: 0.92;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .registration-bank .bank-transfer-wrapper {
+    flex-direction: column;
+  }
+
+  .registration-bank .bank-info-section {
+    border-right: none;
+    border-bottom: 1px solid var(--reg-border);
+  }
+}
