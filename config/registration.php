@@ -50,7 +50,7 @@ return [
     'bank_transfer' => [
         'bank_name' => env('REGISTRATION_BANK_NAME', 'MB Bank'),
         'account_name' => env('REGISTRATION_BANK_ACCOUNT_NAME', 'CÔNG TY TNHH ĐẦU TƯ THƯƠNG MẠI VÀ DU LỊCH QUỐC TẾ HÒA BÌNH'),
-        'account_number' => env('REGISTRATION_BANK_ACCOUNT_NUMBER', ''),
+        'account_number' => env('REGISTRATION_BANK_ACCOUNT_NUMBER', '8528051414755'),
         'branch' => env('REGISTRATION_BANK_BRANCH', 'MB Bank – 34 Láng Hạ, Quận Đống Đa, Hà Nội'),
         'bank_code' => env('REGISTRATION_BANK_CODE', '01311006'),
         'swift' => env('REGISTRATION_BANK_SWIFT', 'MSCBVNVX'),
