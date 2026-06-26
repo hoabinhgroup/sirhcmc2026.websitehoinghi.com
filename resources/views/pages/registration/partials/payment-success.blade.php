@@ -41,14 +41,22 @@
               <td>Ngân hàng / Bank</td>
               <td>{{ $bank['bank_name'] }}</td>
             </tr>
-            <tr>
-              <td>Địa chỉ ngân hàng / Bank address</td>
-              <td>{{ $bank['bank_address'] ?? '' }}</td>
-            </tr>
+            @if (! empty($bank['bank_address']))
+              <tr>
+                <td>Địa chỉ ngân hàng / Bank address</td>
+                <td>{{ $bank['bank_address'] }}</td>
+              </tr>
+            @endif
             @if (! empty($bank['swift']))
               <tr>
                 <td>SWIFT code</td>
                 <td>{{ $bank['swift'] }}</td>
+              </tr>
+            @endif
+            @if (! empty($bank['bank_code']))
+              <tr>
+                <td>Mã ngân hàng / Bank code</td>
+                <td>{{ $bank['bank_code'] }}</td>
               </tr>
             @endif
             @if ($registration)

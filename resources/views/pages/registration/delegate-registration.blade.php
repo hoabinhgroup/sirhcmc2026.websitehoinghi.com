@@ -248,9 +248,14 @@
             @endif
             <p>Số tài khoản / Account number: {{ $bank['account_number'] ?: '—' }}</p>
             <p>Ngân hàng / Bank: {{ $bank['bank_name'] }}</p>
-            <p>Địa chỉ ngân hàng / Bank address: {{ $bank['bank_address'] ?? '' }}</p>
+            @if (! empty($bank['bank_address']))
+              <p>Địa chỉ ngân hàng / Bank address: {{ $bank['bank_address'] }}</p>
+            @endif
             @if ($bank['swift'])
               <p>SWIFT code: {{ $bank['swift'] }}</p>
+            @endif
+            @if (! empty($bank['bank_code']))
+              <p>Mã ngân hàng / Bank code: {{ $bank['bank_code'] }}</p>
             @endif
             <p>Nội dung chuyển khoản / Transfer content: <em>{Họ tên} – {Mã đăng ký} | Đóng phí SIRHCM2026</em></p>
           </div>
