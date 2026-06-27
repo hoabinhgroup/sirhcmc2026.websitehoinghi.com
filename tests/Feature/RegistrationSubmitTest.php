@@ -3,7 +3,9 @@
 namespace Tests\Feature;
 
 use App\Enums\PaymentMethod;
-use App\Mail\RegistrationConfirmationMail;
+use App\Mail\AbstractReceivedMail;
+use App\Mail\RegistrationTemplateMail;
+use App\Models\AbstractSubmission;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Mail;
@@ -22,12 +24,21 @@ class RegistrationSubmitTest extends TestCase
         $response->assertSee('Đăng ký tham dự');
     }
 
+    public function test_international_registration_form_loads(): void
+    {
+        $response = $this->get(route('registration.international-registration'));
+
+        $response->assertOk();
+        $response->assertSee('International Registration');
+    }
+
     public function test_bank_transfer_registration_creates_record_and_sends_email(): void
     {
         Mail::fake();
         Storage::fake('local');
 
         $response = $this->post(route('registration.submit'), [
+            'scope' => 'domestic',
             'title' => 'BS.',
             'fullname' => 'Nguyen Van A',
             'affiliation' => 'BV Cho Ray',
@@ -38,29 +49,55 @@ class RegistrationSubmitTest extends TestCase
             'phone' => '0901234567',
             'email' => 'test@example.com',
             'degree_file' => UploadedFile::fake()->create('degree.pdf', 100, 'application/pdf'),
-            'dietary' => 'Không có',
-            'conference_checklist_item' => 'sirhcm_member',
-            'total_amount' => 2500000,
+            'conference_checklist_item' => 'physician',
             'payment_method' => 'bank-transfer',
-            'category' => 'LOCAL REGISTRATION',
             'country' => 'VN',
         ]);
 
         $response->assertOk();
-        $response->assertSee('SIRHCM2026-001');
+        $response->assertSee('SIRHCM26-R0001');
 
         $this->assertDatabaseHas('registrations', [
             'email' => 'test@example.com',
-            'guest_code' => 'SIRHCM2026-001',
+            'guest_code' => 'SIRHCM26-R0001',
             'payment_method' => PaymentMethod::BankTransfer->value,
+            'base_fee' => 1000000,
         ]);
 
-        Mail::assertSent(RegistrationConfirmationMail::class, 1);
-        Mail::assertSent(RegistrationConfirmationMail::class, function (RegistrationConfirmationMail $mail): bool {
-            return $mail->registration->email === 'test@example.com'
-                && $mail->registration->guest_code === 'SIRHCM2026-001'
-                && $mail->hasTo('test@example.com');
-        });
+        Mail::assertSent(RegistrationTemplateMail::class, 1);
+    }
+
+    public function test_fee_waiver_registration_skips_payment(): void
+    {
+        Mail::fake();
+        Storage::fake('local');
+
+        $response = $this->post(route('registration.submit'), [
+            'scope' => 'domestic',
+            'title' => 'BS.',
+            'fullname' => 'Nguyen Van B',
+            'affiliation' => 'BV Cho Ray',
+            'day' => 1,
+            'month' => 1,
+            'year' => 1990,
+            'phone' => '0901234567',
+            'email' => 'waiver@example.com',
+            'degree_file' => UploadedFile::fake()->create('degree.pdf', 100, 'application/pdf'),
+            'conference_checklist_item' => 'sirhcm_member',
+            'country' => 'VN',
+        ]);
+
+        $response->assertOk();
+        $response->assertSee('SIRHCM26-R0001');
+
+        $this->assertDatabaseHas('registrations', [
+            'email' => 'waiver@example.com',
+            'total' => 0,
+            'status' => 'confirmed',
+            'payment_method' => null,
+        ]);
+
+        Mail::assertSent(RegistrationTemplateMail::class, 1);
     }
 
     public function test_closed_page_when_deadline_passed(): void

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AbstractSubmissionController;
 use App\Http\Controllers\ContactLeadController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\RegistrationFileController;
@@ -19,6 +20,7 @@ Route::view('/faculty', 'pages.faculty.index')->name('faculty');
 
 Route::view('/registration', 'pages.registration.index')->name('registration');
 Route::get('/registration/delegate-registration', [RegistrationController::class, 'form'])->name('registration.delegate-registration');
+Route::get('/registration/international-registration', [RegistrationController::class, 'formInternational'])->name('registration.international-registration');
 Route::post('/registration/submit', [RegistrationController::class, 'submit'])->name('registration.submit');
 Route::get('/registration/payment/callback', [RegistrationController::class, 'paymentCallback'])->name('registration.payment.callback');
 Route::get('/registration/dr', [RegistrationController::class, 'paymentCallback'])->name('payment.registration.dr');
@@ -30,7 +32,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/registration/files/{registration}/degree', [RegistrationFileController::class, 'degree'])
         ->name('registration.files.degree');
 });
-Route::view('/registration/abstract-submission', 'pages.registration.abstract-submission')->name('registration.abstract-submission');
+Route::get('/registration/abstract-submission', [AbstractSubmissionController::class, 'form'])->name('registration.abstract-submission');
+Route::get('/registration/abstract-submission/international', [AbstractSubmissionController::class, 'formInternational'])->name('registration.abstract-submission.international');
+Route::post('/registration/abstract-submission/submit', [AbstractSubmissionController::class, 'submit'])->name('registration.abstract-submission.submit');
+Route::get('/registration/abstract-submission/closed', [AbstractSubmissionController::class, 'closed'])->name('registration.abstract-submission.closed');
 
 Route::view('/travel-support', 'pages.travel-support.index')->name('travel-support');
 Route::view('/travel-support/vietnam-visa', 'pages.travel-support.vietnam-visa')->name('travel-support.vietnam-visa');

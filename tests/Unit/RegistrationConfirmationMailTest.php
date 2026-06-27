@@ -2,54 +2,68 @@
 
 namespace Tests\Unit;
 
-use App\Mail\RegistrationConfirmationMail;
+use App\Mail\RegistrationTemplateMail;
 use App\Models\Registration;
 use Tests\TestCase;
 
 class RegistrationConfirmationMailTest extends TestCase
 {
-    public function test_mailable_renders_registration_details(): void
+    public function test_bank_transfer_template_renders_details(): void
     {
         $registration = new Registration([
-            'guest_code' => 'SIRHCM2026-001',
+            'guest_code' => 'SIRHCM26-R0001',
             'title' => 'BS.',
             'fullname' => 'Nguyen Van A',
             'affiliation' => 'BV Cho Ray',
             'email' => 'test@example.com',
-            'conference_fees' => '["sirhcm_member"]',
-            'total' => 2500000,
+            'conference_fees' => '["physician"]',
+            'base_fee' => 1000000,
+            'gala_fee_amount' => 0,
+            'transaction_fee' => 0,
+            'total' => 1000000,
             'payment_method' => 'bank-transfer',
             'status' => 'pending',
             'is_international' => false,
         ]);
 
-        $html = (new RegistrationConfirmationMail($registration))->render();
+        $html = (new RegistrationTemplateMail(
+            $registration,
+            'bank_transfer',
+            'Test subject',
+        ))->render();
 
-        $this->assertStringContainsString('SIRHCM2026-001', $html);
+        $this->assertStringContainsString('SIRHCM26-R0001', $html);
         $this->assertStringContainsString('Nguyen Van A', $html);
+        $this->assertStringContainsString('1112 0846 228 011', $html);
         $this->assertStringContainsString('sirhcm2024@gmail.com', $html);
-        $this->assertStringNotContainsString('Thông tin chuyển khoản', $html);
-        $this->assertStringNotContainsString('Thanh toán online qua OnePay', $html);
     }
 
-    public function test_mailable_does_not_include_payment_link_for_onepay(): void
+    public function test_online_payment_template_includes_payment_link(): void
     {
         $registration = new Registration([
-            'guest_code' => 'SIRHCM2026-002',
+            'guest_code' => 'SIRHCM26-R0002',
             'title' => 'TS.',
             'fullname' => 'Tran Thi B',
             'affiliation' => 'BV A',
             'email' => 'onepay@example.com',
-            'conference_fees' => '["sirhcm_member"]',
-            'total' => 2500000,
-            'payment_method' => 'onepay-payment',
+            'conference_fees' => '["physician"]',
+            'base_fee' => 1000000,
+            'gala_fee_amount' => 0,
+            'transaction_fee' => 60000,
+            'total' => 1060000,
+            'payment_method' => 'onepay',
             'status' => 'pending',
             'is_international' => false,
         ]);
 
-        $html = (new RegistrationConfirmationMail($registration, 'https://onepay.test/pay'))->render();
+        $html = (new RegistrationTemplateMail(
+            $registration,
+            'online_payment',
+            'Test subject',
+            'https://onepay.test/pay',
+        ))->render();
 
-        $this->assertStringNotContainsString('https://onepay.test/pay', $html);
-        $this->assertStringNotContainsString('Thanh toán online qua OnePay', $html);
+        $this->assertStringContainsString('https://onepay.test/pay', $html);
+        $this->assertStringContainsString('Thanh toán OnePay', $html);
     }
 }

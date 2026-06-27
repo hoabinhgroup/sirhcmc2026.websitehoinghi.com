@@ -1,0 +1,289 @@
+/* ── Hub đăng ký: thẻ lựa chọn (card) ── */
+
+.registration-hub-step-title {
+  margin-bottom: 8px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #171822;
+}
+
+.registration-choice-cards {
+  margin-top: 24px;
+}
+
+.registration-choice-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  margin: 0 0 24px;
+  padding: 28px 28px 24px;
+  text-align: left;
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid #e8eaef;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(23, 24, 34, 0.06);
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: #171822;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.registration-choice-card:hover {
+  border-color: #ec1f23;
+  box-shadow: 0 10px 28px rgba(236, 31, 35, 0.12);
+  transform: translateY(-3px);
+  color: #171822;
+  text-decoration: none;
+}
+
+.registration-choice-card:focus {
+  outline: none;
+  border-color: #ec1f23;
+  box-shadow: 0 0 0 3px rgba(236, 31, 35, 0.2);
+}
+
+.registration-choice-card--registration {
+  border-top: 4px solid #ec1f23;
+}
+
+.registration-choice-card--abstract {
+  border-top: 4px solid #171822;
+}
+
+.registration-choice-card--domestic {
+  border-top: 4px solid #ec1f23;
+}
+
+.registration-choice-card--international {
+  border-top: 4px solid #171822;
+}
+
+.registration-choice-card__title {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #171822;
+  line-height: 1.35;
+}
+
+.registration-choice-card__sub {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ec1f23;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.registration-choice-card--abstract .registration-choice-card__sub,
+.registration-choice-card--international .registration-choice-card__sub {
+  color: #171822;
+}
+
+.registration-choice-card__desc {
+  margin: 0 0 auto;
+  padding-bottom: 16px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #6a6b7c;
+  flex-grow: 1;
+}
+
+.registration-choice-card__action {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ec1f23;
+  margin-top: auto;
+}
+
+.registration-choice-card--abstract .registration-choice-card__action,
+.registration-choice-card--international .registration-choice-card__action {
+  color: #171822;
+}
+
+/* ── Step wizard ── */
+
+.registration-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin: 0 0 36px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.registration-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  flex: 0 0 auto;
+  color: #a0a1b5;
+  transition: color 0.2s ease;
+}
+
+.registration-step.is-active,
+.registration-step.is-done {
+  color: #171822;
+}
+
+.registration-step__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #d8dae0;
+  font-weight: 700;
+  font-size: 16px;
+  background: #fff;
+  transition: all 0.2s ease;
+}
+
+.registration-step.is-active .registration-step__num {
+  border-color: #ec1f23;
+  background: #ec1f23;
+  color: #fff;
+}
+
+.registration-step.is-done .registration-step__num {
+  border-color: #ec1f23;
+  background: #fff;
+  color: #ec1f23;
+}
+
+.registration-step__label {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.registration-step__line {
+  flex: 1;
+  height: 2px;
+  background: #d8dae0;
+  margin: 0 12px;
+  margin-bottom: 28px;
+  min-width: 48px;
+  transition: background 0.2s ease;
+}
+
+.registration-step__line.is-done {
+  background: #ec1f23;
+}
+
+.registration-hub-back {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: #ec1f23;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.registration-hub-back:hover {
+  color: #c4191d;
+}
+
+.registration-hub-summary {
+  margin: 12px 0 20px;
+  padding: 12px 16px;
+  background: #f8f9fb;
+  border-left: 4px solid #ec1f23;
+  font-size: 14px;
+  color: #171822;
+}
+
+.registration-hub-hint {
+  font-size: 14px;
+  color: #6a6b7c;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+/* ── Upload file trong form: nút thang nhỏ hơn ── */
+
+.registration-form label.button-vietnam {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  min-height: 44px;
+  margin-top: 10px;
+  padding: 10px 28px;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", "Work Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.35;
+  text-align: center;
+  color: #fff !important;
+  text-decoration: none;
+  transform: skewX(-14deg);
+  background: linear-gradient(to right, #f9488b 0%, #ec1f23 100%) !important;
+  box-shadow: 0 3px 10px rgba(236, 31, 35, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+  box-sizing: border-box;
+  max-width: 100%;
+  border-radius: 0 !important;
+}
+
+.registration-form label.button-vietnam:hover {
+  color: #fff !important;
+  transform: skewX(-14deg) translateY(-1px);
+  box-shadow: 0 5px 14px rgba(236, 31, 35, 0.35);
+  filter: brightness(1.05);
+}
+
+.registration-form .upload-files-grid .form-group > label:first-child {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.registration-form .upload-files-grid .col-md-6 {
+  margin-bottom: 20px;
+}
+
+.registration-form .file-name {
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #6a6b7c;
+}
+
+.registration-hub-block {
+  margin-bottom: 40px;
+}
+
+.registration-hub-block .f-para {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 575px) {
+  .registration-choice-card {
+    min-height: auto;
+  }
+
+  .registration-step__label {
+    white-space: normal;
+    max-width: 100px;
+  }
+}

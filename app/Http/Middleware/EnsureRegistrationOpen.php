@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\EventSetting;
 use Carbon\Carbon;
 use Closure;
 use Illuminate\Http\Request;
@@ -11,10 +12,14 @@ class EnsureRegistrationOpen
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $deadline = Carbon::parse(config('registration.registration_deadline'));
-        $now = Carbon::now();
+        if (EventSetting::get('registration_open', true) === false) {
+            return redirect()->route('registration.closed');
+        }
 
-        if ($now->greaterThan($deadline)) {
+        $deadline = EventSetting::get('registration_deadline', config('registration.registration_deadline'));
+        $now = Carbon::now('Asia/Bangkok');
+
+        if ($now->greaterThan(Carbon::parse($deadline, 'Asia/Bangkok'))) {
             return redirect()->route('registration.closed');
         }
 

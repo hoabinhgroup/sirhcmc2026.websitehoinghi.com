@@ -4,7 +4,9 @@ namespace App\Filament\Resources;
 
 use App\Enums\PaymentMethod;
 use App\Enums\PaymentStatus;
+use App\Enums\RegistrationStatus;
 use App\Filament\Resources\RegistrationResource\Pages;
+use App\Filament\Resources\RegistrationResource\RelationManagers;
 use App\Filament\Actions\ExportRegistrationsAction;
 use App\Models\Registration;
 use Filament\Forms;
@@ -124,13 +126,8 @@ class RegistrationResource extends Resource
                                 PaymentMethod::BankTransfer->value => 'Chuyển khoản',
                             ]),
                         Forms\Components\Select::make('status')
-                            ->label('Trạng thái thanh toán')
-                            ->options([
-                                PaymentStatus::Pending->value => 'Pending',
-                                PaymentStatus::Successful->value => 'Successful',
-                                PaymentStatus::Cancelled->value => 'Cancelled',
-                                PaymentStatus::Failed->value => 'Failed',
-                            ]),
+                            ->label('Trạng thái')
+                            ->options(RegistrationStatus::options()),
                         Forms\Components\TextInput::make('orderinfo')
                             ->label('Order info'),
                         Forms\Components\TextInput::make('vpc_TransactionNo')
@@ -269,12 +266,7 @@ class RegistrationResource extends Resource
                     ]),
                 Tables\Filters\SelectFilter::make('status')
                     ->label('Trạng thái')
-                    ->options([
-                        PaymentStatus::Pending->value => 'Pending',
-                        PaymentStatus::Successful->value => 'Successful',
-                        PaymentStatus::Cancelled->value => 'Cancelled',
-                        PaymentStatus::Failed->value => 'Failed',
-                    ]),
+                    ->options(RegistrationStatus::options()),
                 Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
@@ -295,7 +287,10 @@ class RegistrationResource extends Resource
 
     public static function getRelations(): array
     {
-        return [];
+        return [
+            RelationManagers\PaymentsRelationManager::class,
+            RelationManagers\EmailLogsRelationManager::class,
+        ];
     }
 
     public static function getPages(): array

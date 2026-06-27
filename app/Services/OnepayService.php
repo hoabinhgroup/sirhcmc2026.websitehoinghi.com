@@ -45,7 +45,7 @@ class OnepayService
 
     public function buildPaymentLink(Registration $registration, string $returnUrl, ?string $merchantKey = null): string
     {
-        $merchantKey = $merchantKey ?? $this->resolveMerchantKey();
+        $merchantKey = $merchantKey ?? $this->resolveMerchantKey($registration->locale);
         $config = $this->merchantConfig($merchantKey);
         $amount = $this->amountWithTax($registration);
 
@@ -99,6 +99,18 @@ class OnepayService
 
     public function amountWithTax(Registration $registration): int
     {
+        if ((float) $registration->transaction_fee > 0) {
+            return (int) round((float) $registration->total);
+        }
+
+        $subtotal = (float) $registration->base_fee + (float) $registration->gala_fee_amount;
+
+        if ($subtotal > 0) {
+            $taxRate = (float) config('payment.onepay_tax_rate', 0.06);
+
+            return (int) round($subtotal * (1 + $taxRate));
+        }
+
         $taxRate = (float) config('payment.onepay_tax_rate', 0.06);
 
         return (int) round((float) $registration->total * (1 + $taxRate));
