@@ -10,7 +10,7 @@
           <div class="cs-text">
             <div class="ct-address">
               <span>Địa chỉ:</span>
-              <p>Pullman Vũng tàu, Đà Nẵng<br />Việt Nam</p>
+              <p>Pullman Vũng tàu, Tp. Hồ Chí Minh<br />Việt Nam</p>
             </div>
           </div>
         </div>
