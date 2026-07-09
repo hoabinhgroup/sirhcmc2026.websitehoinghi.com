@@ -12,7 +12,7 @@ Route::view('/about', 'pages.about.index')->name('about');
 Route::view('/about/organizing-committee', 'pages.about.organizing-committee')->name('about.organizing-committee');
 Route::view('/about/venue', 'pages.about.venue')->name('about.venue');
 
-Route::view('/speakers', 'pages.speaker.index')->name('speakers');
+Route::redirect('/speakers', '/faculty', 301);
 
 Route::view('/schedule', 'pages.schedule.index')->name('schedule');
 

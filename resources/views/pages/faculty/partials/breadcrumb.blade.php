@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="breadcrumb-text">
-          <h2>FACULTY</h2>
+          <h2>CHỦ TOẠ - BÁO CÁO VIÊN</h2>
           <div class="bt-option">
             <a href="{{ route('home') }}">Home</a>
             <span>Faculty</span>
