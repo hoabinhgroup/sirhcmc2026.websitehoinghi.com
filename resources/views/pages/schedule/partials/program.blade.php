@@ -76,7 +76,7 @@
                           <h5>EMBOLIZATION</h5>
                         </td>
                         <td class="program-cell program-cell--ballroom2">
-                          <h5>ADVANCED HCC</h5>
+                          <h5>PELVIC INTERVENTION</h5>
                         </td>
                         <td class="program-cell program-cell--ballroom3">
                           <h5>STROKE</h5>
@@ -171,9 +171,15 @@
                         </td>
                       </tr>
                       <tr>
-                        <td class="event-time">16.30 - 17.00</td>
-                        <td colspan="3" class="program-cell program-cell--shared">
-                          <h5>CLOSING</h5>
+                        <td class="event-time">16.30 - 17.30</td>
+                        <td class="program-cell program-cell--ballroom1">
+                          <h5>CONCENSUS FOR IR MANAGEMANT <br> OF PORTAL HYPERTENSION</h5>
+                        </td>
+                        <td class="program-cell program-cell--ballroom2">
+                          <h5>VASCULAR MALFORMATION</h5>
+                        </td>
+                        <td class="program-cell program-cell--ballroom3">
+                          <h5>MSK</h5>
                         </td>
                       </tr>
                       <tr>
