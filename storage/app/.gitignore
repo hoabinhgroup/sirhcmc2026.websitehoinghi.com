@@ -1,4 +1,6 @@
 *
 !private/
 !public/
+!public/css/
+!public/css/**
 !.gitignore

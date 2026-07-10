@@ -1,0 +1,139 @@
+/* SIRHCM 2026 — Payment result pages */
+.registration-result {
+  --reg-primary: #ec1f23;
+  --reg-heading: #171822;
+  --reg-text: #6a6b7c;
+  --reg-border: #e5e5e5;
+  --reg-surface: #f8f9fb;
+}
+
+.registration-result .payment-result-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 15px 60px;
+  min-height: 50vh;
+}
+
+.registration-result .payment-result-card {
+  background: #ffffff;
+  border-radius: 2px;
+  border: 1px solid var(--reg-border);
+  box-shadow: 0 8px 30px rgba(23, 24, 34, 0.06);
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.registration-result .payment-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+}
+
+.registration-result .payment-icon.success {
+  background: rgba(236, 31, 35, 0.1);
+  color: var(--reg-primary);
+}
+
+.registration-result .payment-icon.cancel {
+  background: #fff8f0;
+  color: #e67e22;
+}
+
+.registration-result .payment-icon.error {
+  background: #fff0f0;
+  color: var(--reg-primary);
+}
+
+.registration-result .payment-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--reg-heading);
+}
+
+.registration-result .payment-title.success {
+  color: var(--reg-heading);
+}
+
+.registration-result .payment-title.cancel {
+  color: #e67e22;
+}
+
+.registration-result .payment-title.error {
+  color: var(--reg-primary);
+}
+
+.registration-result .payment-message {
+  font-size: 16px;
+  color: var(--reg-text);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.registration-result .payment-message p {
+  margin-bottom: 10px;
+}
+
+.registration-result .payment-contact {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--reg-border);
+}
+
+.registration-result .payment-contact p {
+  font-size: 15px;
+  color: var(--reg-text);
+  line-height: 1.8;
+}
+
+.registration-result .payment-contact a {
+  color: var(--reg-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.registration-result .payment-contact a:hover {
+  text-decoration: underline;
+}
+
+.registration-result .result-action-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 36px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #f9488b 0%, #ec1f23 100%);
+  text-decoration: none;
+  border: none;
+  transition: opacity 0.3s;
+}
+
+.registration-result .result-action-btn:hover {
+  opacity: 0.92;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .registration-result .payment-result-card {
+    padding: 32px 20px;
+  }
+
+  .registration-result .payment-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .registration-result .payment-title {
+    font-size: 22px;
+  }
+}

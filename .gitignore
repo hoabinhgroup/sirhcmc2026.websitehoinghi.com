@@ -20,6 +20,8 @@
 !/bootstrap/cache/.gitignore
 /storage/app/public/**
 !/storage/app/public/.gitignore
+!/storage/app/public/css/
+!/storage/app/public/css/**
 /storage/app/private/**
 !/storage/app/private/.gitignore
 /storage/*.key
