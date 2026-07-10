@@ -21,7 +21,7 @@
               </button>
             </div>
             <div class="program-top-image">
-              <img src="{{ Storage::url('img/schedule/schedule_top.jpg') }}" alt="Program Top">
+              <img src="{{ Storage::url('img/banner web-01.jpg') }}" alt="Program Top">
             </div>
             <div class="program-tab-panels">
               <div x-show="day === '1'" x-cloak>
