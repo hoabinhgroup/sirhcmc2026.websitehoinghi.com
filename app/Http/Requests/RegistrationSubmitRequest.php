@@ -25,7 +25,10 @@ class RegistrationSubmitRequest extends FormRequest
      */
     public function rules(): array
     {
-        $feeSlugs = array_keys(config('registration.fees', []));
+        $feeSlugs = collect(config('registration.fees', []))
+            ->reject(fn (array $fee): bool => (bool) ($fee['hidden'] ?? false))
+            ->keys()
+            ->all();
         $scope = $this->isInternational() ? 'international' : 'domestic';
         $uploadMimes = config('registration.upload.mimes', ['pdf', 'jpg', 'jpeg', 'png']);
         $uploadMax = (int) config('registration.upload.max_kb', 10240);

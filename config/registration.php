@@ -46,6 +46,7 @@ return [
             'early' => 0,
             'standard' => 0,
             'fee_waiver' => true,
+            'hidden' => true, // tạm ẩn trên form đăng ký
         ],
         'oral_presentation' => [
             'label_vi' => 'Báo cáo viên Oral',
@@ -53,6 +54,7 @@ return [
             'early' => 0,
             'standard' => 0,
             'fee_waiver' => true,
+            'hidden' => true, // tạm ẩn trên form đăng ký
         ],
         'poster_presentation' => [
             'label_vi' => 'Báo cáo viên Poster',
@@ -60,6 +62,7 @@ return [
             'early' => 0,
             'standard' => 0,
             'fee_waiver' => true,
+            'hidden' => true, // tạm ẩn trên form đăng ký
         ],
         'plenary_invited' => [
             'label_vi' => 'Plenary / Invited Speakers',

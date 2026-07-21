@@ -83,7 +83,7 @@ class RegistrationSubmitTest extends TestCase
             'phone' => '0901234567',
             'email' => 'waiver@example.com',
             'degree_file' => UploadedFile::fake()->create('degree.pdf', 100, 'application/pdf'),
-            'conference_checklist_item' => 'sirhcm_member',
+            'conference_checklist_item' => 'plenary_invited',
             'country' => 'VN',
         ]);
 

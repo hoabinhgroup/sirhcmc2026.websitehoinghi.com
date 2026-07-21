@@ -216,6 +216,7 @@ class RegistrationController extends Controller implements HasMiddleware
         $isInternational = $scope === 'international';
         $referenceDate = Carbon::now('Asia/Bangkok');
         $fees = collect(config('registration.fees', []))
+            ->reject(fn (array $fee): bool => (bool) ($fee['hidden'] ?? false))
             ->map(function (array $fee, string $slug) use ($referenceDate): array {
                 return array_merge($fee, [
                     'amount' => app(FeeCalculationService::class)->getDisplayFee($slug, $referenceDate),
