@@ -102,6 +102,8 @@ return [
             'BSCKI.' => 'BSCKI.',
             'BSCKII.' => 'BSCKII.',
             'BS.' => 'BS.',
+            'KTV' => 'KTV',
+            'Điều dưỡng' => 'Điều dưỡng',
             'other' => 'Khác',
         ],
         'international' => [
@@ -111,6 +113,8 @@ return [
             'BSc.' => 'BSc.',
             'Mr.' => 'Mr.',
             'Ms.' => 'Ms.',
+            'Technician' => 'Technician',
+            'Nurse' => 'Nurse',
             'other' => 'Other',
         ],
     ],
