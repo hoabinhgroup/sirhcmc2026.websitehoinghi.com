@@ -38,7 +38,7 @@
       {{-- Bước 1 --}}
       <div class="row" x-show="step === 1" x-cloak>
         <div class="col-lg-12 registration-hub-block">
-          <h3 class="registration-hub-step-title">Bước 1 — Bạn muốn làm gì? / What would you like to do?</h3>
+          <h3 class="registration-hub-step-title">Bước 1 — Chọn phương thức đăng ký / Select registration method</h3>
           <p class="f-para">Chọn một thẻ bên dưới. / Select one of the cards below.</p>
 
           <div class="row registration-choice-cards">
