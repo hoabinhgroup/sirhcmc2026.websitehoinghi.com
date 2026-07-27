@@ -48,12 +48,84 @@
       'affiliation_vi' => 'Thái Lan',
       'affiliation_en' => 'Thailand',
     ],
+    [
+      'name' => 'Dr. Kevin Fung',
+      'image' => 'img/speakers/9. Kevin Fung.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Hou Kuei Yuan',
+      'image' => 'img/speakers/10. Hou Kuei Yuan.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Michel Wassef',
+      'image' => 'img/speakers/11. Michel Wassef.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Joseph Gemmete',
+      'image' => 'img/speakers/12. Joseph Gemmete.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Linzi Webster',
+      'image' => 'img/speakers/13. Linzi Webster.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Avi Beck',
+      'image' => 'img/speakers/14. Avi Beck.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Diamanto Rigas',
+      'image' => 'img/speakers/15. Diamanto Rigas.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Kittipitch Bannangkoon',
+      'image' => 'img/speakers/16. Kittipitch Bannangkoon.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Murthy Chennapragada',
+      'image' => 'img/speakers/17. Murthy Chennapragada.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Wu Chih Horng',
+      'image' => 'img/speakers/18. Wu Chih Horng.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Luke Toh',
+      'image' => 'img/speakers/19. Luke Toh.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
+    [
+      'name' => 'Dr. Farah Gillan Irani',
+      'image' => 'img/speakers/20. Farah Gillan Irani.png',
+      'affiliation_vi' => 'update',
+      'affiliation_en' => 'update',
+    ],
   ];
 
   $speakerGroupsVi = [
     [
       'title' => 'Báo cáo viên',
-      'members' => array_map(fn ($member) => [
+      'members' => array_map(fn($member) => [
         'name' => $member['name'],
         'image' => $member['image'],
         'role' => '<p>BÁO CÁO VIÊN</p>',
@@ -65,7 +137,7 @@
   $speakerGroupsEn = [
     [
       'title' => 'Faculty',
-      'members' => array_map(fn ($member) => [
+      'members' => array_map(fn($member) => [
         'name' => $member['name'],
         'image' => $member['image'],
         'role' => '<p>FACULTY</p>',
@@ -85,8 +157,10 @@
         </div>
 
         <div class="switch-language oc-switch-language">
-          <button @click="lang = 'vi'" :class="{ 'active': lang === 'vi' }" class="button-vietnam" type="button">Tiếng Việt</button>
-          <button @click="lang = 'en'" :class="{ 'active': lang === 'en' }" class="button-english" type="button">English</button>
+          <button @click="lang = 'vi'" :class="{ 'active': lang === 'vi' }" class="button-vietnam" type="button">Tiếng
+            Việt</button>
+          <button @click="lang = 'en'" :class="{ 'active': lang === 'en' }" class="button-english"
+            type="button">English</button>
         </div>
 
         <div x-show="lang === 'vi'" x-cloak>
