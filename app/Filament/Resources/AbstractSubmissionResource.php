@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use App\Filament\Actions\ExportAbstractSubmissionsAction;
 use App\Filament\Resources\AbstractSubmissionResource\Pages;
 use App\Models\AbstractSubmission;
 use Filament\Forms;
@@ -164,6 +165,9 @@ class AbstractSubmissionResource extends Resource
                     Tables\Actions\ForceDeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
                 ]),
+            ])
+            ->headerActions([
+                ExportAbstractSubmissionsAction::make(),
             ])
             ->defaultSort('created_at', 'desc');
     }
