@@ -2383,7 +2383,7 @@ ol {
     height: auto;
     min-height: 64px;
     padding: 12px 12px;
-    vertical-align: middle;
+    vertical-align: top;
     border-right: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     width: auto;
@@ -3541,4 +3541,132 @@ ol {
 
 #contact-form-section {
     margin-top: 72px;
+}
+
+/* ===== Program Detail Expand/Collapse ===== */
+
+.program-chairman {
+    font-size: 12px;
+    color: #666;
+    margin: 4px 0 6px 0;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.program-detail-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ec1f23;
+    background: transparent;
+    border: 1px solid #ec1f23;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+.program-detail-toggle:hover {
+    background: #ec1f23;
+    color: #fff;
+}
+
+.program-cell--ballroom1 .program-detail-toggle {
+    color: #1a3a6e;
+    border-color: #1a3a6e;
+}
+.program-cell--ballroom1 .program-detail-toggle:hover {
+    background: #1a3a6e;
+    color: #fff;
+}
+
+.program-cell--ballroom2 .program-detail-toggle {
+    color: #2a6e3a;
+    border-color: #2a6e3a;
+}
+.program-cell--ballroom2 .program-detail-toggle:hover {
+    background: #2a6e3a;
+    color: #fff;
+}
+
+.program-cell--ballroom3 .program-detail-toggle {
+    color: #6e4a1a;
+    border-color: #6e4a1a;
+}
+.program-cell--ballroom3 .program-detail-toggle:hover {
+    background: #6e4a1a;
+    color: #fff;
+}
+
+.program-detail-list {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.program-detail-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-detail-list ul li {
+    padding: 6px 0;
+    border-bottom: 1px dashed rgba(0,0,0,0.07);
+    font-size: 12.5px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.program-detail-list ul li:last-child {
+    border-bottom: none;
+}
+
+.talk-time {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #999;
+    min-width: 86px;
+    margin-right: 4px;
+}
+
+.talk-title {
+    font-weight: 500;
+    color: #222;
+}
+
+.talk-title.talk-break {
+    color: #888;
+    font-style: italic;
+}
+
+.talk-speaker {
+    display: inline-block;
+    font-size: 12px;
+    color: #ec1f23;
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+.program-cell--shared .program-detail-list ul li,
+.program-cell--shared .program-chairman {
+    color: #444;
+}
+
+@media only screen and (max-width: 767px) {
+    .program-chairman {
+        font-size: 11px;
+    }
+    .program-detail-list ul li {
+        font-size: 11.5px;
+    }
+    .talk-time {
+        display: block;
+        margin-bottom: 2px;
+    }
 }
