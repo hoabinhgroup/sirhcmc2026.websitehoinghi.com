@@ -1,0 +1,568 @@
+- generic [active] [ref=f12e1]:
+  - banner [ref=f12e4]:
+    - generic [ref=f12e5]:
+      - link [ref=f12e7] [cursor=pointer]:
+        - /url: https://sir-hcmc2026.websitehoinghi.com.test
+      - navigation [ref=f12e9]:
+        - list [ref=f12e10]:
+          - listitem [ref=f12e11]:
+            - link "Trang chủ Home" [ref=f12e12] [cursor=pointer]:
+              - /url: https://sir-hcmc2026.websitehoinghi.com.test
+              - generic [ref=f12e13]: Trang chủ
+              - generic [ref=f12e14]: Home
+          - listitem [ref=f12e15]:
+            - button "SIRHCM 2026 SIRHCM 2026" [ref=f12e16] [cursor=pointer]:
+              - generic [ref=f12e17]: SIRHCM 2026
+              - generic [ref=f12e18]: SIRHCM 2026
+          - listitem [ref=f12e19]:
+            - link "CHƯƠNG TRÌNH Program" [ref=f12e20] [cursor=pointer]:
+              - /url: https://sir-hcmc2026.websitehoinghi.com.test/schedule
+              - generic [ref=f12e21]: CHƯƠNG TRÌNH
+              - generic [ref=f12e22]: Program
+          - listitem [ref=f12e23]:
+            - link "CHỦ TOẠ - BÁO CÁO VIÊN FACULTY" [ref=f12e24] [cursor=pointer]:
+              - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+              - generic [ref=f12e25]: CHỦ TOẠ - BÁO CÁO VIÊN
+              - generic [ref=f12e26]: FACULTY
+          - listitem [ref=f12e27]:
+            - link "ĐĂNG KÝ REGISTRATION" [ref=f12e28] [cursor=pointer]:
+              - /url: https://sir-hcmc2026.websitehoinghi.com.test/registration
+              - generic [ref=f12e29]: ĐĂNG KÝ
+              - generic [ref=f12e30]: REGISTRATION
+          - listitem [ref=f12e31]:
+            - button "HỖ TRỢ HẬU CẦN TRAVEL SUPPORT" [ref=f12e32] [cursor=pointer]:
+              - generic [ref=f12e33]: HỖ TRỢ HẬU CẦN
+              - generic [ref=f12e34]: TRAVEL SUPPORT
+          - listitem [ref=f12e35]:
+            - link "NHÀ TÀI TRỢ SPONSOR" [ref=f12e36] [cursor=pointer]:
+              - /url: https://sir-hcmc2026.websitehoinghi.com.test/sponsor
+              - generic [ref=f12e37]: NHÀ TÀI TRỢ
+              - generic [ref=f12e38]: SPONSOR
+  - generic [ref=f12e42]:
+    - generic [ref=f12e44]:
+      - text: Conference Date
+      - heading "Count Every Second Until the Event" [level=3] [ref=f12e45]
+    - generic [ref=f12e47]:
+      - generic [ref=f12e48]:
+        - text: "52"
+        - paragraph [ref=f12e49]: Days
+      - generic [ref=f12e50]:
+        - text: "07"
+        - paragraph [ref=f12e51]: Hrs
+      - generic [ref=f12e52]:
+        - text: "17"
+        - paragraph [ref=f12e53]: Mins
+      - generic [ref=f12e54]:
+        - text: "50"
+        - paragraph [ref=f12e55]: Secs
+  - generic [ref=f12e58]:
+    - generic [ref=f12e59]:
+      - img "TS.BS. Nguyễn Đình Luân" [ref=f12e61]
+      - generic [ref=f12e63]:
+        - heading "TS.BS. NGUYỄN ĐÌNH LUÂN" [level=5] [ref=f12e64]
+        - paragraph [ref=f12e65]: CHỦ TỊCH SIRHCM
+    - generic [ref=f12e67]:
+      - generic [ref=f12e68]:
+        - heading "THƯ CHÀO MỪNG" [level=2] [ref=f12e69]
+        - generic [ref=f12e70]: WELCOME MESSAGE
+      - generic [ref=f12e71]:
+        - button "Tiếng Việt" [ref=f12e72] [cursor=pointer]
+        - button "English" [ref=f12e73] [cursor=pointer]
+      - generic [ref=f12e74]:
+        - paragraph [ref=f12e75]: Kính gửi Quý Đại biểu tham dự,
+        - paragraph [ref=f12e76]: Hội Điện quang Can thiệp Hồ Chí Minh (SIRHCM) xin trân trọng gửi lời chào mừng nồng nhiệt đến Quý Đại biểu tham dự Hội nghị khoa học Điện Quang Can Thiệp Hồ Chí Minh lần thứ 2 (SIRHCM 2026).
+        - paragraph [ref=f12e77]: Hội nghị này là dịp để các chuyên gia, bác sĩ, nhà khoa học và đồng nghiệp trong lĩnh vực Điện quang Can thiệp trên cả nước cùng gặp gỡ, chia sẻ kinh nghiệm, cập nhật kiến thức, cũng như thảo luận về những tiến bộ mới nhất trong chuyên ngành. Chúng tôi tin rằng sự góp mặt của Quý vị sẽ đóng vai trò quan trọng trong việc tạo nên một diễn đàn khoa học chất lượng và giàu giá trị thực tiễn.
+        - paragraph [ref=f12e78]: Ban tổ chức xin chân thành cảm ơn sự quan tâm, đồng hành và ủng hộ của Quý vị. Kính chúc Quý Đại biểu có những trải nghiệm ý nghĩa, nhiều kết nối chuyên môn và một kỳ hội nghị thành công tốt đẹp.
+        - paragraph [ref=f12e79]:
+          - text: Trân trọng,
+          - strong [ref=f12e80]: Hội Điện quang Can thiệp Hồ Chí Minh (SIRHCM)
+  - generic [ref=f12e82]:
+    - generic [ref=f12e83]:
+      - generic [ref=f12e84]:
+        - heading "Về Vũng Tàu" [level=2] [ref=f12e85]
+        - generic [ref=f12e86]: About Vung Tau
+      - generic [ref=f12e87]:
+        - button "Tiếng Việt" [ref=f12e88] [cursor=pointer]
+        - button "English" [ref=f12e89] [cursor=pointer]
+    - generic [ref=f12e90]:
+      - iframe [ref=f12e93]:
+        - generic [ref=f13e1]:
+          - generic "YouTube Video Player" [ref=f13e3]
+          - generic [ref=f13e6]:
+            - generic:
+              - generic:
+                - button "Hide player controls" [ref=f13e7] [cursor=pointer]
+                - generic [ref=f13e9]:
+                  - generic:
+                    - generic [ref=f13e12]:
+                      - generic [ref=f13e14]:
+                        - generic [ref=f13e15]:
+                          - link "Vung Tau From Above | Welcome to Vietnam" [ref=f13e16] [cursor=pointer]:
+                            - /url: https://www.youtube.com/watch?v=bB_mm7cI-6k
+                          - link "Welcome To Vietnam" [ref=f13e17] [cursor=pointer]:
+                            - /url: /channel/UCUpzmbDDsX771G4_TpKG7lQ
+                        - generic [ref=f13e19]:
+                          - button [ref=f13e20] [cursor=pointer]
+                          - generic [ref=f13e22]:
+                            - generic: Welcome To Vietnam
+                            - generic: 6K subscribers
+                      - generic [ref=f13e23]:
+                        - button "Unmute" [ref=f13e25] [cursor=pointer]:
+                          - img "Unmute" [ref=f13e26]
+                        - button "No captions are available for this video" [disabled] [ref=f13e29] [cursor=pointer]
+                        - button "Playback Settings" [ref=f13e34] [cursor=pointer]
+                    - generic [ref=f13e38]:
+                      - generic:
+                        - generic:
+                          - button "Previous video"
+                        - button "Rewind 10 seconds"
+                        - generic:
+                          - button "Play video"
+                        - button "Fast forward 10 seconds"
+                        - generic:
+                          - button "Next video" [disabled]
+                  - generic:
+                    - generic:
+                      - generic [ref=f13e44]:
+                        - generic [ref=f13e45]:
+                          - text: 0:00
+                          - generic [ref=f13e46]: Time elapsed 0 seconds
+                        - text: /
+                        - generic [ref=f13e47]:
+                          - text: 2:17
+                          - generic [ref=f13e48]: Time duration 2 minutes, 17 seconds
+                      - button "Enter full screen" [ref=f13e52] [cursor=pointer]
+                  - slider "Seek slider" [ref=f13e56] [cursor=pointer]
+                  - generic [ref=f13e62]:
+                    - button "Share" [ref=f13e65] [cursor=pointer]
+                    - link "Watch on YouTube" [ref=f13e76] [cursor=pointer]:
+                      - /url: https://www.youtube.com/watch?v=bB_mm7cI-6k
+      - generic [ref=f12e96]:
+        - paragraph [ref=f12e97]: Vũng Tàu là một thành phố biển xinh đẹp ở miền Nam Việt Nam, nằm cách Thành phố Hồ Chí Minh khoảng 90 km về phía Đông Nam. Nổi tiếng với những bãi biển đẹp, hải sản tươi ngon và không khí thư giãn, Vũng Tàu là điểm đến được yêu thích của cả du khách trong nước và quốc tế.
+        - paragraph [ref=f12e98]: Thành phố là sự kết hợp hài hòa giữa vẻ đẹp thiên nhiên, các điểm tham quan văn hóa và hệ thống dịch vụ du lịch hiện đại. Du khách có thể tận hưởng khung cảnh biển tuyệt đẹp, khám phá các địa danh nổi tiếng như Tượng Chúa Kitô Vua và Hải đăng Vũng Tàu, hoặc thư giãn tại những bãi biển của thành phố.
+        - paragraph [ref=f12e99]: Với vị trí thuận tiện, không gian biển thoáng đãng cùng hệ thống khách sạn, nhà hàng và cơ sở hội nghị đa dạng, Vũng Tàu là điểm đến lý tưởng cho du lịch, các sự kiện doanh nghiệp, hội nghị và những chương trình quốc tế.
+  - generic [ref=f12e100]:
+    - generic [ref=f12e104]:
+      - heading "CHỦ TOẠ - BÁO CÁO VIÊN" [level=2] [ref=f12e105]
+      - paragraph [ref=f12e106]: Faculty
+    - generic "Faculty slider" [ref=f12e107]:
+      - generic [ref=f12e108]:
+        - link "Dr. Chun Yu Lin Dr. Chun Yu Lin Taiwan" [ref=f12e110] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Chun Yu Lin" [ref=f12e112]
+          - generic [ref=f12e113]:
+            - heading "Dr. Chun Yu Lin" [level=5] [ref=f12e114]
+            - generic [ref=f12e115]: Taiwan
+        - link "Prof. Guillaume Canaud Prof. Guillaume Canaud France" [ref=f12e117] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Guillaume Canaud" [ref=f12e119]
+          - generic [ref=f12e120]:
+            - heading "Prof. Guillaume Canaud" [level=5] [ref=f12e121]
+            - generic [ref=f12e122]: France
+        - link "Hiroshi Kondo, M.D., Ph.D Hiroshi Kondo, M.D., Ph.D Japan" [ref=f12e124] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Hiroshi Kondo, M.D., Ph.D" [ref=f12e126]
+          - generic [ref=f12e127]:
+            - heading "Hiroshi Kondo, M.D., Ph.D" [level=5] [ref=f12e128]
+            - generic [ref=f12e129]: Japan
+        - link "Kai-Wen Huang MD, MS, PhD Kai-Wen Huang MD, MS, PhD Taiwan" [ref=f12e131] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Kai-Wen Huang MD, MS, PhD" [ref=f12e133]
+          - generic [ref=f12e134]:
+            - heading "Kai-Wen Huang MD, MS, PhD" [level=5] [ref=f12e135]
+            - generic [ref=f12e136]: Taiwan
+        - link "Prof. Martin Krauss Prof. Martin Krauss Germany" [ref=f12e138] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Martin Krauss" [ref=f12e140]
+          - generic [ref=f12e141]:
+            - heading "Prof. Martin Krauss" [level=5] [ref=f12e142]
+            - generic [ref=f12e143]: Germany
+        - link "Prof. Masanori Inoue Prof. Masanori Inoue Japan" [ref=f12e145] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Masanori Inoue" [ref=f12e147]
+          - generic [ref=f12e148]:
+            - heading "Prof. Masanori Inoue" [level=5] [ref=f12e149]
+            - generic [ref=f12e150]: Japan
+        - link "Assoc. Prof. Nakarin Inmutto Assoc. Prof. Nakarin Inmutto Thailand" [ref=f12e152] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Assoc. Prof. Nakarin Inmutto" [ref=f12e154]
+          - generic [ref=f12e155]:
+            - heading "Assoc. Prof. Nakarin Inmutto" [level=5] [ref=f12e156]
+            - generic [ref=f12e157]: Thailand
+        - link "Panat Nisityotakul, M.D Panat Nisityotakul, M.D Thailand" [ref=f12e159] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Panat Nisityotakul, M.D" [ref=f12e161]
+          - generic [ref=f12e162]:
+            - heading "Panat Nisityotakul, M.D" [level=5] [ref=f12e163]
+            - generic [ref=f12e164]: Thailand
+        - link [ref=f12e166] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Kevin Fung" [ref=f12e168]
+          - heading "Dr. Kevin Fung" [level=5] [ref=f12e170]
+        - link [ref=f12e172] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Hou Kuei Yuan" [ref=f12e174]
+          - heading "Dr. Hou Kuei Yuan" [level=5] [ref=f12e176]
+        - link [ref=f12e178] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Michel Wassef" [ref=f12e180]
+          - heading "Dr. Michel Wassef" [level=5] [ref=f12e182]
+        - link [ref=f12e184] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Joseph Gemmete" [ref=f12e186]
+          - heading "Dr. Joseph Gemmete" [level=5] [ref=f12e188]
+        - link [ref=f12e190] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Linzi Webster" [ref=f12e192]
+          - heading "Dr. Linzi Webster" [level=5] [ref=f12e194]
+        - link [ref=f12e196] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Avi Beck" [ref=f12e198]
+          - heading "Dr. Avi Beck" [level=5] [ref=f12e200]
+        - link [ref=f12e202] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Diamanto Rigas" [ref=f12e204]
+          - heading "Dr. Diamanto Rigas" [level=5] [ref=f12e206]
+        - link [ref=f12e208] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Kittipitch Bannangkoon" [ref=f12e210]
+          - heading "Dr. Kittipitch Bannangkoon" [level=5] [ref=f12e212]
+        - link [ref=f12e214] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Murthy Chennapragada" [ref=f12e216]
+          - heading "Dr. Murthy Chennapragada" [level=5] [ref=f12e218]
+        - link [ref=f12e220] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Wu Chih Horng" [ref=f12e222]
+          - heading "Dr. Wu Chih Horng" [level=5] [ref=f12e224]
+        - link [ref=f12e226] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Luke Toh" [ref=f12e228]
+          - heading "Dr. Luke Toh" [level=5] [ref=f12e230]
+        - link [ref=f12e232] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Farah Gillan Irani" [ref=f12e234]
+          - heading "Dr. Farah Gillan Irani" [level=5] [ref=f12e236]
+        - link "Dr. Chun Yu Lin Dr. Chun Yu Lin Taiwan" [ref=f12e238] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Chun Yu Lin" [ref=f12e240]
+          - generic [ref=f12e241]:
+            - heading "Dr. Chun Yu Lin" [level=5] [ref=f12e242]
+            - generic [ref=f12e243]: Taiwan
+        - link "Prof. Guillaume Canaud Prof. Guillaume Canaud France" [ref=f12e245] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Guillaume Canaud" [ref=f12e247]
+          - generic [ref=f12e248]:
+            - heading "Prof. Guillaume Canaud" [level=5] [ref=f12e249]
+            - generic [ref=f12e250]: France
+        - link "Hiroshi Kondo, M.D., Ph.D Hiroshi Kondo, M.D., Ph.D Japan" [ref=f12e252] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Hiroshi Kondo, M.D., Ph.D" [ref=f12e254]
+          - generic [ref=f12e255]:
+            - heading "Hiroshi Kondo, M.D., Ph.D" [level=5] [ref=f12e256]
+            - generic [ref=f12e257]: Japan
+        - link "Kai-Wen Huang MD, MS, PhD Kai-Wen Huang MD, MS, PhD Taiwan" [ref=f12e259] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Kai-Wen Huang MD, MS, PhD" [ref=f12e261]
+          - generic [ref=f12e262]:
+            - heading "Kai-Wen Huang MD, MS, PhD" [level=5] [ref=f12e263]
+            - generic [ref=f12e264]: Taiwan
+        - link "Prof. Martin Krauss Prof. Martin Krauss Germany" [ref=f12e266] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Martin Krauss" [ref=f12e268]
+          - generic [ref=f12e269]:
+            - heading "Prof. Martin Krauss" [level=5] [ref=f12e270]
+            - generic [ref=f12e271]: Germany
+        - link "Prof. Masanori Inoue Prof. Masanori Inoue Japan" [ref=f12e273] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Prof. Masanori Inoue" [ref=f12e275]
+          - generic [ref=f12e276]:
+            - heading "Prof. Masanori Inoue" [level=5] [ref=f12e277]
+            - generic [ref=f12e278]: Japan
+        - link "Assoc. Prof. Nakarin Inmutto Assoc. Prof. Nakarin Inmutto Thailand" [ref=f12e280] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Assoc. Prof. Nakarin Inmutto" [ref=f12e282]
+          - generic [ref=f12e283]:
+            - heading "Assoc. Prof. Nakarin Inmutto" [level=5] [ref=f12e284]
+            - generic [ref=f12e285]: Thailand
+        - link "Panat Nisityotakul, M.D Panat Nisityotakul, M.D Thailand" [ref=f12e287] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Panat Nisityotakul, M.D" [ref=f12e289]
+          - generic [ref=f12e290]:
+            - heading "Panat Nisityotakul, M.D" [level=5] [ref=f12e291]
+            - generic [ref=f12e292]: Thailand
+        - link [ref=f12e294] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Kevin Fung" [ref=f12e296]
+          - heading "Dr. Kevin Fung" [level=5] [ref=f12e298]
+        - link [ref=f12e300] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Hou Kuei Yuan" [ref=f12e302]
+          - heading "Dr. Hou Kuei Yuan" [level=5] [ref=f12e304]
+        - link [ref=f12e306] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Michel Wassef" [ref=f12e308]
+          - heading "Dr. Michel Wassef" [level=5] [ref=f12e310]
+        - link [ref=f12e312] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Joseph Gemmete" [ref=f12e314]
+          - heading "Dr. Joseph Gemmete" [level=5] [ref=f12e316]
+        - link [ref=f12e318] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Linzi Webster" [ref=f12e320]
+          - heading "Dr. Linzi Webster" [level=5] [ref=f12e322]
+        - link [ref=f12e324] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Avi Beck" [ref=f12e326]
+          - heading "Dr. Avi Beck" [level=5] [ref=f12e328]
+        - link [ref=f12e330] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Diamanto Rigas" [ref=f12e332]
+          - heading "Dr. Diamanto Rigas" [level=5] [ref=f12e334]
+        - link [ref=f12e336] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Kittipitch Bannangkoon" [ref=f12e338]
+          - heading "Dr. Kittipitch Bannangkoon" [level=5] [ref=f12e340]
+        - link [ref=f12e342] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Murthy Chennapragada" [ref=f12e344]
+          - heading "Dr. Murthy Chennapragada" [level=5] [ref=f12e346]
+        - link [ref=f12e348] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Wu Chih Horng" [ref=f12e350]
+          - heading "Dr. Wu Chih Horng" [level=5] [ref=f12e352]
+        - link [ref=f12e354] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Luke Toh" [ref=f12e356]
+          - heading "Dr. Luke Toh" [level=5] [ref=f12e358]
+        - link [ref=f12e360] [cursor=pointer]:
+          - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+          - img "Dr. Farah Gillan Irani" [ref=f12e362]
+          - heading "Dr. Farah Gillan Irani" [level=5] [ref=f12e364]
+    - link "View all Faculty" [ref=f12e367] [cursor=pointer]:
+      - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+  - generic [ref=f12e371]:
+    - generic [ref=f12e372]:
+      - heading "CHƯƠNG TRÌNH DỰ KIẾN" [level=2] [ref=f12e373]
+      - paragraph [ref=f12e374]: TENTATIVE PROGRAM
+    - generic [ref=f12e375]:
+      - generic [ref=f12e376]:
+        - button "Day 1 16th October" [ref=f12e377] [cursor=pointer]:
+          - strong [ref=f12e378]: Day 1
+          - generic [ref=f12e379]: 16th October
+        - button "Day 2 17th October" [ref=f12e380] [cursor=pointer]:
+          - strong [ref=f12e381]: Day 2
+          - generic [ref=f12e382]: 17th October
+      - img "Program Top" [ref=f12e384]
+      - table [ref=f12e388]:
+        - rowgroup [ref=f12e389]:
+          - row [ref=f12e390]:
+            - columnheader "Time" [ref=f12e391]
+            - columnheader "Ballroom 1" [ref=f12e392]
+            - columnheader "Ballroom 2" [ref=f12e393]
+            - columnheader "Ballroom 3" [ref=f12e394]
+        - rowgroup [ref=f12e395]:
+          - row [ref=f12e396]:
+            - cell "08.00 - 11.30" [ref=f12e397]
+            - 'cell "PRE-CONFERENCE CME: VASCULAR MALFORMATIONS ISSVA classification for vascular malformation and pathology aspects - MD. Michel Wassef Molecular genetic and histopathology of vascular malformations - Prof. Guillaume Canaud Clinical and Imaging assessment of vascular malformations - Prof. Luke Toh Prenatal diagnosis and treatment of CVM - MD. Antoine Fraissenon Break Interventional Radiology role in management of slow flow vascular malformations - Prof. Luke Toh Radiological diagnosis and treatment of CVM in children in France - MD. Antoine Fraissenon Management of slow-flow vascular malformations: medical management, sclerotherapy (alcohol, others) - MD. Nguyen Dinh Luan Reversible electroporation for slow-flow vascular malformations: indication, probe selection, technique and outcomes - MD. Martin Krauss" [ref=f12e398]':
+              - 'heading "PRE-CONFERENCE CME: VASCULAR MALFORMATIONS" [level=5] [ref=f12e399]'
+              - list [ref=f12e401]:
+                - listitem [ref=f12e402]:
+                  - text: ISSVA classification for vascular malformation and pathology aspects
+                  - generic [ref=f12e403]: "- MD. Michel Wassef"
+                - listitem [ref=f12e404]:
+                  - text: Molecular genetic and histopathology of vascular malformations
+                  - generic [ref=f12e405]: "- Prof. Guillaume Canaud"
+                - listitem [ref=f12e406]:
+                  - text: Clinical and Imaging assessment of vascular malformations
+                  - generic [ref=f12e407]: "- Prof. Luke Toh"
+                - listitem [ref=f12e408]:
+                  - text: Prenatal diagnosis and treatment of CVM
+                  - generic [ref=f12e409]: "- MD. Antoine Fraissenon"
+                - listitem [ref=f12e410]: Break
+                - listitem [ref=f12e411]:
+                  - text: Interventional Radiology role in management of slow flow vascular malformations
+                  - generic [ref=f12e412]: "- Prof. Luke Toh"
+                - listitem [ref=f12e413]:
+                  - text: Radiological diagnosis and treatment of CVM in children in France
+                  - generic [ref=f12e414]: "- MD. Antoine Fraissenon"
+                - listitem [ref=f12e415]:
+                  - text: "Management of slow-flow vascular malformations: medical management, sclerotherapy (alcohol, others)"
+                  - generic [ref=f12e416]: "- MD. Nguyen Dinh Luan"
+                - listitem [ref=f12e417]:
+                  - text: "Reversible electroporation for slow-flow vascular malformations: indication, probe selection, technique and outcomes"
+                  - generic [ref=f12e418]: "- MD. Martin Krauss"
+            - 'cell "PRE-CONFERENCE CME: ABLATION Lung tumor ablation - PhD. MD. Cung Van Cong The current development of non-thermal tumor ablation in Asia - Prof. Huang Kai Wen RFA/MWA for hepatic tumor - PhD. MD. Vo Hoi Trung Truc Thyroid Ablation - MD. Tran Quy Tuong Combination of TACE and MWA for treatment of intermediate HCC - MD. Nguyen Tan Tai Application of fusion imaging in liver tumor ablation - PhD. MD. Le Van Khang" [ref=f12e419]':
+              - 'heading "PRE-CONFERENCE CME: ABLATION" [level=5] [ref=f12e420]'
+              - list [ref=f12e422]:
+                - listitem [ref=f12e423]:
+                  - text: Lung tumor ablation
+                  - generic [ref=f12e424]: "- PhD. MD. Cung Van Cong"
+                - listitem [ref=f12e425]:
+                  - text: The current development of non-thermal tumor ablation in Asia
+                  - generic [ref=f12e426]: "- Prof. Huang Kai Wen"
+                - listitem [ref=f12e427]:
+                  - text: RFA/MWA for hepatic tumor
+                  - generic [ref=f12e428]: "- PhD. MD. Vo Hoi Trung Truc"
+                - listitem [ref=f12e429]:
+                  - text: Thyroid Ablation
+                  - generic [ref=f12e430]: "- MD. Tran Quy Tuong"
+                - listitem [ref=f12e431]:
+                  - text: Combination of TACE and MWA for treatment of intermediate HCC
+                  - generic [ref=f12e432]: "- MD. Nguyen Tan Tai"
+                - listitem [ref=f12e433]:
+                  - text: Application of fusion imaging in liver tumor ablation
+                  - generic [ref=f12e434]: "- PhD. MD. Le Van Khang"
+            - 'cell "ORAL PRESENTATION Endovascular treatment of cerebral aneurysms using intrasaccular flow disruptors (WEB, LUNA...) Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases Outcomes of middle meningeal artery (MMA) embolization for recurrences at Cho Ray Hospital: A case series An overview of intra-arterial chemotherapy for the brain: Where do we stand? Adrenal vein sampling: experience at People''s Hospital 115 - MD Do Quoc Huy No-reflow phenomenon after endovascular thrombectomy in acute ischemic stroke patients - MD Nguyen Quang Hien" [ref=f12e435]':
+              - heading "ORAL PRESENTATION" [level=5] [ref=f12e436]
+              - list [ref=f12e438]:
+                - listitem [ref=f12e439]: Endovascular treatment of cerebral aneurysms using intrasaccular flow disruptors (WEB, LUNA...)
+                - listitem [ref=f12e440]: "Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital"
+                - listitem [ref=f12e441]: "Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases"
+                - listitem [ref=f12e442]: "Outcomes of middle meningeal artery (MMA) embolization for recurrences at Cho Ray Hospital: A case series"
+                - listitem [ref=f12e443]: "An overview of intra-arterial chemotherapy for the brain: Where do we stand?"
+                - listitem [ref=f12e444]:
+                  - text: "Adrenal vein sampling: experience at People's Hospital 115"
+                  - generic [ref=f12e445]: "- MD Do Quoc Huy"
+                - listitem [ref=f12e446]:
+                  - text: No-reflow phenomenon after endovascular thrombectomy in acute ischemic stroke patients
+                  - generic [ref=f12e447]: "- MD Nguyen Quang Hien"
+          - row [ref=f12e448]:
+            - cell "11.30 - 12.30" [ref=f12e449]
+            - cell [ref=f12e450]:
+              - heading "LUNCH SYMPOSIUM" [level=5] [ref=f12e451]
+          - row [ref=f12e452]:
+            - cell "13.00 - 14.30" [ref=f12e453]
+            - 'cell "NON-VASCULAR INTERVENTION Chairman: Assoc. Prof. Le Trong Binh | Assoc. Prof. Nguyen Thai Binh Percutaneous Cholecystostomy: practical techniques - Assoc. Prof. Nakarin Inmutto Controversies in the percutaneous transhepatic intervention for unresectable malignant hilar biliary obstruction - Assoc. Prof. Le Trong Binh" [ref=f12e454]':
+              - heading "NON-VASCULAR INTERVENTION" [level=5] [ref=f12e455]
+              - paragraph [ref=f12e456]: "Chairman: Assoc. Prof. Le Trong Binh | Assoc. Prof. Nguyen Thai Binh"
+              - list [ref=f12e458]:
+                - listitem [ref=f12e459]:
+                  - text: "Percutaneous Cholecystostomy: practical techniques"
+                  - generic [ref=f12e460]: "- Assoc. Prof. Nakarin Inmutto"
+                - listitem [ref=f12e461]:
+                  - text: Controversies in the percutaneous transhepatic intervention for unresectable malignant hilar biliary obstruction
+                  - generic [ref=f12e462]: "- Assoc. Prof. Le Trong Binh"
+            - 'cell "HCC Chairman: Prof. Mai Trong Khoa | Assoc. Prof. Le Thanh Dung | MD. Amanda Rigas HCC 2026: Key Updates Every Interventional Radiologist Should Know - MD. Amanda Rigas The Interventionalist''s Third Eye: Cone-Beam CT in the Era of Superselective TACE for HCC - Assoc. Prof. Kittipitch Bannangkoon Radiation segmentectomy using Y90 - MD. Farah Gillan Irani Management of HCC, learning from failures - MD. Ngo Le Lam" [ref=f12e463]':
+              - heading "HCC" [level=5] [ref=f12e464]
+              - paragraph [ref=f12e465]: "Chairman: Prof. Mai Trong Khoa | Assoc. Prof. Le Thanh Dung | MD. Amanda Rigas"
+              - list [ref=f12e467]:
+                - listitem [ref=f12e468]:
+                  - text: "HCC 2026: Key Updates Every Interventional Radiologist Should Know"
+                  - generic [ref=f12e469]: "- MD. Amanda Rigas"
+                - listitem [ref=f12e470]:
+                  - text: "The Interventionalist's Third Eye: Cone-Beam CT in the Era of Superselective TACE for HCC"
+                  - generic [ref=f12e471]: "- Assoc. Prof. Kittipitch Bannangkoon"
+                - listitem [ref=f12e472]:
+                  - text: Radiation segmentectomy using Y90
+                  - generic [ref=f12e473]: "- MD. Farah Gillan Irani"
+                - listitem [ref=f12e474]:
+                  - text: Management of HCC, learning from failures
+                  - generic [ref=f12e475]: "- MD. Ngo Le Lam"
+            - cell [ref=f12e476]:
+              - heading "ORAL PRESENTATION (English - Contest)" [level=5] [ref=f12e477]
+          - row [ref=f12e478]:
+            - cell "14.30 - 15.00" [ref=f12e479]
+            - cell [ref=f12e480]:
+              - heading "TEA BREAKS" [level=5] [ref=f12e481]
+          - row [ref=f12e482]:
+            - cell "15.30 - 17.00" [ref=f12e483]
+            - 'cell "EMBOLIZATION Chairman: Prof. Hiroshi Kondo | MD. Nguyen Ngoc Cuong Emergency IR for Hemorrhage Control - Prof. Hiroshi Kondo Endovascular management of splenic artery aneurysms - MD. Farah Gillan Irani Update on renal artery embolization for treatment of resistant hypertension in ESRD patients - A.Prof. Nguyen Xuan Hien" [ref=f12e484]':
+              - heading "EMBOLIZATION" [level=5] [ref=f12e485]
+              - paragraph [ref=f12e486]: "Chairman: Prof. Hiroshi Kondo | MD. Nguyen Ngoc Cuong"
+              - list [ref=f12e488]:
+                - listitem [ref=f12e489]:
+                  - text: Emergency IR for Hemorrhage Control
+                  - generic [ref=f12e490]: "- Prof. Hiroshi Kondo"
+                - listitem [ref=f12e491]:
+                  - text: Endovascular management of splenic artery aneurysms
+                  - generic [ref=f12e492]: "- MD. Farah Gillan Irani"
+                - listitem [ref=f12e493]:
+                  - text: Update on renal artery embolization for treatment of resistant hypertension in ESRD patients
+                  - generic [ref=f12e494]: "- A.Prof. Nguyen Xuan Hien"
+            - 'cell "PELVIC INTERVENTION Chairman: Assoc. Prof. Nguyen Xuan Hien | MD. Avi Beck | Assoc. Prof. Vo Tan Duc Uterine Artery Embolization for fibroids / adenomyosis / obstetrical scenarios - MD. Avi Beck Endovascular intervention for men''s problems - MD. Chun Yu Lin" [ref=f12e495]':
+              - heading "PELVIC INTERVENTION" [level=5] [ref=f12e496]
+              - paragraph [ref=f12e497]: "Chairman: Assoc. Prof. Nguyen Xuan Hien | MD. Avi Beck | Assoc. Prof. Vo Tan Duc"
+              - list [ref=f12e499]:
+                - listitem [ref=f12e500]:
+                  - text: Uterine Artery Embolization for fibroids / adenomyosis / obstetrical scenarios
+                  - generic [ref=f12e501]: "- MD. Avi Beck"
+                - listitem [ref=f12e502]:
+                  - text: Endovascular intervention for men's problems
+                  - generic [ref=f12e503]: "- MD. Chun Yu Lin"
+            - 'cell "STROKE Chairman: Assoc. Prof. Nguyen Huy Thang | Assoc. Prof. Vu Dang Luu | MD. Nguyen Duc Khang The optimal recanalisation therapy for acute ischemic stroke - Assoc. Prof. Nguyen Huy Thang An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital" [ref=f12e504]':
+              - heading "STROKE" [level=5] [ref=f12e505]
+              - paragraph [ref=f12e506]: "Chairman: Assoc. Prof. Nguyen Huy Thang | Assoc. Prof. Vu Dang Luu | MD. Nguyen Duc Khang"
+              - list [ref=f12e508]:
+                - listitem [ref=f12e509]:
+                  - text: The optimal recanalisation therapy for acute ischemic stroke
+                  - generic [ref=f12e510]: "- Assoc. Prof. Nguyen Huy Thang"
+                - listitem [ref=f12e511]: An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital
+          - row [ref=f12e512]:
+            - cell "18.30 - 21.30" [ref=f12e513]
+            - cell [ref=f12e514]:
+              - heading "WELCOME DINNER" [level=5] [ref=f12e515]
+  - generic [ref=f12e520]:
+    - generic [ref=f12e521]:
+      - heading "THÔNG TIN LIÊN HỆ" [level=3] [ref=f12e523]
+      - generic [ref=f12e524]:
+        - button "Tiếng Việt" [ref=f12e525] [cursor=pointer]
+        - button "English" [ref=f12e526] [cursor=pointer]
+    - generic [ref=f12e527]:
+      - generic [ref=f12e528]:
+        - paragraph [ref=f12e529]: "Vui lòng liên hệ với chúng tôi theo thông tin:"
+        - paragraph [ref=f12e530]: Mr. Lê Quang Nhật Tú
+        - generic [ref=f12e531]:
+          - link " Số điện thoại +84 772 649 011" [ref=f12e532] [cursor=pointer]:
+            - /url: tel:+84772649011
+            - generic [ref=f12e533]: 
+            - generic [ref=f12e535]:
+              - generic [ref=f12e536]: Số điện thoại
+              - text: +84 772 649 011
+          - link " Email sirhcm2024@gmail.com" [ref=f12e537] [cursor=pointer]:
+            - /url: mailto:sirhcm2024@gmail.com
+            - generic [ref=f12e538]: 
+            - generic [ref=f12e540]:
+              - generic [ref=f12e541]: Email
+              - text: sirhcm2024@gmail.com
+      - text:  
+  - generic [ref=f12e544]:
+    - generic [ref=f12e545]:
+      - generic [ref=f12e546]:
+        - heading "Địa điểm tổ chức" [level=2] [ref=f12e547]
+        - paragraph [ref=f12e548]: Venue
+      - generic [ref=f12e550]:
+        - text: "Địa chỉ:"
+        - paragraph [ref=f12e551]: Pullman Vũng tàu, Tp. Hồ Chí MinhViệt Nam
+    - iframe [ref=f12e554]
+  - contentinfo [ref=f12e555]:
+    - generic [ref=f12e559]:
+      - list [ref=f12e560]:
+        - listitem [ref=f12e561]:
+          - link "Home" [ref=f12e562] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test
+        - listitem [ref=f12e563]:
+          - link "SIRHCM 2026" [ref=f12e564] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/about
+        - listitem [ref=f12e565]:
+          - link "Program" [ref=f12e566] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/schedule
+        - listitem [ref=f12e567]:
+          - link "Faculty" [ref=f12e568] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/faculty
+        - listitem [ref=f12e569]:
+          - link "Registration" [ref=f12e570] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/registration
+        - listitem [ref=f12e571]:
+          - link "Travel Support" [ref=f12e572] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/travel-support
+        - listitem [ref=f12e573]:
+          - link "Sponsor" [ref=f12e574] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/sponsor
+        - listitem [ref=f12e575]:
+          - link "Blog" [ref=f12e576] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/blog
+        - listitem [ref=f12e577]:
+          - link "Contact" [ref=f12e578] [cursor=pointer]:
+            - /url: https://sir-hcmc2026.websitehoinghi.com.test/contact
+      - paragraph [ref=f12e580]: Copyright © SIRHCM 2026 | All rights reserved
