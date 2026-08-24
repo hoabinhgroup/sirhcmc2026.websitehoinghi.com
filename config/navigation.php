@@ -50,7 +50,8 @@ return [
             'label_en' => 'TRAVEL SUPPORT',
             'children' => [
                 ['route' => 'travel-support.vietnam-visa', 'label_vi' => 'Thị thực nhập cảnh', 'label_en' => 'Vietnam Visa'],
-                ['route' => 'travel-support.transportation', 'label_vi' => 'Transportation', 'label_en' => 'Di chuyển'],
+                ['route' => 'travel-support.transportation', 'label_vi' => 'Di chuyển', 'label_en' => 'Transportation'],
+                ['route' => 'travel-support.accommodation', 'label_vi' => 'Lưu trú', 'label_en' => 'Accommodation'],
             ],
             'active' => ['travel-support', 'travel-support.*'],
         ],

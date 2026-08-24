@@ -5,7 +5,7 @@
   @include('pages.home.partials.counter')
   @include('pages.home.partials.welcome_letter')
   @include('pages.home.partials.about')
-  {{-- @include('pages.home.partials.team_member') --}}
+  @include('pages.home.partials.team_member')
   {{-- @include('pages.home.partials.pricing') --}}
   {{-- @include('pages.home.partials.blog') --}}
   

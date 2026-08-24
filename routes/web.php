@@ -40,6 +40,7 @@ Route::get('/registration/abstract-submission/closed', [AbstractSubmissionContro
 Route::view('/travel-support', 'pages.travel-support.index')->name('travel-support');
 Route::view('/travel-support/vietnam-visa', 'pages.travel-support.vietnam-visa')->name('travel-support.vietnam-visa');
 Route::view('/travel-support/transportation', 'pages.travel-support.transportation')->name('travel-support.transportation');
+Route::view('/travel-support/accommodation', 'pages.travel-support.accommodation')->name('travel-support.accommodation');
 
 Route::view('/sponsor', 'pages.sponsor.index')->name('sponsor');
 

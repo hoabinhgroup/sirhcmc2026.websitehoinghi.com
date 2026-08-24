@@ -13,16 +13,22 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="about-text">
             <h3>Thị thực nhập cảnh</h3>
             <p><a href="{{ route('travel-support.vietnam-visa') }}" class="primary-btn">Vietnam Visa</a></p>
           </div>
         </div>
-        <div class="col-md-6 mb-4">
+        <div class="col-md-4 mb-4">
           <div class="about-text">
             <h3>Di chuyển</h3>
             <p><a href="{{ route('travel-support.transportation') }}" class="primary-btn">Transportation</a></p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="about-text">
+            <h3>Lưu trú</h3>
+            <p><a href="{{ route('travel-support.accommodation') }}" class="primary-btn">Accommodation</a></p>
           </div>
         </div>
       </div>
