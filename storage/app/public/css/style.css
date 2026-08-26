@@ -3867,7 +3867,7 @@ ol {
     }
 }
 
-/* ===== Faculty Slider (Home) - CSS continuous marquee ===== */
+/* ===== Faculty Slider (Home) - continuous marquee ===== */
 
 .faculty-slider-section {
     background: #f7f8fb;
@@ -3878,20 +3878,28 @@ ol {
 .faculty-marquee {
     width: 100%;
     overflow: hidden;
+    touch-action: pan-y;
     mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 4%, #000 96%, transparent);
 }
 
 .faculty-marquee-track {
     display: flex;
+    flex-wrap: nowrap;
     width: max-content;
     gap: 24px;
     will-change: transform;
     animation: faculty-marquee-scroll 60s linear infinite;
 }
 
-.faculty-marquee:hover .faculty-marquee-track {
-    animation-play-state: paused;
+.faculty-marquee.is-js .faculty-marquee-track {
+    animation: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .faculty-marquee:hover .faculty-marquee-track {
+        animation-play-state: paused;
+    }
 }
 
 @keyframes faculty-marquee-scroll {
@@ -3986,17 +3994,5 @@ ol {
 
     .faculty-slide-info h5 {
         font-size: 13px;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .faculty-marquee-track {
-        animation: none;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: center;
-        max-width: 1140px;
-        margin: 0 auto;
-        padding: 0 15px;
     }
 }
