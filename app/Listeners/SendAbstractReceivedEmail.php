@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Events\AbstractSubmissionNotification;
 use App\Services\RegistrationEmailService;
+use Throwable;
 
 class SendAbstractReceivedEmail
 {
@@ -13,6 +14,10 @@ class SendAbstractReceivedEmail
 
     public function handle(AbstractSubmissionNotification $event): void
     {
-        $this->emailService->sendAbstractReceived($event->submission);
+        try {
+            $this->emailService->sendAbstractReceived($event->submission);
+        } catch (Throwable $exception) {
+            report($exception);
+        }
     }
 }

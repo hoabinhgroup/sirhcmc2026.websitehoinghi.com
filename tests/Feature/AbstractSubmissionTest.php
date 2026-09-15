@@ -3,10 +3,12 @@
 namespace Tests\Feature;
 
 use App\Mail\AbstractReceivedMail;
+use App\Services\RegistrationEmailService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use RuntimeException;
 use Tests\TestCase;
 
 class AbstractSubmissionTest extends TestCase
@@ -56,7 +58,45 @@ class AbstractSubmissionTest extends TestCase
             'status' => 'submitted',
         ]);
 
-        Mail::assertSent(AbstractReceivedMail::class, 1);
+        Mail::assertSent(AbstractReceivedMail::class, function (AbstractReceivedMail $mail): bool {
+            return $mail->hasTo('abstract@example.com');
+        });
+    }
+
+    public function test_abstract_submission_succeeds_when_confirmation_email_fails(): void
+    {
+        Storage::fake('public');
+        config(['abstract.submission_deadline' => '2099-12-31 23:59:59']);
+
+        $this->mock(RegistrationEmailService::class, function ($mock): void {
+            $mock->shouldReceive('sendAbstractReceived')
+                ->once()
+                ->andThrow(new RuntimeException('SMTP failed'));
+        });
+
+        $response = $this->post(route('registration.abstract-submission.submit'), [
+            'scope' => 'domestic',
+            'abstract_category' => 'artificial_intelligence',
+            'title' => 'BS.',
+            'fullname' => 'Tran Van C',
+            'affiliation' => 'BV Cho Ray',
+            'day' => 1,
+            'month' => 1,
+            'year' => 1985,
+            'citizen_id' => '123456789012',
+            'phone' => '0901234567',
+            'email' => 'abstract-fail@example.com',
+            'abstract_file' => UploadedFile::fake()->create('abstract.pdf', 100, 'application/pdf'),
+            'cv_file' => UploadedFile::fake()->create('cv.pdf', 100, 'application/pdf'),
+            'headshot_file' => UploadedFile::fake()->create('photo.jpg', 100, 'image/jpeg'),
+            'degree_file' => UploadedFile::fake()->create('degree.pdf', 100, 'application/pdf'),
+        ]);
+
+        $response->assertOk();
+        $this->assertDatabaseHas('abstract_submissions', [
+            'email' => 'abstract-fail@example.com',
+            'status' => 'submitted',
+        ]);
     }
 
     public function test_abstract_closed_when_deadline_passed(): void

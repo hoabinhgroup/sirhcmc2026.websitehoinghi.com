@@ -3,13 +3,13 @@
 namespace Tests\Feature;
 
 use App\Enums\PaymentMethod;
-use App\Mail\AbstractReceivedMail;
 use App\Mail\RegistrationTemplateMail;
-use App\Models\AbstractSubmission;
+use App\Services\RegistrationEmailService;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use RuntimeException;
 use Tests\TestCase;
 
 class RegistrationSubmitTest extends TestCase
@@ -64,7 +64,44 @@ class RegistrationSubmitTest extends TestCase
             'base_fee' => 1000000,
         ]);
 
-        Mail::assertSent(RegistrationTemplateMail::class, 1);
+        Mail::assertSent(RegistrationTemplateMail::class, function (RegistrationTemplateMail $mail): bool {
+            return $mail->hasTo('test@example.com')
+                && $mail->templateKey === 'bank_transfer';
+        });
+    }
+
+    public function test_registration_succeeds_when_confirmation_email_fails(): void
+    {
+        Storage::fake('local');
+
+        $this->mock(RegistrationEmailService::class, function ($mock): void {
+            $mock->shouldReceive('send')
+                ->once()
+                ->andThrow(new RuntimeException('SMTP failed'));
+        });
+
+        $response = $this->post(route('registration.submit'), [
+            'scope' => 'domestic',
+            'title' => 'BS.',
+            'fullname' => 'Nguyen Van A',
+            'affiliation' => 'BV Cho Ray',
+            'position' => 'BS',
+            'day' => 1,
+            'month' => 1,
+            'year' => 1990,
+            'phone' => '0901234567',
+            'email' => 'fail@example.com',
+            'degree_file' => UploadedFile::fake()->create('degree.pdf', 100, 'application/pdf'),
+            'conference_checklist_item' => 'physician',
+            'payment_method' => 'bank-transfer',
+            'country' => 'VN',
+        ]);
+
+        $response->assertOk();
+        $this->assertDatabaseHas('registrations', [
+            'email' => 'fail@example.com',
+            'guest_code' => 'SIRHCM26-R0001',
+        ]);
     }
 
     public function test_fee_waiver_registration_skips_payment(): void
@@ -97,7 +134,10 @@ class RegistrationSubmitTest extends TestCase
             'payment_method' => null,
         ]);
 
-        Mail::assertSent(RegistrationTemplateMail::class, 1);
+        Mail::assertSent(RegistrationTemplateMail::class, function (RegistrationTemplateMail $mail): bool {
+            return $mail->hasTo('waiver@example.com')
+                && $mail->templateKey === 'fee_waived';
+        });
     }
 
     public function test_closed_page_when_deadline_passed(): void

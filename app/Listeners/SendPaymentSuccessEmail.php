@@ -4,6 +4,7 @@ namespace App\Listeners;
 
 use App\Events\PaymentSuccessNotification;
 use App\Services\RegistrationEmailService;
+use Throwable;
 
 class SendPaymentSuccessEmail
 {
@@ -13,6 +14,10 @@ class SendPaymentSuccessEmail
 
     public function handle(PaymentSuccessNotification $event): void
     {
-        $this->emailService->sendPaymentSuccess($event->registration);
+        try {
+            $this->emailService->sendPaymentSuccess($event->registration);
+        } catch (Throwable $exception) {
+            report($exception);
+        }
     }
 }

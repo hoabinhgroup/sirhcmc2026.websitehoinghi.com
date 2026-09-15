@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AbstractSubmissionController;
 use App\Http\Controllers\ContactLeadController;
+use App\Http\Controllers\MailPreviewController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\RegistrationFileController;
 use Illuminate\Support\Facades\Route;
@@ -52,3 +53,5 @@ Route::get('/blog/{slug}', function (string $slug) {
 
 Route::view('/contact', 'pages.contact.index')->name('contact');
 Route::post('/contact-lead', [ContactLeadController::class, 'store'])->name('contact-lead.store');
+
+Route::get('/dev/mail-preview', MailPreviewController::class)->name('dev.mail-preview');
