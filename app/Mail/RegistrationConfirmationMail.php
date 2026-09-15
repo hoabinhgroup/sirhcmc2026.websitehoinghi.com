@@ -5,14 +5,13 @@ namespace App\Mail;
 use App\Models\Registration;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class RegistrationConfirmationMail extends Mailable
 {
-    use Queueable, SerializesModels;
+    use Queueable, SerializesModels, UsesConferenceMailEnvelope;
 
     /**
      * @param  array<string, mixed>  $bank
@@ -29,22 +28,7 @@ class RegistrationConfirmationMail extends Mailable
 
     public function envelope(): Envelope
     {
-        $cc = collect(config('registration.email.cc', []))
-            ->filter(fn (array $item): bool => ! empty($item[0]))
-            ->map(fn (array $item): Address => new Address($item[0], $item[1] ?? null))
-            ->all();
-
-        return new Envelope(
-            from: new Address(
-                config('registration.email.from_email'),
-                config('registration.email.from_name'),
-            ),
-            replyTo: [
-                new Address(config('registration.email.reply_to')),
-            ],
-            cc: $cc,
-            subject: $this->registration->email_subject,
-        );
+        return $this->conferenceEnvelope($this->registration->email_subject);
     }
 
     public function content(): Content

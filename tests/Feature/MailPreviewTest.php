@@ -17,5 +17,7 @@ class MailPreviewTest extends TestCase
         $response->assertSee('Xác nhận đăng ký & hướng dẫn chuyển khoản SIRHCM 2026');
         $response->assertSee('Trần Thị B');
         $response->assertSee('Nguyễn Văn A');
+        $response->assertSee('dh.qt2@hoabinh-group.com');
+        $response->assertSee('minhphamquang028@gmail.com');
     }
 }

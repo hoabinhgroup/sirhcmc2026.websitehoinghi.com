@@ -118,6 +118,7 @@ class RegistrationEmailService
             'subject' => $subject,
             'reply_to' => config('registration.email.reply_to'),
             'addCC' => config('registration.email.cc'),
+            'addBCC' => config('registration.email.bcc'),
             'template' => $html,
         ]);
     }

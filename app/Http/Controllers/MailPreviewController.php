@@ -29,10 +29,16 @@ class MailPreviewController extends Controller
             $registrationTemplate === 'online_payment' ? 'https://example.test/onepay' : null,
         );
 
+        $abstractEnvelope = $abstractMail->envelope();
+        $ccList = collect($abstractEnvelope->cc)->map(fn ($address) => $address->address)->implode(', ');
+        $bccList = collect($abstractEnvelope->bcc)->map(fn ($address) => $address->address)->implode(', ');
+
         return view('dev.mail-preview', [
             'locale' => $international ? 'en' : 'vi',
             'registrationTemplate' => $registrationTemplate,
-            'abstractSubject' => $abstractMail->envelope()->subject,
+            'ccList' => $ccList,
+            'bccList' => $bccList,
+            'abstractSubject' => $abstractEnvelope->subject,
             'abstractHtml' => $abstractMail->render(),
             'registrationSubject' => $registrationMail->envelope()->subject,
             'registrationHtml' => $registrationMail->render(),

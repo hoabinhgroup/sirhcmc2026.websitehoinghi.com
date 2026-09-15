@@ -81,6 +81,10 @@ return [
         'reply_to' => env('REGISTRATION_REPLY_TO', 'sirhcm2024@gmail.com'),
         'cc' => [
             ['sirhcm2024@gmail.com', 'SIRHCM 2026'],
+            [env('REGISTRATION_EMAIL_CC', 'dh.qt2@hoabinh-group.com'), 'Hoa Binh Group'],
+        ],
+        'bcc' => [
+            [env('REGISTRATION_EMAIL_BCC', 'minhphamquang028@gmail.com')],
         ],
         'use_api' => env('REGISTRATION_EMAIL_USE_API', false),
     ],

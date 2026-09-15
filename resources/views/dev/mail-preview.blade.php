@@ -39,6 +39,8 @@
       <div class="meta">
         <div><strong>Mail</strong> Nộp abstract thành công</div>
         <div><strong>To</strong> {{ $locale === 'en' ? 'jane.doe@example.com' : 'tranthib@example.com' }}</div>
+        <div><strong>Cc</strong> {{ $ccList }}</div>
+        <div><strong>Bcc</strong> {{ $bccList }}</div>
         <div><strong>Subject</strong> {{ $abstractSubject }}</div>
       </div>
       <div class="frame">
@@ -50,6 +52,8 @@
       <div class="meta">
         <div><strong>Mail</strong> Đăng ký thành công</div>
         <div><strong>To</strong> {{ $locale === 'en' ? 'john.smith@example.com' : 'nguyenvana@example.com' }}</div>
+        <div><strong>Cc</strong> {{ $ccList }}</div>
+        <div><strong>Bcc</strong> {{ $bccList }}</div>
         <div><strong>Subject</strong> {{ $registrationSubject }}</div>
       </div>
       <div class="frame">

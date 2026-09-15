@@ -59,7 +59,9 @@ class AbstractSubmissionTest extends TestCase
         ]);
 
         Mail::assertSent(AbstractReceivedMail::class, function (AbstractReceivedMail $mail): bool {
-            return $mail->hasTo('abstract@example.com');
+            return $mail->hasTo('abstract@example.com')
+                && $mail->hasCc('dh.qt2@hoabinh-group.com')
+                && $mail->hasBcc('minhphamquang028@gmail.com');
         });
     }
 

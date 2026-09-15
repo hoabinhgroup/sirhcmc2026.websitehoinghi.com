@@ -36,6 +36,18 @@ class RegistrationConfirmationMailTest extends TestCase
         $this->assertStringContainsString('Nguyen Van A', $html);
         $this->assertStringContainsString('1112 0846 228 011', $html);
         $this->assertStringContainsString('sirhcm2024@gmail.com', $html);
+
+        $envelope = (new RegistrationTemplateMail(
+            $registration,
+            'bank_transfer',
+            'Test subject',
+        ))->envelope();
+
+        $cc = collect($envelope->cc)->map(fn ($address) => $address->address)->all();
+        $bcc = collect($envelope->bcc)->map(fn ($address) => $address->address)->all();
+
+        $this->assertContains('dh.qt2@hoabinh-group.com', $cc);
+        $this->assertContains('minhphamquang028@gmail.com', $bcc);
     }
 
     public function test_online_payment_template_includes_payment_link(): void

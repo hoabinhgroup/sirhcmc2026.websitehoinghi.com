@@ -66,7 +66,9 @@ class RegistrationSubmitTest extends TestCase
 
         Mail::assertSent(RegistrationTemplateMail::class, function (RegistrationTemplateMail $mail): bool {
             return $mail->hasTo('test@example.com')
-                && $mail->templateKey === 'bank_transfer';
+                && $mail->templateKey === 'bank_transfer'
+                && $mail->hasCc('dh.qt2@hoabinh-group.com')
+                && $mail->hasBcc('minhphamquang028@gmail.com');
         });
     }
 
@@ -136,7 +138,9 @@ class RegistrationSubmitTest extends TestCase
 
         Mail::assertSent(RegistrationTemplateMail::class, function (RegistrationTemplateMail $mail): bool {
             return $mail->hasTo('waiver@example.com')
-                && $mail->templateKey === 'fee_waived';
+                && $mail->templateKey === 'fee_waived'
+                && $mail->hasCc('dh.qt2@hoabinh-group.com')
+                && $mail->hasBcc('minhphamquang028@gmail.com');
         });
     }
 

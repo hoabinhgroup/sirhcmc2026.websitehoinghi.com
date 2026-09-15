@@ -5,14 +5,13 @@ namespace App\Mail;
 use App\Models\AbstractSubmission;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Address;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
 class AbstractResultMail extends Mailable
 {
-    use Queueable, SerializesModels;
+    use Queueable, SerializesModels, UsesConferenceMailEnvelope;
 
     public function __construct(
         public AbstractSubmission $submission,
@@ -21,16 +20,7 @@ class AbstractResultMail extends Mailable
 
     public function envelope(): Envelope
     {
-        return new Envelope(
-            from: new Address(
-                config('registration.email.from_email'),
-                config('registration.email.from_name'),
-            ),
-            replyTo: [
-                new Address(config('registration.email.reply_to')),
-            ],
-            subject: $this->resolveSubjectLine(),
-        );
+        return $this->conferenceEnvelope($this->resolveSubjectLine());
     }
 
     public function content(): Content
