@@ -231,30 +231,19 @@
             <h3>{{ $isInternational ? 'Payment method' : 'Phương thức thanh toán / Payment method' }}</h3>
             <div class="payment-method-group">
               <label class="radio-inline d-block mb-2">
-                <input type="radio" name="payment_method" value="onepay" @checked(old('payment_method') == 'onepay')>
-                <span>{{ $isInternational ? 'Online Payment (OnePay, +6% transaction fee)' : 'Thanh toán online OnePay (cộng thêm 6% phí giao dịch)' }}</span>
-              </label>
-              <label class="radio-inline d-block">
                 <input type="radio" name="payment_method" value="bank-transfer" id="payment_bank_transfer" @checked(old('payment_method', 'bank-transfer') == 'bank-transfer')>
                 <span>{{ $isInternational ? 'Wire/Bank Transfer' : 'Chuyển khoản ngân hàng / Bank transfer' }}</span>
               </label>
+              <label class="radio-inline d-block">
+                <input type="radio" name="payment_method" value="onepay" @checked(old('payment_method') == 'onepay')>
+                <span>{{ $isInternational ? 'Online Payment (OnePay, +6% transaction fee)' : 'Thanh toán online OnePay (cộng thêm 6% phí giao dịch)' }}</span>
+              </label>
             </div>
 
-            <div id="bank-transfer-note" class="note-box">
-              <p><strong>{{ $isInternational ? 'Bank transfer details:' : 'Thông tin chuyển khoản:' }}</strong></p>
-              <p>{{ $isInternational ? 'Account name' : 'Tên tài khoản' }}: {{ $bank['account_name'] }}</p>
-              <p>{{ $isInternational ? 'Account number' : 'Số tài khoản' }}: {{ $bank['account_number'] ?: '—' }}</p>
-              <p>{{ $isInternational ? 'Bank' : 'Ngân hàng' }}: {{ $bank['bank_name'] }}</p>
-              @if ($bank['swift'])
-                <p>SWIFT: {{ $bank['swift'] }}</p>
-              @endif
-              @if (!empty($bank['bank_code']))
-                <p>{{ $isInternational ? 'Bank code' : 'Mã ngân hàng' }}: {{ $bank['bank_code'] }}</p>
-              @endif
-              <p>{{ $isInternational ? 'Transfer content' : 'Nội dung chuyển khoản' }}: <em>{Full name} – {Registration ID} | SIRHCM2026</em></p>
-
-              <b>{{ $isInternational ? 'Please send the screenshot of the bank transfer receipt to the email: sirhcm2024@gmail.com' : 'Quý đại biểu vui lòng gửi ảnh chụp sao kê đến email: sirhcm2024@gmail.com' }}</b>
-            </div>
+            @include('pages.registration.partials.bank-transfer-note', [
+              'isInternational' => $isInternational,
+              'bank' => $bank,
+            ])
           </div>
 
           @if ($recaptchaSiteKey)
