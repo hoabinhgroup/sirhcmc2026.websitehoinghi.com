@@ -231,11 +231,11 @@
             <h3>{{ $isInternational ? 'Payment method' : 'Phương thức thanh toán / Payment method' }}</h3>
             <div class="payment-method-group">
               <label class="radio-inline d-block mb-2">
-                <input type="radio" name="payment_method" value="onepay" @checked(old('payment_method', 'onepay') == 'onepay')>
+                <input type="radio" name="payment_method" value="onepay" @checked(old('payment_method') == 'onepay')>
                 <span>{{ $isInternational ? 'Online Payment (OnePay, +6% transaction fee)' : 'Thanh toán online OnePay (cộng thêm 6% phí giao dịch)' }}</span>
               </label>
               <label class="radio-inline d-block">
-                <input type="radio" name="payment_method" value="bank-transfer" id="payment_bank_transfer" @checked(old('payment_method') == 'bank-transfer')>
+                <input type="radio" name="payment_method" value="bank-transfer" id="payment_bank_transfer" @checked(old('payment_method', 'bank-transfer') == 'bank-transfer')>
                 <span>{{ $isInternational ? 'Wire/Bank Transfer' : 'Chuyển khoản ngân hàng / Bank transfer' }}</span>
               </label>
             </div>
