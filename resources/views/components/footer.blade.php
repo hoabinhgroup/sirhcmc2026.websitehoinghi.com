@@ -18,7 +18,13 @@
             </div> --}}
             <ul>
               @foreach ($footerMenu as $item)
-                <li><a href="{{ route($item['route']) }}">{{ $item['label'] }}</a></li>
+                <li>
+                  @if (! empty($item['url']))
+                    <a href="{{ $item['url'] }}" @if (! empty($item['external'])) target="_blank" rel="noopener noreferrer" @endif>{{ $item['label'] }}</a>
+                  @else
+                    <a href="{{ route($item['route']) }}">{{ $item['label'] }}</a>
+                  @endif
+                </li>
               @endforeach
             </ul>
             <div class="copyright-text">

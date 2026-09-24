@@ -6,7 +6,8 @@ return [
     | Header main navigation
     |--------------------------------------------------------------------------
     |
-    | route: tên route Laravel (bắt buộc nếu không có children — link menu chính).
+    | route: tên route Laravel (link nội bộ — dùng nếu không có url).
+    | url: URL tuyệt đối (link ngoài — ưu tiên hơn route; nên mở tab mới).
     | active: tuỳ chọn — mảng pattern tên route cho request()->routeIs(...) (OR).
     |        Dùng * cho nhánh con: about.* khớp about.organizing-committee, không khớp route trang cha nếu trang cha không tồn tại.
     | children: mục cha không cần route — chỉ dùng để hiển thị dropdown; route nằm ở từng phần tử con.
@@ -17,6 +18,12 @@ return [
             'route' => 'home',
             'label_vi' => 'Trang chủ',
             'label_en' => 'Home',
+        ],
+        [
+            'url' => 'https://sirhcm.vn',
+            'label_vi' => 'Hội SIRHCM',
+            'label_en' => 'SIRHCM Society',
+            'external' => true,
         ],
         [
             'label_vi' => 'SIRHCM 2026',
@@ -70,6 +77,7 @@ return [
     */
     'footer' => [
         ['route' => 'home', 'label' => 'Home'],
+        ['url' => 'https://sirhcm.vn', 'label' => 'SIRHCM Society', 'external' => true],
         ['route' => 'about', 'label' => 'SIRHCM 2026'],
         ['route' => 'schedule', 'label' => 'Program'],
         ['route' => 'faculty', 'label' => 'Faculty'],

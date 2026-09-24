@@ -16,6 +16,11 @@
                     <div class="nav-link-text-vietnamese">{{ $item['label_vi'] }}</div>
                     <div class="nav-link-text-english">{{ $item['label_en'] }}</div>
                   </a>
+                @elseif (! empty($item['url']))
+                  <a class="nav-link" href="{{ $item['url'] }}" @if (! empty($item['external'])) target="_blank" rel="noopener noreferrer" @endif>
+                    <div class="nav-link-text-vietnamese">{{ $item['label_vi'] }}</div>
+                    <div class="nav-link-text-english">{{ $item['label_en'] }}</div>
+                  </a>
                 @else
                   <a class="nav-link" href="{{ route($item['route']) }}">
                     <div class="nav-link-text-vietnamese">{{ $item['label_vi'] }}</div>
