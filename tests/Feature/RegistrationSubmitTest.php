@@ -36,6 +36,7 @@ class RegistrationSubmitTest extends TestCase
     {
         Mail::fake();
         Storage::fake('local');
+        config(['registration.early_deadline' => now()->addMonth()->toDateString()]);
 
         $response = $this->post(route('registration.submit'), [
             'scope' => 'domestic',

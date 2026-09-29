@@ -594,8 +594,7 @@ ol {
 }
 
 .wl-pic img {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top center;
@@ -1869,11 +1868,11 @@ ol {
 }
 
 .oc-card-pic img {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     aspect-ratio: 3 / 4;
     -o-object-fit: cover;
     object-fit: cover;
+    object-position: top center;
     display: block;
 }
 
