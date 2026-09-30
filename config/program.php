@@ -506,7 +506,7 @@ return [
         [
             'label' => 'Day 2',
             'date' => '17th October',
-            'rooms' => ['Ballroom 1', 'Ballroom 2', 'Ballroom 3'],
+            'rooms' => ['Ha Noi', 'Da Nang', 'Sai Gon'],
             'rows' => [
                 [
                     'time' => '08.00 - 09.30',
