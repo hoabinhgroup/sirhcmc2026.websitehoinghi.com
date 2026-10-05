@@ -57,12 +57,6 @@ return [
             'affiliation_en' => '',
         ],
         [
-            'name' => 'Dr. Hou Kuei Yuan',
-            'image' => 'img/speakers/10. Hou Kuei Yuan.png',
-            'affiliation_vi' => '',
-            'affiliation_en' => '',
-        ],
-        [
             'name' => 'Dr. Michel Wassef',
             'image' => 'img/speakers/11. Michel Wassef.png',
             'affiliation_vi' => '',
@@ -71,12 +65,6 @@ return [
         [
             'name' => 'Dr. Joseph Gemmete',
             'image' => 'img/speakers/12. Joseph Gemmete.png',
-            'affiliation_vi' => '',
-            'affiliation_en' => '',
-        ],
-        [
-            'name' => 'Dr. Linzi Webster',
-            'image' => 'img/speakers/13. Linzi Webster.png',
             'affiliation_vi' => '',
             'affiliation_en' => '',
         ],
