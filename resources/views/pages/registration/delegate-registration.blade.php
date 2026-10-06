@@ -157,6 +157,10 @@
               <label for="degree_file" class="button-vietnam">{{ $isInternational ? 'Upload file' : 'Tải file / Upload' }}</label>
               <input type="file" id="degree_file" name="degree_file" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" required>
               <span id="degree_file_name" class="file-name"></span>
+              <span id="degree_file_error" class="text-danger d-block mt-1" style="display:none">
+                {{ $isInternational ? 'Please upload your degree/certificate file.' : 'Vui lòng tải lên bằng cấp / chứng chỉ.' }}
+              </span>
+              @error('degree_file')<span class="text-danger d-block mt-1">{{ $message }}</span>@enderror
             </div>
           </div>
 
@@ -332,18 +336,38 @@
         if (!radio.checked) input.value = '';
       }
 
-      function bindFileLabel(inputId, nameId) {
+      function bindFileLabel(inputId, nameId, errorId) {
         const input = document.getElementById(inputId);
         const nameEl = document.getElementById(nameId);
+        const errorEl = errorId ? document.getElementById(errorId) : null;
         if (!input || !nameEl) return;
         input.addEventListener('change', function () {
           nameEl.textContent = input.files.length ? input.files[0].name : '';
+          if (errorEl && input.files.length > 0) {
+            errorEl.style.display = 'none';
+          }
         });
       }
 
       function toggleBankNote() {
         if (!bankNote) return;
         bankNote.style.display = bankTransferRadio && bankTransferRadio.checked ? 'block' : 'none';
+      }
+
+      const regForm = document.getElementById('payment-registration');
+      if (regForm) {
+        regForm.addEventListener('submit', function (e) {
+          const degreeInput = document.getElementById('degree_file');
+          const degreeError = document.getElementById('degree_file_error');
+          if (degreeInput && degreeInput.required && (!degreeInput.files || degreeInput.files.length === 0)) {
+            e.preventDefault();
+            if (degreeError) {
+              degreeError.style.display = 'block';
+            }
+            degreeInput.closest('.form-group')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            return false;
+          }
+        });
       }
 
       document.querySelectorAll('.fee-radio, #galadinner_fee, input[name="payment_method"]').forEach(function (el) {
@@ -363,7 +387,7 @@
         });
       });
 
-      bindFileLabel('degree_file', 'degree_file_name');
+      bindFileLabel('degree_file', 'degree_file_name', 'degree_file_error');
       toggleTitleOther();
       toggleOtherInput(dietaryOtherRadio, dietaryOther);
       toggleBankNote();

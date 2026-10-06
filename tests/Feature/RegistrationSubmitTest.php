@@ -145,6 +145,26 @@ class RegistrationSubmitTest extends TestCase
         });
     }
 
+    public function test_submitting_without_degree_file_fails_validation(): void
+    {
+        $response = $this->post(route('registration.submit'), [
+            'scope' => 'international',
+            'title' => 'Prof.',
+            'fullname' => 'John Doe',
+            'affiliation' => 'Harvard University',
+            'country' => 'United States',
+            'day' => 15,
+            'month' => 6,
+            'year' => 1985,
+            'phone' => '+123456789',
+            'email' => 'johndoe@example.com',
+            'conference_checklist_item' => 'physician',
+            'payment_method' => 'bank-transfer',
+        ]);
+
+        $response->assertSessionHasErrors(['degree_file' => 'Please upload your degree/certificate file.']);
+    }
+
     public function test_closed_page_when_deadline_passed(): void
     {
         config(['registration.registration_deadline' => '2020-01-01 00:00:00']);

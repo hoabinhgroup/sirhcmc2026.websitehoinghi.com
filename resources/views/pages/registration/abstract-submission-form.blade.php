@@ -151,6 +151,9 @@
                 <label for="abstract_file" class="button-vietnam">{{ $isInternational ? 'Upload file' : 'Tải file / Upload' }}</label>
                 <input type="file" id="abstract_file" name="abstract_file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
                 <span id="abstract_file_name" class="file-name"></span>
+                <span id="abstract_file_error" class="text-danger d-block mt-1" style="display:none">
+                  {{ $isInternational ? 'Please upload your abstract file.' : 'Vui lòng tải lên bài báo cáo tóm tắt.' }}
+                </span>
                 @error('abstract_file')<span class="text-danger d-block">{{ $message }}</span>@enderror
               </div>
             </div>
@@ -161,6 +164,9 @@
                 <label for="cv_file" class="button-vietnam">{{ $isInternational ? 'Upload file' : 'Tải file / Upload' }}</label>
                 <input type="file" id="cv_file" name="cv_file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
                 <span id="cv_file_name" class="file-name"></span>
+                <span id="cv_file_error" class="text-danger d-block mt-1" style="display:none">
+                  {{ $isInternational ? 'Please upload your CV.' : 'Vui lòng tải lên CV.' }}
+                </span>
                 @error('cv_file')<span class="text-danger d-block">{{ $message }}</span>@enderror
               </div>
             </div>
@@ -171,6 +177,9 @@
                 <label for="headshot_file" class="button-vietnam">{{ $isInternational ? 'Upload image' : 'Tải ảnh / Upload' }}</label>
                 <input type="file" id="headshot_file" name="headshot_file" accept=".jpg,.jpeg,.png" required>
                 <span id="headshot_file_name" class="file-name"></span>
+                <span id="headshot_file_error" class="text-danger d-block mt-1" style="display:none">
+                  {{ $isInternational ? 'Please upload your headshot image.' : 'Vui lòng tải lên ảnh chân dung.' }}
+                </span>
                 @error('headshot_file')<span class="text-danger d-block">{{ $message }}</span>@enderror
               </div>
             </div>
@@ -182,6 +191,9 @@
                   <label for="degree_file" class="button-vietnam">Tải file / Upload</label>
                   <input type="file" id="degree_file" name="degree_file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png" required>
                   <span id="degree_file_name" class="file-name"></span>
+                  <span id="degree_file_error" class="text-danger d-block mt-1" style="display:none">
+                    Vui lòng tải lên bằng cấp phục vụ CME.
+                  </span>
                   @error('degree_file')<span class="text-danger d-block">{{ $message }}</span>@enderror
                 </div>
               </div>
@@ -238,18 +250,50 @@
       });
     });
 
-    function bindFileLabel(inputId, nameId) {
+    function bindFileLabel(inputId, nameId, errorId) {
       const input = document.getElementById(inputId);
       const nameEl = document.getElementById(nameId);
-      if (!input || !nameEl) return;
+      const errorEl = errorId ? document.getElementById(errorId) : null;
+      if (!input) return;
       input.addEventListener('change', function () {
-        nameEl.textContent = input.files.length ? input.files[0].name : '';
+        if (nameEl) {
+          nameEl.textContent = input.files.length ? input.files[0].name : '';
+        }
+        if (errorEl && input.files.length > 0) {
+          errorEl.style.display = 'none';
+        }
       });
     }
 
-    bindFileLabel('abstract_file', 'abstract_file_name');
-    bindFileLabel('cv_file', 'cv_file_name');
-    bindFileLabel('headshot_file', 'headshot_file_name');
-    bindFileLabel('degree_file', 'degree_file_name');
+    bindFileLabel('abstract_file', 'abstract_file_name', 'abstract_file_error');
+    bindFileLabel('cv_file', 'cv_file_name', 'cv_file_error');
+    bindFileLabel('headshot_file', 'headshot_file_name', 'headshot_file_error');
+    bindFileLabel('degree_file', 'degree_file_name', 'degree_file_error');
+
+    const abstractForm = document.querySelector('.registration-form form');
+    if (abstractForm) {
+      abstractForm.addEventListener('submit', function (e) {
+        const fileFields = [
+          { id: 'abstract_file', errorId: 'abstract_file_error' },
+          { id: 'cv_file', errorId: 'cv_file_error' },
+          { id: 'headshot_file', errorId: 'headshot_file_error' },
+          { id: 'degree_file', errorId: 'degree_file_error' },
+        ];
+        let firstInvalid = null;
+        for (const field of fileFields) {
+          const input = document.getElementById(field.id);
+          const errorEl = document.getElementById(field.errorId);
+          if (input && input.required && (!input.files || input.files.length === 0)) {
+            if (errorEl) errorEl.style.display = 'block';
+            if (!firstInvalid) firstInvalid = input;
+          }
+        }
+        if (firstInvalid) {
+          e.preventDefault();
+          firstInvalid.closest('.form-group')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return false;
+        }
+      });
+    }
   </script>
 @endpush
