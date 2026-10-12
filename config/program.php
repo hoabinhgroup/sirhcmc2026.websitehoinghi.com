@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Chương trình hội nghị (nguồn: Agenda details - SIRHCM 2026 Updated 24Sep.xlsx)
+| Chương trình hội nghị (nguồn: Agenda details - SIRHCM 2026 Updated 24Sep (4).xlsx)
 |--------------------------------------------------------------------------
 |
 | rows[].type: sessions (3 phòng), lunch (3 phòng), shared (gộp 3 phòng), break, dinner.
@@ -205,7 +205,7 @@ return [
                                 [
                                     'time' => '13:40 - 14:00',
                                     'title' => 'Percutaneous intra-abdominal and retroperitoneal foreign body removal',
-                                    'speaker' => 'Nguyen Thai Binh, MD',
+                                    'speaker' => 'Assoc. Prof. Nguyen Thai Binh',
                                     'break' => false,
                                 ],
                                 [
@@ -223,46 +223,52 @@ return [
                             ],
                         ],
                         [
-                            'title' => 'HCC',
+                            'title' => 'Pelvic Intervention',
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Prof. Mai Trong Khoa', 'Assoc. Prof. Le Thanh Dung', 'Amanda Rigas, MD'],
+                                    'names' => ['Assoc. Prof. Nguyen Xuan Hien', 'Assoc. Prof. Kittipitch Bannangkoon, MD'],
                                 ],
                             ],
                             'items' => [
                                 [
                                     'time' => '13:00 - 13:15',
-                                    'title' => 'HCC 2026: Key Updates Every Interventional Radiologist Should Know',
-                                    'speaker' => 'Amanda Rigas, MD',
+                                    'title' => 'Uterine Artery Embolization for fibroids/ adenomyosis/ obstetrical scenarios',
+                                    'speaker' => 'Avi Beck, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:15 - 13:30',
-                                    'title' => 'The Interventionalist\'s Third Eye: Cone-Beam CT in the Era of Superselective TACE for HCC',
-                                    'speaker' => 'Assoc. Prof. Kittipitch Bannangkoon',
+                                    'title' => 'Endovascular intervention for men’s problems',
+                                    'speaker' => 'Chun Yu Lin, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:30 - 13:45',
-                                    'title' => 'Radiation segmentectomy using Y90',
-                                    'speaker' => 'Farah Gillan Irani, MD',
+                                    'title' => 'Pelvic Vein Embolization for Pelvic Congestion Syndrome at Quang Tri General Hospital',
+                                    'speaker' => 'Tran Minh Son, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:45 - 14:00',
-                                    'title' => 'Intra-arterial Therapies for HCC in the Era of Systemic Therapies: Evolving Strategies and Techniques',
-                                    'speaker' => 'Nguyen Duy Anh, MD',
+                                    'title' => 'Tips and Trick embolization in pelvic congestion syndrome',
+                                    'speaker' => 'Assoc. Prof. Nguyen Xuan Hien',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:00 - 14:15',
-                                    'title' => 'Optimizing the treatment of intermediate-stage hepatocellular carcinoma through the combination of TACE and systemic therapy',
-                                    'speaker' => 'Vo Ngoc Huan, MD',
+                                    'title' => 'Efficacy evaluation of endovascular intervention in the treatment of benign prostatic hyperplasia',
+                                    'speaker' => 'Thi Van Gung, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:15 - 14:30',
+                                    'title' => 'Microwave Ablation for Uterine Fibroids: From Patient Selection to Technical Optimization',
+                                    'speaker' => 'Nguyen Duc Tinh, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => null,
                                     'title' => 'Discussion',
                                     'speaker' => null,
                                     'break' => true,
@@ -270,74 +276,62 @@ return [
                             ],
                         ],
                         [
-                            'title' => 'Oral Presentation (English - Contest)',
+                            'title' => 'Stroke',
                             'roles' => [
                                 [
-                                    'label' => 'Judges',
-                                    'names' => ['Avi Beck, MD', 'Prof. Nicolas Stacoffe', 'Diamanto Rigas, MD'],
+                                    'label' => 'Chairs',
+                                    'names' => ['Assoc. Prof. Pham Minh Thong', 'Assoc. Prof. Nguyen Huy Thang', 'Nguyen Duc Khang, MD'],
                                 ],
                             ],
                             'items' => [
                                 [
-                                    'time' => '13:00 - 13:10',
-                                    'title' => 'Endovascular treatment of cerebral aneurysms using intrasaccular flow disruptors (WEB, LUNA...)',
+                                    'time' => '13:00 - 13:15',
+                                    'title' => 'Advanced Tips and Tricks for the Management of Complex Thrombectomy',
+                                    'speaker' => 'Joseph Gammete, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '13:15 - 13:30',
+                                    'title' => 'The optimal recanalisation therapy for acute ischemic stroke',
+                                    'speaker' => 'Assoc. Prof. Nguyen Huy Thang',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '13:30 - 13:45',
+                                    'title' => 'Endovascular thrombectomy for acute ischemic stroke: Updates from the 2026 AHA/ASA Guidelines',
                                     'speaker' => 'Nguyen Huynh Nhat Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '13:10 - 13:20',
-                                    'title' => 'Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital',
-                                    'speaker' => 'Le Van Khoa, MD',
+                                    'time' => '13:45 - 14:00',
+                                    'title' => 'An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital',
+                                    'speaker' => 'Tran Duc Hai, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '13:20 - 13:30',
-                                    'title' => 'Embolization of a left ventricular apical aneurysm: A case report',
-                                    'speaker' => 'Nguyen Thai Binh, MD',
+                                    'time' => '14:00 - 14:15',
+                                    'title' => 'Updates on endovascular strategies for the treatment of chronic intracranial arterial stenosis',
+                                    'speaker' => 'Pham Dang Tu, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '13:30 - 13:40',
-                                    'title' => 'Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases',
+                                    'time' => '14:15 - 14:30',
+                                    'title' => 'The role of endovascular intervention in the preoperative embolization of intracranial tumors',
                                     'speaker' => 'Le Nhat Minh, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '13:40 - 13:50',
-                                    'title' => 'Adrenal vein sampling: experience at People\'s Hospital 115',
-                                    'speaker' => 'Do Quoc Huy, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '13:50 - 14:00',
-                                    'title' => 'The "No-reflow" phenomenon after mechanical thrombectomy in patients with acute ischemic stroke',
-                                    'speaker' => 'Nguyen Quang Hien, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '14:00 - 14:10',
-                                    'title' => 'Endovascular Treatment of Cerebral Aneurysms at Quang Tri General Hospital',
-                                    'speaker' => 'Phung Hung, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '14:10 - 14:20',
-                                    'title' => 'Clinical outcomes of radiofrequency ablation (RFA) for the treatment of hemorrhoids at Gia Dinh General Hospital',
-                                    'speaker' => 'Tran Ngoc Luong, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '14:20 - 14:30',
-                                    'title' => 'Traumatic carotid-cavernous fistula with ipsilateral parent artery occlusion: What is the optimal treatment strategy?',
-                                    'speaker' => 'Pham Dang Tu, MD',
-                                    'break' => false,
+                                    'time' => null,
+                                    'title' => 'Discussion',
+                                    'speaker' => null,
+                                    'break' => true,
                                 ],
                             ],
                         ],
                     ],
                 ],
                 [
-                    'time' => '14.30 - 15.00',
+                    'time' => '14.30 - 15.30',
                     'type' => 'break',
                     'session' => [
                         'title' => 'Tea Breaks',
@@ -359,77 +353,36 @@ return [
                             ],
                             'items' => [
                                 [
-                                    'time' => '15:30 - 15:50',
+                                    'time' => '15:30 - 15:45',
                                     'title' => 'Emergency IR for Hemorrhage Control',
                                     'speaker' => 'Prof. Hiroshi Kondo',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '15:50 - 16:10',
+                                    'time' => '15:45 - 16:00',
                                     'title' => 'Endovascular management of splenic artery aneurysms',
                                     'speaker' => 'Farah Gillan Irani, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:10 - 16:30',
+                                    'time' => '16:00 - 16:15',
                                     'title' => 'Updated management of resistant hypertension in end-stage renal disease patients via renal artery embolization',
                                     'speaker' => 'Assoc. Prof. Nguyen Xuan Hien',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:30 - 16:50',
+                                    'time' => '16:15 - 16:30',
+                                    'title' => 'Treatment strategies for hemoptysis caused by pulmonary artery pseudoaneurysms',
+                                    'speaker' => 'Do Dang Tan, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:30 - 16:45',
                                     'title' => 'Visceral Arterial Pseudoaneurysms: Beyond Coils—What Are Our Options?',
                                     'speaker' => 'Pham Ngoc Minh Triet, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:50 - 17:00',
-                                    'title' => 'Discussion',
-                                    'speaker' => null,
-                                    'break' => true,
-                                ],
-                            ],
-                        ],
-                        [
-                            'title' => 'Pelvic Intervention',
-                            'roles' => [
-                                [
-                                    'label' => 'Chairs',
-                                    'names' => ['Assoc. Prof. Nguyen Xuan Hien', 'Avi Beck, MD', 'Assoc. Prof. Vo Tan Duc'],
-                                ],
-                            ],
-                            'items' => [
-                                [
-                                    'time' => '15:30 - 15:45',
-                                    'title' => 'Uterine Artery Embolization for fibroids/ adenomyosis/ obstetrical scenarios',
-                                    'speaker' => 'Avi Beck, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '15:45 - 16:00',
-                                    'title' => 'Endovascular intervention for men’s problems',
-                                    'speaker' => 'Chun Yu Lin, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '16:00 - 16:15',
-                                    'title' => 'Pelvic Vein Embolization for Pelvic Congestion Syndrome at Quang Tri General Hospital',
-                                    'speaker' => 'Tran Minh Son, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '16:15 - 16:30',
-                                    'title' => 'Tips and Trick embolization',
-                                    'speaker' => 'Assoc. Prof. Nguyen Xuan Hien',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '16:30 - 16:45',
-                                    'title' => 'Efficacy evaluation of endovascular intervention in the treatment of benign prostatic hyperplasia',
-                                    'speaker' => 'Thi Van Gung, MD',
-                                    'break' => false,
-                                ],
-                                [
                                     'time' => '16:45 - 17:00',
                                     'title' => 'Discussion',
                                     'speaker' => null,
@@ -438,48 +391,48 @@ return [
                             ],
                         ],
                         [
-                            'title' => 'Stroke',
+                            'title' => 'HCC',
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Assoc. Prof. Nguyen Huy Thang', 'Nguyen Duc Khang, MD', 'Assoc. Prof. Pham Minh Thong'],
+                                    'names' => ['Nguyen Dinh Luan, MD', 'Assoc. Prof. Le Thanh Dung', 'Diamanto Rigas, MD'],
                                 ],
                             ],
                             'items' => [
                                 [
                                     'time' => '15:30 - 15:45',
-                                    'title' => 'Advanced Tips and Tricks for the Management of Complex Thrombectomy',
-                                    'speaker' => 'Joseph Gammete, MD',
+                                    'title' => 'HCC 2026: Key Updates Every Interventional Radiologist Should Know',
+                                    'speaker' => 'Diamanto Rigas, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '15:45 - 16:00',
-                                    'title' => 'The optimal recanalisation therapy for acute ischemic stroke',
-                                    'speaker' => 'Assoc. Prof. Nguyen Huy Thang',
+                                    'title' => 'The Interventionalist\'s Third Eye: Cone-Beam CT in the Era of Superselective TACE for HCC',
+                                    'speaker' => 'Assoc. Prof. Kittipitch Bannangkoon',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:00 - 16:15',
-                                    'title' => 'Endovascular thrombectomy for acute ischemic stroke: Updates from the 2026 AHA/ASA Guidelines',
-                                    'speaker' => 'Nguyen Huynh Nhat Tuan, MD',
+                                    'title' => 'Radiation segmentectomy using Y90',
+                                    'speaker' => 'Farah Gillan Irani, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:15 - 16:30',
-                                    'title' => 'An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital',
-                                    'speaker' => 'Tran Duc Hai, MD',
+                                    'title' => 'Intra-arterial Therapies for HCC in the Era of Systemic Therapies: Evolving Strategies and Techniques',
+                                    'speaker' => 'Nguyen Duy Anh, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:30 - 16:45',
-                                    'title' => 'Updates on endovascular strategies for the treatment of chronic intracranial arterial stenosis',
-                                    'speaker' => 'Pham Dang Tu, MD',
+                                    'title' => 'Optimizing the treatment of intermediate-stage hepatocellular carcinoma through the combination of TACE and systemic therapy',
+                                    'speaker' => 'Vo Ngoc Huan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:45 - 17:00',
-                                    'title' => 'The role of endovascular intervention in the preoperative embolization of intracranial tumors',
-                                    'speaker' => 'Le Nhat Minh, MD',
+                                    'title' => 'Beyond TACE-unsuitable: practical IR strategies for high tumor burden HCC',
+                                    'speaker' => 'Than Van Sy, MD',
                                     'break' => false,
                                 ],
                                 [
@@ -487,6 +440,65 @@ return [
                                     'title' => 'Discussion',
                                     'speaker' => null,
                                     'break' => true,
+                                ],
+                            ],
+                        ],
+                        [
+                            'title' => 'Oral Presentation (English - Contest)',
+                            'roles' => [
+                                [
+                                    'label' => 'Judges',
+                                    'names' => ['Prof. Nicolas Stacoffe', 'Avi Beck, MD', 'Chun Yu Lin, MD'],
+                                ],
+                            ],
+                            'items' => [
+                                [
+                                    'time' => '15:30 - 15:40',
+                                    'title' => 'TACE in Challenging Anatomy: A Case Report of Hepatocellular Carcinoma Supplied by the Right Gastroepiploic Artery',
+                                    'speaker' => 'Nguyen Hoang Nhat Khanh, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '15:40 - 15:50',
+                                    'title' => 'Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital',
+                                    'speaker' => 'Le Van Khoa, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '15:50 - 16:00',
+                                    'title' => 'Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases',
+                                    'speaker' => 'Le Nhat Minh, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:00 - 16:10',
+                                    'title' => 'Adrenal vein sampling: experience at People\'s Hospital 115',
+                                    'speaker' => 'Do Quoc Huy, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:10 - 16:20',
+                                    'title' => 'The "No-reflow" phenomenon after mechanical thrombectomy in patients with acute ischemic stroke',
+                                    'speaker' => 'Nguyen Quang Hien, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:20 - 16:30',
+                                    'title' => 'Endovascular Treatment of Cerebral Aneurysms at Quang Tri General Hospital',
+                                    'speaker' => 'Phung Hung, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:30 - 16:40',
+                                    'title' => 'Clinical outcomes of radiofrequency ablation (RFA) for the treatment of hemorrhoids at Gia Dinh General Hospital',
+                                    'speaker' => 'Tran Ngoc Luong, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:40 - 16:50',
+                                    'title' => 'Traumatic carotid-cavernous fistula with ipsilateral parent artery occlusion: What is the optimal treatment strategy?',
+                                    'speaker' => 'Tran Duc Hai, MD',
+                                    'break' => false,
                                 ],
                             ],
                         ],
@@ -524,7 +536,7 @@ return [
                                 [
                                     'time' => '08:00 - 08:15',
                                     'title' => 'One Patient, One Circulation: The Interplay Between PAD and ESRD',
-                                    'speaker' => 'Amanda Rigas, MD',
+                                    'speaker' => 'Diamanto Rigas, MD',
                                     'break' => false,
                                 ],
                                 [
@@ -542,7 +554,7 @@ return [
                                 [
                                     'time' => '08:45 - 09:00',
                                     'title' => 'Tips and Tricks to overcome in complex peripheral intervention',
-                                    'speaker' => 'Assoc. Prof. Hoang Minh Loi',
+                                    'speaker' => 'Hoang Minh Loi, MD',
                                     'break' => false,
                                 ],
                                 [
@@ -641,7 +653,7 @@ return [
                                 ],
                                 [
                                     'time' => '09:00 - 09:15',
-                                    'title' => 'Treatment of Pediatric Brain Arteriovenous Malformations: The Role of DSA and Embolization in a Personalized Strategy',
+                                    'title' => 'Treatment of Pediatric Brain Arterovenous Malformations: The Role of DSA and Embolization in a Personalized Strategy',
                                     'speaker' => 'Assoc. Prof. Pham Hong Duc',
                                     'break' => false,
                                 ],
@@ -686,7 +698,7 @@ return [
                                 'time' => '10:00 - 10:30',
                                 'title' => 'Opening Ceremony',
                                 'speaker' => null,
-                                'break' => true,
+                                'break' => false,
                             ],
                             [
                                 'time' => '10:30 - 10:50',
@@ -697,7 +709,7 @@ return [
                             [
                                 'time' => '10:50 - 11:10',
                                 'title' => 'Global Training: Beyond Case Numbers: Competency-Based Training in Interventional Radiology',
-                                'speaker' => 'Amanda Rigas, MD (SIR)',
+                                'speaker' => 'Diamanto Rigas, MD - SIR',
                                 'break' => false,
                             ],
                             [
@@ -745,8 +757,8 @@ return [
                             'items' => [
                                 [
                                     'time' => '13:00 - 13:15',
-                                    'title' => 'The Role of Interventional Radiology in Orthopedic and Musculoskeletal Disorders',
-                                    'speaker' => 'Joris Lavigne, MD',
+                                    'title' => 'The principle of irreversible electroporation',
+                                    'speaker' => 'Prof. Huang Kai Wen',
                                     'break' => false,
                                 ],
                                 [
@@ -757,8 +769,8 @@ return [
                                 ],
                                 [
                                     'time' => '13:30 - 13:45',
-                                    'title' => 'The principle of irreversible electroporation',
-                                    'speaker' => 'Prof. Huang Kai Wen',
+                                    'title' => 'The Role of Interventional Radiology in Orthopedic and Musculoskeletal Disorders',
+                                    'speaker' => 'Joris Lavigne, MD',
                                     'break' => false,
                                 ],
                                 [
@@ -786,7 +798,7 @@ return [
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Prof. Huang Kai Wen', 'Ngo Le Lam, MD', 'Chun Yu Lin, MD'],
+                                    'names' => ['Prof. Masanori Inoue', 'Ngo Le Lam, MD', 'Chun Yu Lin, MD'],
                                 ],
                             ],
                             'items' => [
@@ -816,14 +828,14 @@ return [
                                 ],
                                 [
                                     'time' => '14:00 - 14:15',
-                                    'title' => 'Microwave ablation for uterine fibroid',
+                                    'title' => 'Microwave ablation for uterine fibroids',
                                     'speaker' => 'Tran Quy Tuong, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:15 - 14:30',
-                                    'title' => 'Microwave Ablation for Uterine Fibroids: From Patient Selection to Technical Optimization',
-                                    'speaker' => 'Nguyen Duc Tinh, MD',
+                                    'title' => 'Recorded live case - Philips',
+                                    'speaker' => null,
                                     'break' => false,
                                 ],
                                 [
@@ -869,8 +881,8 @@ return [
                                 ],
                                 [
                                     'time' => '14:00 - 14:20',
-                                    'title' => 'Record live case',
-                                    'speaker' => 'Acandis',
+                                    'title' => 'Recorded live case - Acandis',
+                                    'speaker' => null,
                                     'break' => false,
                                 ],
                                 [
@@ -919,26 +931,26 @@ return [
                                 ],
                                 [
                                     'time' => '15:30 - 15:45',
-                                    'title' => 'Record live case',
-                                    'speaker' => 'Gore',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '15:45 - 16:00',
                                     'title' => 'Video',
                                     'speaker' => 'Assoc. Prof. Nguyen Trong Tuyen',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:00 - 16:15',
+                                    'time' => '15:45 - 16:00',
                                     'title' => 'Video',
                                     'speaker' => 'Nguyen Tan Tai, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:15 - 16:30',
+                                    'time' => '16:00 - 16:15',
                                     'title' => 'Consensus (Version 2)',
                                     'speaker' => 'Tran Doan Khac Viet, MD | Nguyen Tan Tai, MD',
+                                    'break' => false,
+                                ],
+                                [
+                                    'time' => '16:15 - 16:30',
+                                    'title' => 'Recorded live case - Gore',
+                                    'speaker' => null,
                                     'break' => false,
                                 ],
                             ],
@@ -989,7 +1001,7 @@ return [
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Assoc. Prof. Le Thanh Thao', 'Assoc. Prof. Dang Vinh Hiep', 'Technician Thai Van Loc'],
+                                    'names' => ['Assoc. Prof. Nguyen Thanh Thao', 'Assoc. Prof. Dang Vinh Hiep', 'Technician Thai Van Loc'],
                                 ],
                             ],
                             'items' => [
@@ -1045,37 +1057,30 @@ return [
                     'cells' => [
                         [
                             'title' => 'Oncological Intervention and Neurointervention - UIH AVIVA',
-                            'roles' => [],
+                            'roles' => [
+                                [
+                                    'label' => 'Moderator',
+                                    'names' => ['Nguyen Dinh Luan, MD', 'Prof. Xiang Jun'],
+                                ],
+                            ],
                             'items' => [
                                 [
-                                    'time' => '16:30 - 16:45',
-                                    'title' => 'Cutting-edge Progress in Oncological Interventional Radiology',
-                                    'speaker' => 'Zhang Wen MD',
+                                    'time' => '16:30 - 16:35',
+                                    'title' => 'Opening',
+                                    'speaker' => 'Nguyen Dinh Luan, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:45 - 17:00',
-                                    'title' => 'Y90 procedure under AVIVA',
-                                    'speaker' => 'Rio Hermawan MD',
+                                    'time' => '16:35 - 17:00',
+                                    'title' => 'Advanced Clinical Practice with Noise Free: Neuro & Peripheral Vascular Case Sharing',
+                                    'speaker' => 'Dr. Zhang Yi',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '17:00 - 17:15',
-                                    'title' => 'Advanced CTO Procedures under AVIVA',
-                                    'speaker' => 'Arif Sejati MD',
+                                    'time' => '17:00 - 17:25',
+                                    'title' => 'AI-Powered Interventional X-Ray Technology Enabling Precision Interventional Treatment',
+                                    'speaker' => 'Dr. Zhu Dongliang',
                                     'break' => false,
-                                ],
-                                [
-                                    'time' => '17:15 - 17:30',
-                                    'title' => 'Advanced Clinical Practice in Neurointervention',
-                                    'speaker' => 'Zhang Wen MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => null,
-                                    'title' => 'Discussion',
-                                    'speaker' => null,
-                                    'break' => true,
                                 ],
                             ],
                         ],
@@ -1084,7 +1089,7 @@ return [
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Prof. Masanori Inoue', 'Ngo Le Lam, MD'],
+                                    'names' => ['Prof. Masanori Inoue', 'Ngo Le Lam, MD', 'Wu Chih Horng, MD'],
                                 ],
                             ],
                             'items' => [
@@ -1103,7 +1108,7 @@ return [
                                 [
                                     'time' => '16:50 - 17:00',
                                     'title' => 'Catheter-directed thrombectomy of pulmonary embolism using a 16F sheath — Challenges and troubleshooting: A case report at Hanoi Medical University Hospital',
-                                    'speaker' => 'Nguyen Thai Binh, MD',
+                                    'speaker' => 'Assoc. Prof. Nguyen Thai Binh',
                                     'break' => false,
                                 ],
                                 [
