@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Chương trình hội nghị (nguồn: Agenda details - SIRHCM 2026 Updated 24Sep (4).xlsx)
+| Chương trình hội nghị (SIRHCM 2026 - 16 & 17 October 2026)
 |--------------------------------------------------------------------------
 |
 | rows[].type: sessions (3 phòng), lunch (3 phòng), shared (gộp 3 phòng), break, dinner.
@@ -100,7 +100,7 @@ return [
                                 ],
                                 [
                                     'label' => 'Panelists',
-                                    'names' => ['PhD. Vo Hoi Trung Truc, MD', 'Tran Quy Tuong, MD', 'Nguyen Tan Tai, MD'],
+                                    'names' => ['Tran Quy Tuong, MD', 'Nguyen Tan Tai, MD'],
                                 ],
                             ],
                             'items' => [
@@ -118,8 +118,8 @@ return [
                                 ],
                                 [
                                     'time' => '09:10 - 09:30',
-                                    'title' => 'RFA/MWA for hepatic tumor',
-                                    'speaker' => 'PhD. Vo Hoi Trung Truc, MD',
+                                    'title' => 'Thyroid ablation',
+                                    'speaker' => 'Tran Quy Tuong, MD',
                                     'break' => false,
                                 ],
                                 [
@@ -130,27 +130,21 @@ return [
                                 ],
                                 [
                                     'time' => '10:00 - 10:20',
-                                    'title' => 'Thyroid ablation',
-                                    'speaker' => 'Tran Quy Tuong, MD',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '10:20 - 10:40',
                                     'title' => 'Combination of TACE and MWA for treatment of intermediate HCC',
                                     'speaker' => 'Nguyen Tan Tai, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '10:40 - 11:00',
+                                    'time' => '10:20 - 10:40',
                                     'title' => 'Application of fusion imaging in liver tumor ablation',
                                     'speaker' => 'PhD. Le Van Khang, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '11:00 - 11:30',
-                                    'title' => 'Discussion',
-                                    'speaker' => null,
-                                    'break' => true,
+                                    'time' => '10:40 - 11:30',
+                                    'title' => 'Recorded live case',
+                                    'speaker' => 'Philips',
+                                    'break' => false,
                                 ],
                             ],
                         ],
@@ -161,17 +155,17 @@ return [
                     'type' => 'lunch',
                     'cells' => [
                         [
-                            'title' => 'Lunch symposium',
+                            'title' => 'Luncheon symposium',
                             'roles' => [],
                             'items' => [],
                         ],
                         [
-                            'title' => 'Lunch symposium - UIH AVIVA',
+                            'title' => 'Luncheon symposium - UIH AVIVA',
                             'roles' => [],
                             'items' => [],
                         ],
                         [
-                            'title' => 'Lunch symposium - Công nghệ An Pha',
+                            'title' => 'Luncheon symposium - Công nghệ An Pha',
                             'roles' => [],
                             'items' => [],
                         ],
@@ -198,19 +192,19 @@ return [
                                 ],
                                 [
                                     'time' => '13:20 - 13:40',
-                                    'title' => 'Controversies in the percutaneous transhepatic intervention for unresectable malignant hilar biliary obstruction',
+                                    'title' => 'Tắc mật ác tính vùng rốn gan: những vấn đề cần thảo luận trong can thiệp đường mật qua da/ Controversies in the percutaneous transhepatic intervention for unresectable malignant hilar biliary obstruction',
                                     'speaker' => 'Assoc. Prof. Le Trong Binh',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:40 - 14:00',
-                                    'title' => 'Percutaneous intra-abdominal and retroperitoneal foreign body removal',
+                                    'title' => 'Can thiệp qua da lấy dị vật trong ổ bụng và sau phúc mạc/ Percutaneous intra-abdominal and retroperitoneal foreign body removal',
                                     'speaker' => 'Assoc. Prof. Nguyen Thai Binh',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:00 - 14:20',
-                                    'title' => 'Primary result of drainage of abscess by ultrasound guiding at Chau Doc General Hospital',
+                                    'title' => 'Đánh giá kết quả siêu âm can thiệp dẫn lưu điều trị áp xe tại Bệnh viện Đa khoa Châu Đốc/ Primary result of drainage of abscess by ultrasound guiding at Chau Doc General Hospital',
                                     'speaker' => 'Le Thien Hoa, MD',
                                     'break' => false,
                                 ],
@@ -245,25 +239,25 @@ return [
                                 ],
                                 [
                                     'time' => '13:30 - 13:45',
-                                    'title' => 'Pelvic Vein Embolization for Pelvic Congestion Syndrome at Quang Tri General Hospital',
+                                    'title' => 'Can thiệp mạch điều trị Hội chứng xung huyết tiểu khung tại bệnh viện Đa khoa tỉnh Quảng Trị/ Pelvic Vein Embolization for Pelvic Congestion Syndrome at Quang Tri General Hospital',
                                     'speaker' => 'Tran Minh Son, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:45 - 14:00',
-                                    'title' => 'Tips and Trick embolization in pelvic congestion syndrome',
+                                    'title' => 'Hội chứng sung huyết vùng chậu/ Tips and Trick embolization',
                                     'speaker' => 'Assoc. Prof. Nguyen Xuan Hien',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:00 - 14:15',
-                                    'title' => 'Efficacy evaluation of endovascular intervention in the treatment of benign prostatic hyperplasia',
+                                    'title' => 'Đánh giá hiệu quả của can thiệp nội mạch trong điều trị tăng sinh tuyến tiền liệt lành tính/ Efficacy evaluation of endovascular intervention in the treatment of benign prostatic hyperplasia',
                                     'speaker' => 'Thi Van Gung, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:15 - 14:30',
-                                    'title' => 'Microwave Ablation for Uterine Fibroids: From Patient Selection to Technical Optimization',
+                                    'title' => 'Microwave Ablation trong điều trị u xơ tử cung: Từ lựa chọn bệnh nhân/ Microwave Ablation for Uterine Fibroids: From Patient Selection to Technical Optimization',
                                     'speaker' => 'Nguyen Duc Tinh, MD',
                                     'break' => false,
                                 ],
@@ -292,31 +286,31 @@ return [
                                 ],
                                 [
                                     'time' => '13:15 - 13:30',
-                                    'title' => 'The optimal recanalisation therapy for acute ischemic stroke',
+                                    'title' => 'Tối ưu hóa điều trị tái thông trong đột quỵ cấp/ The optimal recanalisation therapy for acute ischemic stroke',
                                     'speaker' => 'Assoc. Prof. Nguyen Huy Thang',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:30 - 13:45',
-                                    'title' => 'Endovascular thrombectomy for acute ischemic stroke: Updates from the 2026 AHA/ASA Guidelines',
+                                    'title' => 'Can thiệp nội mạch lấy huyết khối điều trị đột quỵ não cấp: Cập nhật từ hướng dẫn của Hiệp hội đột quỵ và tim mạch Hoa Kỳ 2026/ Endovascular thrombectomy for acute ischemic stroke: Updates from the 2026 AHA/ASA Guidelines',
                                     'speaker' => 'Nguyen Huynh Nhat Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:45 - 14:00',
-                                    'title' => 'An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital',
+                                    'title' => 'Tổng kết 8 năm về điều trị can thiệp nội mạch lấy huyết khối xoang tĩnh mạch não tại BV Chợ Rẫy/ An 8-year review of endovascular thrombectomy for cerebral venous sinus thrombosis at Cho Ray Hospital',
                                     'speaker' => 'Tran Duc Hai, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:00 - 14:15',
-                                    'title' => 'Updates on endovascular strategies for the treatment of chronic intracranial arterial stenosis',
+                                    'title' => 'Cập nhật về chiến lược can thiệp mạch trong điều trị hẹp động mạch nội sọ mạn tính/ Updates on endovascular strategies for the treatment of chronic intracranial arterial stenosis',
                                     'speaker' => 'Pham Dang Tu, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:15 - 14:30',
-                                    'title' => 'The role of endovascular intervention in the preoperative embolization of intracranial tumors',
+                                    'title' => 'Vai trò can thiệp nội mạch trong điều trị nút tắc mạch máu tiền phẫu các khối u nội sọ/ The role of endovascular intervention in the preoperative embolization of intracranial tumors',
                                     'speaker' => 'Le Nhat Minh, MD',
                                     'break' => false,
                                 ],
@@ -366,19 +360,19 @@ return [
                                 ],
                                 [
                                     'time' => '16:00 - 16:15',
-                                    'title' => 'Updated management of resistant hypertension in end-stage renal disease patients via renal artery embolization',
+                                    'title' => 'Cập nhật điều trị tăng huyết áp kháng trị ở bệnh nhân bệnh thận giai đoạn cuối thận bằng nút động mạch thận/ Updated management of resistant hypertension in end-stage renal disease patients via renal artery embolization',
                                     'speaker' => 'Assoc. Prof. Nguyen Xuan Hien',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:15 - 16:30',
-                                    'title' => 'Treatment strategies for hemoptysis caused by pulmonary artery pseudoaneurysms',
+                                    'title' => 'Chiến lược điều trị ho ra máu do giả phình động mạch phổi/ Treatment strategies for hemoptysis caused by pulmonary artery pseudoaneurysms',
                                     'speaker' => 'Do Dang Tan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:30 - 16:45',
-                                    'title' => 'Visceral Arterial Pseudoaneurysms: Beyond Coils—What Are Our Options?',
+                                    'title' => 'Điều trị giả phình động mạch tạng - Nếu không dùng coil - lựa chọn gì?/ Visceral Arterial Pseudoaneurysms: Beyond Coils—What Are Our Options?',
                                     'speaker' => 'Pham Ngoc Minh Triet, MD',
                                     'break' => false,
                                 ],
@@ -419,13 +413,13 @@ return [
                                 ],
                                 [
                                     'time' => '16:15 - 16:30',
-                                    'title' => 'Intra-arterial Therapies for HCC in the Era of Systemic Therapies: Evolving Strategies and Techniques',
+                                    'title' => 'Can thiệp nội mạch điều trị HCC trong kỷ nguyên toàn thân: Các thay đổi về chiến lược và kỹ thuật/ Intra-arterial Therapies for HCC in the Era of Systemic Therapies: Evolving Strategies and Techniques',
                                     'speaker' => 'Nguyen Duy Anh, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:30 - 16:45',
-                                    'title' => 'Optimizing the treatment of intermediate-stage hepatocellular carcinoma through the combination of TACE and systemic therapy',
+                                    'title' => 'Tối ưu hóa điều trị UTBMTBG giai đoạn trung gian thông qua phối hợp TACE và liệu pháp toàn thân/ Optimizing the treatment of intermediate-stage hepatocellular carcinoma through the combination of TACE and systemic therapy',
                                     'speaker' => 'Vo Ngoc Huan, MD',
                                     'break' => false,
                                 ],
@@ -460,43 +454,43 @@ return [
                                 ],
                                 [
                                     'time' => '15:40 - 15:50',
-                                    'title' => 'Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital',
+                                    'title' => 'Kết quả bước đầu điều trị phình động mạch não vỡ cổ rộng bằng coils với stent trợ Pegasus: Báo cáo loạt ca bệnh tại Bệnh viện Chợ Rẫy/ Initial outcomes of stent-assisted coiling with Pegasus stent for ruptured wide-necked cerebral aneurysms: A case series at Cho Ray Hospital',
                                     'speaker' => 'Le Van Khoa, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '15:50 - 16:00',
-                                    'title' => 'Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases',
+                                    'title' => 'Can thiệp điều trị dò động tĩnh mạch màng cứng nội sọ vùng lỗ chẩm: Báo cáo 2 ca bệnh hiếm gặp/ Endovascular treatment of foramen magnum dural arteriovenous fistulas (dAVFs): A report of two rare cases',
                                     'speaker' => 'Le Nhat Minh, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:00 - 16:10',
-                                    'title' => 'Adrenal vein sampling: experience at People\'s Hospital 115',
+                                    'title' => 'Lấy máu tĩnh mạch thượng thận: kinh nghiệm từ bệnh viện Nhân Dân 115/ Adrenal vein sampling: experience at People\'s Hospital 115',
                                     'speaker' => 'Do Quoc Huy, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:10 - 16:20',
-                                    'title' => 'The "No-reflow" phenomenon after mechanical thrombectomy in patients with acute ischemic stroke',
+                                    'title' => 'Hiện tượng "Không tái tưới máu" sau điều trị can thiệp lấy huyết khối ở bệnh nhân đột quỵ thiếu máu não cấp/ The "No-reflow" phenomenon after mechanical thrombectomy in patients with acute ischemic stroke',
                                     'speaker' => 'Nguyen Quang Hien, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:20 - 16:30',
-                                    'title' => 'Endovascular Treatment of Cerebral Aneurysms at Quang Tri General Hospital',
+                                    'title' => 'Can thiệp điều trị phình động mạch não tại bệnh viện Đa khoa tỉnh Quảng Trị/ Endovascular Treatment of Cerebral Aneurysms at Quang Tri General Hospital',
                                     'speaker' => 'Phung Hung, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:30 - 16:40',
-                                    'title' => 'Clinical outcomes of radiofrequency ablation (RFA) for the treatment of hemorrhoids at Gia Dinh General Hospital',
+                                    'title' => 'Kết quả điều trị bệnh trĩ bằng sóng cao tần (RFA) tại Bệnh viện ĐK Gia Định/ Clinical outcomes of radiofrequency ablation (RFA) for the treatment of hemorrhoids at Gia Dinh General Hospital',
                                     'speaker' => 'Tran Ngoc Luong, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '16:40 - 16:50',
-                                    'title' => 'Traumatic carotid-cavernous fistula with ipsilateral parent artery occlusion: What is the optimal treatment strategy?',
+                                    'title' => 'Dò động mạch cảnh xoang hang do chấn thương trên bệnh nhân có tắc động mạch mang cùng bên: Chiến lược điều trị như thế nào?/ Traumatic carotid-cavernous fistula with ipsilateral parent artery occlusion: What is the optimal treatment strategy?',
                                     'speaker' => 'Tran Duc Hai, MD',
                                     'break' => false,
                                 ],
@@ -547,25 +541,25 @@ return [
                                 ],
                                 [
                                     'time' => '08:30 - 08:45',
-                                    'title' => 'Endovascular management of LEDVT in cancer patients',
+                                    'title' => 'Can thiệp nội mạch huyết khối tĩnh mạch sâu chi dưới ở bệnh nhân ung thư/ Endovascular management of LEDVT in cancer patients',
                                     'speaker' => 'Assoc. Prof. Le Trong Binh',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '08:45 - 09:00',
-                                    'title' => 'Tips and Tricks to overcome in complex peripheral intervention',
+                                    'title' => 'Các mẹo mực vượt khó trong can thiệp Động mạch ngoại biên phức tạp/ Tips and Tricks to overcome in complex peripheral intervention',
                                     'speaker' => 'Hoang Minh Loi, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '09:00 - 09:15',
-                                    'title' => 'Endovascular treatment in patients with Diabetic Foot Ulcer',
+                                    'title' => 'Can thiệp mạch điều trị loét bàn chân do đái tháo đường/ Endovascular treatment in patients with Diabetic Foot Ulcer',
                                     'speaker' => 'Luong Tuan Anh, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '09:15 - 09:30',
-                                    'title' => 'Evaluation of clinical outcomes of digital subtraction angiography-guided endovascular intervention for stenosis and occlusion of arteriovenous fistulas (AVF) in hemodialysis patients at Chau Doc General Hospital',
+                                    'title' => 'Đánh giá kết quả điều trị tắc, hẹp cầu nối thông động tĩnh mạch (AVF) ở bệnh nhân chạy thận nhân tạo bằng can thiệp mạch máu số hóa xóa nền tại Bệnh viện Đa khoa Châu Đốc/ Evaluation of clinical outcomes of digital subtraction angiography-guided endovascular intervention for stenosis and occlusion of arteriovenous fistulas (AVF) in hemodialysis patients at Chau Doc General Hospital',
                                     'speaker' => 'Phan Huy Hoang, MD',
                                     'break' => false,
                                 ],
@@ -594,19 +588,19 @@ return [
                                 ],
                                 [
                                     'time' => '08:20 - 08:40',
-                                    'title' => 'Role of pterygopalatine ganglion blockage in treatment of facial pain',
+                                    'title' => 'Vai trò phong bế hạch bướm khẩu cái trong điều trị đau vùng mặt/ Role of pterygopalatine ganglion blockage in treatment of facial pain',
                                     'speaker' => 'Nguyen Anh Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '08:40 - 09:00',
-                                    'title' => 'Hypogastric Plexus Alcohol Neurolysis for Pain Management in Advanced Cancer',
+                                    'title' => 'Tiêm cồn diệt đám rối hạ vị trong điều trị đau do ung thư giai đoạn cuối/ Hypogastric Plexus Alcohol Neurolysis for Pain Management in Advanced Cancer',
                                     'speaker' => 'Trinh Tu Tam, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '09:00 - 09:20',
-                                    'title' => 'Pain in microcrystalline arthropathies: diagnosis and minimally invasive interventional treatment',
+                                    'title' => 'Đau trong bệnh lý vi tinh thể: chẩn đoán và điều trị can thiệp tối thiểu/ Pain in microcrystalline arthropathies: diagnosis and minimally invasive interventional treatment',
                                     'speaker' => 'Prof. Bui Van Giang',
                                     'break' => false,
                                 ],
@@ -623,13 +617,13 @@ return [
                             'roles' => [
                                 [
                                     'label' => 'Chairs',
-                                    'names' => ['Joseph Gammete, MD', 'Tran Quoc Tuan, MD', 'Assoc. Prof. Nguyen Trong Tuyen'],
+                                    'names' => ['Joseph Gammete, MD', 'Tran Quoc Tuan, MD'],
                                 ],
                             ],
                             'items' => [
                                 [
                                     'time' => '08:00 - 08:15',
-                                    'title' => 'Endovascular strategies for chronic subdural hematoma: Updates from the AHA/ASA consensus statement',
+                                    'title' => 'Chiến lược can thiệp mạch trong điều trị tụ máu dưới màng cứng mạn tính: Cập nhật từ tuyên bố đồng thuận của Hiệp hội đột quỵ và tim mạch Hoa Kỳ/ Endovascular strategies for chronic subdural hematoma: Updates from the AHA/ASA consensus statement',
                                     'speaker' => 'Nguyen Huynh Nhat Tuan, MD',
                                     'break' => false,
                                 ],
@@ -653,7 +647,7 @@ return [
                                 ],
                                 [
                                     'time' => '09:00 - 09:15',
-                                    'title' => 'Treatment of Pediatric Brain Arterovenous Malformations: The Role of DSA and Embolization in a Personalized Strategy',
+                                    'title' => 'Điều trị dị dạng động tĩnh mạch não ở trẻ em: vai trò của DSA và nút mạch trong chiến lược cá thể hóa/ Treatment of Pediatric Brain Arterovenous Malformations: The Role of DSA and Embolization in a Personalized Strategy',
                                     'speaker' => 'Assoc. Prof. Pham Hong Duc',
                                     'break' => false,
                                 ],
@@ -702,7 +696,7 @@ return [
                             ],
                             [
                                 'time' => '10:30 - 10:50',
-                                'title' => 'AI & IR',
+                                'title' => 'Trí tuệ nhân tạo và Điện quang can thiệp/ AI & IR',
                                 'speaker' => 'Assoc. Prof. Hoang Minh Loi',
                                 'break' => false,
                             ],
@@ -828,18 +822,18 @@ return [
                                 ],
                                 [
                                     'time' => '14:00 - 14:15',
-                                    'title' => 'Microwave ablation for uterine fibroids',
+                                    'title' => 'Đốt u xơ tử cung bằng microwave/ Microwave ablation for uterine fibroids',
                                     'speaker' => 'Tran Quy Tuong, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:15 - 14:30',
-                                    'title' => 'Recorded live case - Philips',
-                                    'speaker' => null,
+                                    'title' => 'Đánh giá kết quả bước đầu điều trị u tuyến giáp kích thước lớn bằng phương pháp đốt vi sóng/ Preliminary results of microwave ablation for large thyroid tumors',
+                                    'speaker' => 'Le Quang Hoa, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => null,
+                                    'time' => '14:30 - 14:45',
                                     'title' => 'Discussion',
                                     'speaker' => null,
                                     'break' => true,
@@ -857,32 +851,32 @@ return [
                             'items' => [
                                 [
                                     'time' => '13:00 - 13:15',
-                                    'title' => 'Management of Aneurysm by FDS',
+                                    'title' => 'Điều trị phình động mạch não bằng thiết bị chuyển dòng nội túi phình/ Management of Aneurysm by FDS',
                                     'speaker' => 'Nguyen Huynh Nhat Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:15 - 13:30',
-                                    'title' => 'Flow diverters in the treatment of intracranial aneurysms',
+                                    'title' => 'Cầu phá dòng trong điều trị túi phình động mạch não/ Flow diverters in the treatment of intracranial aneurysms',
                                     'speaker' => 'Tran Quoc Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:30 - 13:45',
-                                    'title' => 'Transradial access for neurointerventions: Updates on recent advances',
+                                    'title' => 'Can thiệp mạch máu thần kinh qua đường động mạch quay: Cập nhật các tiến bộ mới/ Transradial access for neurointerventions: Updates on recent advances',
                                     'speaker' => 'Tran Duc Hai, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '13:45 - 14:00',
-                                    'title' => 'Middle meningeal artery embolization for the treatment of chronic subdural hematoma: updated recommendations and practical considerations',
+                                    'title' => 'Tắc động mạch màng não giữa trong điều trị máu tụ mãn: cập nhật khuyến cáo và lưu ý trong thực hành/ Middle meningeal artery embolization for the treatment of chronic subdural hematoma: updated recommendations and practical considerations',
                                     'speaker' => 'Tran Quoc Tuan, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '14:00 - 14:20',
-                                    'title' => 'Recorded live case - Acandis',
-                                    'speaker' => null,
+                                    'title' => 'Recorded live case',
+                                    'speaker' => 'Acandis',
                                     'break' => false,
                                 ],
                                 [
@@ -932,25 +926,19 @@ return [
                                 [
                                     'time' => '15:30 - 15:45',
                                     'title' => 'Video',
-                                    'speaker' => 'Assoc. Prof. Nguyen Trong Tuyen',
-                                    'break' => false,
-                                ],
-                                [
-                                    'time' => '15:45 - 16:00',
-                                    'title' => 'Video',
                                     'speaker' => 'Nguyen Tan Tai, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:00 - 16:15',
+                                    'time' => '15:45 - 16:00',
                                     'title' => 'Consensus (Version 2)',
                                     'speaker' => 'Tran Doan Khac Viet, MD | Nguyen Tan Tai, MD',
                                     'break' => false,
                                 ],
                                 [
-                                    'time' => '16:15 - 16:30',
-                                    'title' => 'Recorded live case - Gore',
-                                    'speaker' => null,
+                                    'time' => '16:00 - 16:30',
+                                    'title' => 'Recorded live case',
+                                    'speaker' => 'Gore',
                                     'break' => false,
                                 ],
                             ],
@@ -972,13 +960,13 @@ return [
                                 ],
                                 [
                                     'time' => '15:20 - 15:40',
-                                    'title' => 'Bones AVM: Recognition and strategic to embolize',
+                                    'title' => 'AVM Xương: Nhận diện và chiến lược điều trị nút mạch/ Bones AVM: Recognition and strategic to embolize',
                                     'speaker' => 'Nguyen Ngoc Cuong, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '15:40 - 16:00',
-                                    'title' => 'Transvenous approach for the treatment of brain arteriovenous malformations (bAVMs): Updates from the TATAM 2025 study',
+                                    'title' => 'Tiếp cận đường tĩnh mạch điều trị dị dạng động tĩnh mạch não: Cập nhật từ nghiên cứu TATAM 2025/ Transvenous approach for the treatment of brain arteriovenous malformations (bAVMs): Updates from the TATAM 2025 study',
                                     'speaker' => 'Le Van Khoa, MD',
                                     'break' => false,
                                 ],
@@ -1013,13 +1001,13 @@ return [
                                 ],
                                 [
                                     'time' => '15:15 - 15:30',
-                                    'title' => 'Evaluation of hemostatic efficacy and complications of radial artery mechanical compression following percutaneous coronary intervention at the endovascular intervention unit of HCM UMC',
+                                    'title' => 'Đánh giá hiệu quả cầm máu và biến chứng của băng ép cơ học động mạch quay sau can thiệp động mạch vành qua da tại đơn vị can thiệp nội mạch Bệnh viện Đại Học Y Dược TPHCM/ Evaluation of hemostatic efficacy and complications of radial artery mechanical compression following percutaneous coronary intervention at the endovascular intervention unit of HCM UMC',
                                     'speaker' => 'Technician Tran Ba Khoa',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '15:30 - 15:45',
-                                    'title' => 'Optimization of A 3.0T MRI Protocol to improve image quality in patients after endovascular Coil embolization of intracranial aneurysms',
+                                    'title' => 'Tối ưu hóa protocol MRI 3.0T nhằm cải thiện chất lượng hình ảnh ở bệnh nhân sau nút coil phình động mạch não/ Optimization of A 3.0T MRI Protocol to improve image quality in patients after endovascular Coil embolization of intracranial aneurysms',
                                     'speaker' => 'Technician Le Thanh Phong',
                                     'break' => false,
                                 ],
@@ -1107,19 +1095,19 @@ return [
                                 ],
                                 [
                                     'time' => '16:50 - 17:00',
-                                    'title' => 'Catheter-directed thrombectomy of pulmonary embolism using a 16F sheath — Challenges and troubleshooting: A case report at Hanoi Medical University Hospital',
+                                    'title' => 'Hút huyết khối động mạch phổi bằng ống thông 16F, khó khăn và khắc phục. Báo cáo ca lâm sàng tại bệnh viện Đại học Y Hà Nội/ Catheter-directed thrombectomy of pulmonary embolism using a 16F sheath — Challenges and troubleshooting: A case report at Hanoi Medical University Hospital',
                                     'speaker' => 'Assoc. Prof. Nguyen Thai Binh',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '17:00 - 17:10',
-                                    'title' => 'Complications of transjugular intrahepatic portosystemic shunt (TIPS) interventions',
+                                    'title' => 'Biến chứng trong can thiệp TIPS/ Complications of transjugular intrahepatic portosystemic shunt (TIPS) interventions',
                                     'speaker' => 'Tran Quang Luc, MD',
                                     'break' => false,
                                 ],
                                 [
                                     'time' => '17:10 - 17:20',
-                                    'title' => 'Management of HCC, learning from failures',
+                                    'title' => 'Điều trị HCC, học từ các ca thất bại/ Management of HCC, learning from failures',
                                     'speaker' => 'Ngo Le Lam, MD',
                                     'break' => false,
                                 ],
@@ -1154,7 +1142,7 @@ return [
                                 ],
                                 [
                                     'time' => '17:10 - 17:30',
-                                    'title' => 'Interventional radiology for pain management in knee osteoarthritis',
+                                    'title' => 'Điện quang can thiệp kiểm soát đau trong thoái hóa khớp gối/ Interventional radiology for pain management in knee osteoarthritis',
                                     'speaker' => 'Nguyen Truong Giang, MD',
                                     'break' => false,
                                 ],
