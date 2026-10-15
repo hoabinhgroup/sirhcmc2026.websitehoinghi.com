@@ -1,10 +1,9 @@
 <section class="about-section spad">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title">
-          <h2>NHÀ TÀI TRỢ / SPONSOR</h2>
-          <p class="f-para">Nội dung nhà tài trợ — cập nhật sau.</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-12 text-center">
+        <div class="sponsor-banner-wrapper">
+          <img src="{{ Storage::url('img/sponsor.jpg') }}" alt="NHÀ TÀI TRỢ / SPONSOR" class="img-fluid">
         </div>
       </div>
     </div>
